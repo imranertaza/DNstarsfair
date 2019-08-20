@@ -7,7 +7,7 @@
         </div>
         
         
-        <?php /*?><div class="row">
+        <div class="row">
             <div class="urgent_notice">
             	<div class="col-md-12">
                 <h3>Incentives Offers</h3>
@@ -43,13 +43,6 @@
                     <img src="<?php print base_url(); ?>assets/images/9int.jpg" />
                 </div>
             </div>
-        </div><?php */ ?>
+        </div>
 
-        <h3>Last Win Options</h3>
-        <hr>
-        <?php foreach($winOptions as $option) { ?>
-            <ul class="list-group">
-                <li class="list-group-item">Option Number : <b><?php print $option->option_id; ?></b> has win at <?php print $option->date; ?></li>
-            </ul>
-        <?php } ?>
  	</div>

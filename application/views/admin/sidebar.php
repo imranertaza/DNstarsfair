@@ -282,26 +282,7 @@
                                 </ul>
                                 <!-- /.nav-second-level -->
                             </li>
-                        <?php } if ($this->functions->hasPermission('download_list') == true) { ?>
-                            <li>
-                                <a href="#"><i class="fa fa-fw"></i> Option Game<span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level">
-                                    <?php if ($this->functions->hasPermission('download_list') == true) { ?>
-                                        <li>
-                                            <a href="#"><i class="fa fa-list fa-fw"></i> Option Game</a>
-                                        </li>
-                                    <?php } if ($this->functions->hasPermission('download_list') == true) { ?>
-                                        <li>
-                                            <a href="#"><i class="fa fa-list fa-fw"></i> Options</a>
-                                        </li>
-                                    <?php } if ($this->functions->hasPermission('add_download') == true) { ?>
-                                        <li>
-                                            <a href="<?php echo base_url(); ?>admin_ut/op_game/option_bided"><i class="fa fa-plus-square fa-fw"></i> Options Bided</a>
-                                        </li>
-                                    <?php } ?>
-                                </ul>
-                                <!-- /.nav-second-level -->
-                            </li>
+                        
                         <?php } if ($this->functions->hasPermission('download_list') == true) { ?>
                             <li>
                                 <a href="#"><i class="fa fa-fw"></i> Point History<span class="fa arrow"></span></a>

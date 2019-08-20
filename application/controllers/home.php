@@ -46,14 +46,6 @@ class home extends CI_Controller {
 			$data['list_notice'] = 'No notice published';	
 		}
 
-
-		//Option game win list
-        $this->db->order_by("date", "DESC");
-        $this->db->group_by("option_id");
-        $data['winOptions'] = $this->db->get("history_op_game_win", 15)->result();
-        //print $this->db->last_query();
-
-
 		$data['footer_widget_title'] = $this->functions->show_widget('title', 8);
 		$data['footer_widget_description'] = $this->functions->show_widget('description', 8);
 		

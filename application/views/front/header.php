@@ -53,7 +53,7 @@ print $this->global_settings->get_each_setting_value($key = 'site_title'); ?></t
     <div class="row">
         	<div class="row">
                 <div class="col-md-3">
-                    <strong style="margin-top:5px;"><a href="<?php echo base_url(); ?>">Uturn</a></strong>
+                    <strong style="margin-top:5px;"><a href="<?php echo base_url(); ?>">Stars Fair BD</a></strong>
                 </div>
                 <div class="col-md-1 col-md-offset-8 text-right">
                     <a href="<?php print base_url().$log_url; ?>"><?php print $log_title; ?></a>
@@ -66,7 +66,7 @@ print $this->global_settings->get_each_setting_value($key = 'site_title'); ?></t
 
 <div class="container-fluid">
     <div class="header row">
-        <img src="<?php print base_url(); ?>assets/images/school_top.jpg" width="100%" />
+        <img src="<?php print base_url(); ?>assets/images/top_banner.jpg" width="100%" />
     </div>
 </div>
 
@@ -78,10 +78,8 @@ print $this->global_settings->get_each_setting_value($key = 'site_title'); ?></t
       	<div class="menu">
         	<ul>
             	<li><a href="<?php echo base_url(); ?>">Home</a></li>
-                <li><a href="<?php print base_url(); ?>details/page/marketing-plan/">Marketing Plan</a></li>
                 <li><a href="<?php print base_url(); ?>details/page/notice/">Notice</a></li>
                 <li><a href="<?php print base_url(); ?>gallery/">Event Gallery</a></li>
-                <li><a href="<?php print base_url(); ?>option_win_details/">Option Game</a></li>
                 <li><a href="<?php print base_url(); ?>details/page/about-us/">About Us</a></li>
                 <li><a href="<?php print base_url(); ?>details/page/contact-us/">Contact Us</a></li>
                 <?php if ($log_title === "Login") { ?>

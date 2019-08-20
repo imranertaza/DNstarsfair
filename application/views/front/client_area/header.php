@@ -69,7 +69,7 @@ print $this->global_settings->get_each_setting_value($key = 'site_title'); ?></t
 
 <div class="container-fluid">
     <div class="header row">
-        <img src="<?php print base_url(); ?>assets/images/school_top.jpg" width="100%" />
+        <img src="<?php print base_url(); ?>assets/images/top_banner.jpg" width="100%" />
     </div>
 </div>
 

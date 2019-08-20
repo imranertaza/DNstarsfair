@@ -37,7 +37,7 @@
 <div class="short_footer short_footerl">
 	<div class="container">  
     <div class="row">
-    <div class="col-md-12 short_footer_write">Copyright © 2019 Uturn  | All rights reserved | </div><!--end of short_footer_write-->
+    <div class="col-md-12 short_footer_write">Copyright © 2019 Starsfairbd  | All rights reserved | </div><!--end of short_footer_write-->
     </div>
     </div>
 </div>
