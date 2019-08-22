@@ -279,6 +279,30 @@ if (isset($_GET['check_username'])) {
 	}
 }
 
+//Agent
+if (isset($_GET['check_agent'])) {
+	$ci =& get_instance();
+	$ci->load->database();
+	
+	$uname = $_POST['username'];
+	$query = $this->db->query("SELECT `ID` FROM `users` WHERE `username`='$uname'");
+	$rowcount = $query->num_rows();
+	if ($rowcount==0){
+		print false;	
+	}else {
+
+		$row = $query->row();
+		$usrID =  $row->ID;
+		
+		$agetnId = 	$this->db->query("SELECT `roleID` FROM `user_roles` WHERE `userID`='$usrID'")->row();
+		$roleID = $agetnId->roleID;
+		if ($roleID != 4){
+			print false;			
+		}else {
+		 	print true;	
+		}
+	}
+}
 
 if (isset($_GET['check_valid_username'])) {
 	$ci =& get_instance();

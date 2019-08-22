@@ -262,6 +262,29 @@
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
+
+
+                        <li>
+                            <a href="#"><i class="fa fa-fw"></i> Pin Gnerate<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                
+                                <li>
+                                    <a href="<?php echo base_url(); ?>pin_generat/pin_generate_list.html"><i class="fa fa-list fa-fw"></i> Pin Generat List</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo base_url(); ?>pin_generat/pin_generate.html"><i class="fa fa-plus-square fa-fw"></i> Pin Generat</a>
+                                </li>
+                                
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+
+
+
+
+
+
+
                         <?php } if ($this->functions->hasPermission('download_list') == true) { ?>
                             <li>
                                 <a href="#"><i class="fa fa-fw"></i> Deposit/Withdraw<span class="fa arrow"></span></a>
@@ -358,6 +381,13 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <?php } */ ?>
+
+                        
+                        
+                        
+                              
+                        
+                        
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
