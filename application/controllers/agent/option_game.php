@@ -59,7 +59,7 @@ class option_game extends CI_Controller {
 
             // Game information
             $gameId = 1;
-            $data['gameInfo'] = $this->db->get_where('option_game', array("game_id" => $gameId))->row();
+            $data['gameInfo'] = $this->db->get_where('pins', array("user_id" => $gameId))->row();
 
             //Getting joined list
             $this->db->select("option_id");

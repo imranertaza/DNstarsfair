@@ -18,7 +18,7 @@
                                             <th width="10">Serial</th>
                                             <th width="200">User Name</th>
                                             <th width="120">Action</th>
-                                        </tr>
+                                        </tr  >
                                     </thead>
                                     <tbody>
                                         <?php 

@@ -47,7 +47,7 @@
 				<?php if (($check_user == true) && ($role == 4)) { ?>
             	<li><a href="<?php print base_url(); ?>agent/dashboard/">Dashboard</a></li>
                 <li><a href="<?php print base_url(); ?>profile/">My Profile</a></li>
-                <li><a href="<?php print base_url(); ?>agent/option_game/">Option Game</a></li>
+                <li><a href="<?php print base_url(); ?>agent/agent_pin/">PIN</a></li>
 <!--                <li><a href="--><?php //print base_url(); ?><!--member_form/register/">Sign Up Member</a></li>-->
 <!--                <li><a href="--><?php //print base_url(); ?><!--store/">Store</a></li>-->
 <!--                <li><a href="--><?php //print base_url(); ?><!--agent/sales_report/">Sales Report</a></li>-->
