@@ -54,6 +54,18 @@
                                             
                                             <p class="help-block" id="parent_check">Please put your national ID</p>
                                         </div>
+
+
+                                        <div class="form-group">
+                                            <label>Pin</label>
+                                            <?php echo form_error('pin', '<p class="error">', '</p>'); ?>
+                                            <input class="form-control" id="myInput" name="pin" type="text"  onchange="pin_check(this.value)" required>
+                                            
+                                            <p class="help-block" id="pin_bar">Please put your Pin</p>
+                                        </div>
+
+
+
                                         <div class="form-group">
                                             <label>Choose hand</label>
                                             <?php echo form_error('position', '<p class="error">', '</p>'); ?>
@@ -203,6 +215,32 @@ function check_spon(uname){
 			 }
 	  });
 }
+//Pin Check
+function pin_check(pin){
+	  $.ajax({
+			 url: '<?php print base_url(); ?>ajax.html/?check_pin=yes',
+			 type: "POST",
+			 dataType: "text",
+			 data: {pin: pin},
+			 beforeSend: function(){
+				   $('#pin_bar').css( 'color','#238A09');
+				   $('#pin_bar').html('<img src="<?php print base_url(); ?>/assets/images/loading.gif" width="20" alt="loading"/> Progressing...');
+			 },
+			 success: function(message){
+				  //$('#progress_bar').html(msg);
+				if (message == 0) {
+					$('#pin_bar').html('<span style="color:red">Invalid pin</span>');
+					document.getElementById('myInput').value = ''
+				}else {
+					$('#pin_bar').html('<span style="color:green">Valid pin</span>');
+				 }
+			 }
+	  });
+}
+
+
+
+
 
 function parent_check(uname){
 	  $.ajax({

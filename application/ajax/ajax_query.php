@@ -316,6 +316,31 @@ if (isset($_GET['check_valid_username'])) {
 	}else {
 	 	print '<span style="color:green">Valid Username</span>';
 	}
+	// OR $status=='unused'
+}
+//Pin Check
+if (isset($_GET['check_pin'])) {
+	$ci =& get_instance();
+	$ci->load->database();
+
+	$pin =$_POST['pin'];
+
+	$ci->db->Select('pin, status');
+	$row=$ci->db->get_where('pins', array('pin' => $pin));
+	$rowcount = $row->num_rows();
+	
+	if ($rowcount == 1) {
+		$data= $row->row();
+		$status = $data->status;
+		if ($status != 'unused') {
+			print 0;
+		}else{
+			print 1;
+		}
+	}else {
+		print 0;
+	}
+	
 }
 
 

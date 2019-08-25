@@ -308,9 +308,10 @@ class member_form extends CI_Controller {
                         'religion' => "no_need",
                         'sex' => "no_need",
                         'photo' => "no_need.jpg"
-                    );
+                    );                    
                     $this->db->insert('users', $data_personal);
                     $userID = $this->db->insert_id();
+
 
 
                     // Insert into user_role
@@ -349,10 +350,16 @@ class member_form extends CI_Controller {
                     }
                     $this->db->where('u_id', $pid);
                     $this->db->update('tree', $data_left_right);
-
-
+                    //pin update
+                    $pin = array(
+                    				'pin' =>$this->input->post('pin',TRUE), 
+                    				'status'=>'used'
+                				);
+                    $this->db->where('pin', $_POST['pin']);
+                    $this->db->update('pins', $pin);
                     $this->session->set_flashdata("msg", "<div class='alert alert-success'>Successfully Registered. Please Login</div>");
                     redirect("member_form/login/");
+
                 }else {
                     $this->session->set_flashdata("msg", '<div class="alert alert-warning">Sorry! You did not select any position.</div>');
                     redirect("member_form/register/");
