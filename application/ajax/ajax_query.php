@@ -279,6 +279,30 @@ if (isset($_GET['check_username'])) {
 	}
 }
 
+//Agent
+if (isset($_GET['check_agent'])) {
+	$ci =& get_instance();
+	$ci->load->database();
+	
+	$uname = $_POST['username'];
+	$query = $this->db->query("SELECT `ID` FROM `users` WHERE `username`='$uname'");
+	$rowcount = $query->num_rows();
+	if ($rowcount==0){
+		print false;	
+	}else {
+
+		$row = $query->row();
+		$usrID =  $row->ID;
+		
+		$agetnId = 	$this->db->query("SELECT `roleID` FROM `user_roles` WHERE `userID`='$usrID'")->row();
+		$roleID = $agetnId->roleID;
+		if ($roleID != 4){
+			print false;			
+		}else {
+		 	print true;	
+		}
+	}
+}
 
 if (isset($_GET['check_valid_username'])) {
 	$ci =& get_instance();
@@ -292,6 +316,31 @@ if (isset($_GET['check_valid_username'])) {
 	}else {
 	 	print '<span style="color:green">Valid Username</span>';
 	}
+	// OR $status=='unused'
+}
+//Pin Check
+if (isset($_GET['check_pin'])) {
+	$ci =& get_instance();
+	$ci->load->database();
+
+	$pin =$_POST['pin'];
+
+	$ci->db->Select('pin, status');
+	$row=$ci->db->get_where('pins', array('pin' => $pin));
+	$rowcount = $row->num_rows();
+	
+	if ($rowcount == 1) {
+		$data= $row->row();
+		$status = $data->status;
+		if ($status != 'unused') {
+			print 0;
+		}else{
+			print 1;
+		}
+	}else {
+		print 0;
+	}
+	
 }
 
 
