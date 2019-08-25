@@ -47,7 +47,20 @@
 				<?php if (($check_user == true) && ($role == 4)) { ?>
             	<li><a href="<?php print base_url(); ?>agent/dashboard/">Dashboard</a></li>
                 <li><a href="<?php print base_url(); ?>profile/">My Profile</a></li>
-                <li><a href="<?php print base_url(); ?>agent/agent_pin/">PIN</a></li>
+                <li><a href="<?php print base_url(); ?>agent/agent_pin/">Pin Generate</a></li>
+                <li><a href="#">Product Inventory</a></li>
+                <li><a href="#">Purchased Products</a></li>
+                <li><a href="#">Product Sales History</a></li>
+                <li><a href="#">Sales</a></li>
+                <li><a href="#">Sales Commission History</a></li>                
+                <li><a href="#">Load Balance</a></li>
+                <li><a href="#">Load Balance History</a></li>
+                <li><a href="#">Transaction</a></li>
+                <li><a href="#">Transaction Balance History</a></li>
+                <li><a href="#">Expensive History</a></li>
+                
+                
+                
 <!--                <li><a href="--><?php //print base_url(); ?><!--member_form/register/">Sign Up Member</a></li>-->
 <!--                <li><a href="--><?php //print base_url(); ?><!--store/">Store</a></li>-->
 <!--                <li><a href="--><?php //print base_url(); ?><!--agent/sales_report/">Sales Report</a></li>-->
@@ -84,10 +97,10 @@
                 <li><a href="<?php print base_url(); ?>member/general/withdraw_report/">Withdraw Report</a></li>
                 <li><a href="<?php print base_url(); ?>member/general/matching_report/">Matching Report</a></li>
                 <li><a href="<?php print base_url(); ?>member/general/transfer_money/">Transfer Money</a></li>
-                <li><a href="<?php print base_url(); ?>member/general/transfer_history/">Transfer History</a></li>
-                <li><a href="<?php print base_url(); ?>member/general/load_money/">Load Money</a></li>
+                <li><a href="<?php print base_url(); ?>member/general/transfer_history/">Transfer Money History</a></li>
+                <li><a href="">Product Purchase History</a></li>
 <!--                <li><a href="--><?php //print base_url(); ?><!--member/option_game/">Option Game</a></li>-->
-                <li><a href="<?php print base_url(); ?>member/general/load_money/">View Ads</a></li>
+                
                 <li><a href="<?php print base_url(); ?>member/general/notice/">Notice</a></li>
                 <?php } ?>
             </ul>
