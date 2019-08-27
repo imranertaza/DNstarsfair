@@ -1,6 +1,6 @@
 body { 
-	  background:url(../images/bg.png) repeat center top #fff;
-	  margin:0; padding:0; font-size:13px; 
+	  background-color:  #f5b577;
+	  /*margin:0; padding:0; font-size:13px;*/ 
 }
 h1 { color:#005180 !important; }
 .webbody {
@@ -125,9 +125,9 @@ h1 { color:#005180 !important; }
 	color:#fff;
 }
 .product_list_white_img{   margin: 10px 0 0 74px; float:left;}
-.footerl{ margin-top:10px !important; background:#005180;}
+.footerl{ margin-top:10px !important; background:#ef0b2d;}
 .footer{ padding-top: 20px;
-background: #005180;
+background: #ef0b2d;
 margin-top: 25px; }
 .footer_left, .footer_midil, .footer_right{}
 .footer_left:first-child { margin-left:0px; }
@@ -141,8 +141,8 @@ margin-top: 25px; }
 .footer_go_up{ float:right;}
 .short_footerl {
     height: 40px;
-	background: #082638 none repeat scroll 0% 0%;
-	border-top: 1px solid #145903;
+	background: #9e061d none repeat scroll 0% 0%;
+	border-top: 1px solid #ef0629;
 }
 .short_footer_write{ padding-top:12px; font-size:13px; color:#fff; }
 .short_footer_write a{ text-decoration:none; color:#fff;}
@@ -220,9 +220,9 @@ float: left;
     margin: 20px 0 0 26px;
 }
 
-.sidebar { border:3px solid #005180; padding:0 !important; margin-top:25px;}
+.sidebar { border:3px solid #fc922a; padding:0 !important; margin-top:25px;}
 .results ul { margin-bottom:0px; }
-.head_teacher_comment h4, .important_links h4, .results h4, .notice h4 { margin:0; padding:5px 10px; background:#005180; color:#fff;}
+.head_teacher_comment h4, .important_links h4, .results h4, .notice h4 { margin:0; padding:5px 10px; background:#fc922a; color:#fff;}
 .important_links ul, .results ul, .notice ul, .important_links1 ul { list-style:none; padding:10px 15px;}
 .important_links ul li a, .results ul li a, .notice ul li a, .important_links1 ul li a { color:#000; font-size:12px;}
 .head_teacher { text-align:center; margin:10px;}
@@ -231,7 +231,7 @@ float: left;
 .log { width:155px; border:1px solid #c0c0c0;}
 .log1 { font-size:12px; margin:10px 0;}
 .urgent_notice { margin-top: 15px;}
-.urgent_notice h3{ text-align:center; margin:0; color:#FFF; padding:5px; font-size:18px; background:#b22418;}
+.urgent_notice h3{ text-align:center; margin:0; color:#FFF; padding:5px; font-size:18px; background:#fc922a;}
 .urgent_notice p { padding:5px; font-size:13px; margin-bottom: 0;}
 .important_links1 {
     margin: 15px 0px;
@@ -312,3 +312,125 @@ a:hover, a:focus { color: #B0B9E8 !important; }
     border-radius: 8px;
 }
 .each_offer img{ border:1px solid #999; width:260px; height:250px; margin:10px 0; }
+
+/*Slider Css*/
+h2{
+  text-align:center;
+  padding: 20px;
+}
+/* Slider */
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
