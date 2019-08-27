@@ -8409,3 +8409,1549 @@ DEBUG - 2019-08-27 12:44:51 --> Router Class Initialized
 DEBUG - 2019-08-27 12:44:51 --> Router Class Initialized
 ERROR - 2019-08-27 12:44:51 --> 404 Page Not Found --> assets
 ERROR - 2019-08-27 12:44:51 --> 404 Page Not Found --> assets
+DEBUG - 2019-08-27 12:47:09 --> Config Class Initialized
+DEBUG - 2019-08-27 12:47:09 --> Hooks Class Initialized
+DEBUG - 2019-08-27 12:47:09 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 12:47:09 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 12:47:09 --> URI Class Initialized
+DEBUG - 2019-08-27 12:47:09 --> Router Class Initialized
+DEBUG - 2019-08-27 12:47:09 --> No URI present. Default controller set.
+DEBUG - 2019-08-27 12:47:09 --> Output Class Initialized
+DEBUG - 2019-08-27 12:47:09 --> Security Class Initialized
+DEBUG - 2019-08-27 12:47:09 --> Input Class Initialized
+DEBUG - 2019-08-27 12:47:09 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 12:47:09 --> Language Class Initialized
+DEBUG - 2019-08-27 12:47:10 --> Loader Class Initialized
+DEBUG - 2019-08-27 12:47:10 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 12:47:10 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 12:47:10 --> Session Class Initialized
+DEBUG - 2019-08-27 12:47:10 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 12:47:10 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 12:47:10 --> Session routines successfully run
+DEBUG - 2019-08-27 12:47:10 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 12:47:10 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 12:47:10 --> Pagination Class Initialized
+DEBUG - 2019-08-27 12:47:11 --> Controller Class Initialized
+DEBUG - 2019-08-27 12:47:11 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 12:47:11 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 12:47:11 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 12:47:11 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 12:47:11 --> Model Class Initialized
+DEBUG - 2019-08-27 12:47:11 --> File loaded: application/views/front/slider.php
+ERROR - 2019-08-27 12:47:11 --> Severity: Notice  --> Undefined variable: check_user C:\xampp\htdocs\starsfair\application\views\front\sidebar-left.php 23
+DEBUG - 2019-08-27 12:47:11 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 12:47:11 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 12:47:11 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 12:47:11 --> File loaded: application/views/front/page.php
+DEBUG - 2019-08-27 12:47:11 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 12:47:12 --> Final output sent to browser
+DEBUG - 2019-08-27 12:47:12 --> Total execution time: 3.0468
+DEBUG - 2019-08-27 12:47:12 --> Config Class Initialized
+DEBUG - 2019-08-27 12:47:12 --> Hooks Class Initialized
+DEBUG - 2019-08-27 12:47:12 --> Config Class Initialized
+DEBUG - 2019-08-27 12:47:12 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 12:47:12 --> Hooks Class Initialized
+DEBUG - 2019-08-27 12:47:12 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 12:47:13 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 12:47:13 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 12:47:13 --> URI Class Initialized
+DEBUG - 2019-08-27 12:47:13 --> URI Class Initialized
+DEBUG - 2019-08-27 12:47:13 --> Router Class Initialized
+DEBUG - 2019-08-27 12:47:13 --> Router Class Initialized
+ERROR - 2019-08-27 12:47:13 --> 404 Page Not Found --> assets
+ERROR - 2019-08-27 12:47:13 --> 404 Page Not Found --> assets
+DEBUG - 2019-08-27 12:47:14 --> Config Class Initialized
+DEBUG - 2019-08-27 12:47:15 --> Hooks Class Initialized
+DEBUG - 2019-08-27 12:47:15 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 12:47:15 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 12:47:15 --> URI Class Initialized
+DEBUG - 2019-08-27 12:47:15 --> Router Class Initialized
+DEBUG - 2019-08-27 12:47:15 --> Output Class Initialized
+DEBUG - 2019-08-27 12:47:15 --> Security Class Initialized
+DEBUG - 2019-08-27 12:47:15 --> Input Class Initialized
+DEBUG - 2019-08-27 12:47:15 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 12:47:15 --> Language Class Initialized
+DEBUG - 2019-08-27 12:47:15 --> Loader Class Initialized
+DEBUG - 2019-08-27 12:47:16 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 12:47:16 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 12:47:16 --> Session Class Initialized
+DEBUG - 2019-08-27 12:47:16 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 12:47:16 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 12:47:16 --> Session routines successfully run
+DEBUG - 2019-08-27 12:47:16 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 12:47:16 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 12:47:16 --> Pagination Class Initialized
+DEBUG - 2019-08-27 12:47:16 --> Controller Class Initialized
+DEBUG - 2019-08-27 12:47:16 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 12:47:16 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 12:47:17 --> Model Class Initialized
+DEBUG - 2019-08-27 12:47:17 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 12:47:17 --> Model Class Initialized
+DEBUG - 2019-08-27 12:47:17 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 12:47:17 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 12:47:17 --> File loaded: application/views/front/header.php
+ERROR - 2019-08-27 12:47:17 --> Severity: Notice  --> Undefined variable: failed C:\xampp\htdocs\starsfair\application\views\front\member_form.php 10
+ERROR - 2019-08-27 12:47:17 --> Severity: Notice  --> Undefined variable: more_same_user C:\xampp\htdocs\starsfair\application\views\front\member_form.php 10
+DEBUG - 2019-08-27 12:47:17 --> File loaded: application/views/front/member_form.php
+DEBUG - 2019-08-27 12:47:17 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 12:47:17 --> Final output sent to browser
+DEBUG - 2019-08-27 12:47:17 --> Total execution time: 2.8488
+DEBUG - 2019-08-27 12:50:28 --> Config Class Initialized
+DEBUG - 2019-08-27 12:50:28 --> Hooks Class Initialized
+DEBUG - 2019-08-27 12:50:28 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 12:50:28 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 12:50:28 --> URI Class Initialized
+DEBUG - 2019-08-27 12:50:28 --> Router Class Initialized
+DEBUG - 2019-08-27 12:50:29 --> No URI present. Default controller set.
+DEBUG - 2019-08-27 12:50:29 --> Output Class Initialized
+DEBUG - 2019-08-27 12:50:29 --> Security Class Initialized
+DEBUG - 2019-08-27 12:50:29 --> Input Class Initialized
+DEBUG - 2019-08-27 12:50:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 12:50:29 --> Language Class Initialized
+DEBUG - 2019-08-27 12:50:29 --> Loader Class Initialized
+DEBUG - 2019-08-27 12:50:29 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 12:50:29 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 12:50:29 --> Session Class Initialized
+DEBUG - 2019-08-27 12:50:29 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 12:50:30 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 12:50:30 --> Session routines successfully run
+DEBUG - 2019-08-27 12:50:30 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 12:50:30 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 12:50:30 --> Pagination Class Initialized
+DEBUG - 2019-08-27 12:50:30 --> Controller Class Initialized
+DEBUG - 2019-08-27 12:50:30 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 12:50:30 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 12:50:30 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 12:50:30 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 12:50:31 --> Model Class Initialized
+DEBUG - 2019-08-27 12:50:31 --> File loaded: application/views/front/slider.php
+ERROR - 2019-08-27 12:50:31 --> Severity: Notice  --> Undefined variable: check_user C:\xampp\htdocs\starsfair\application\views\front\sidebar-left.php 23
+DEBUG - 2019-08-27 12:50:31 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 12:50:31 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 12:50:31 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 12:50:31 --> File loaded: application/views/front/page.php
+DEBUG - 2019-08-27 12:50:31 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 12:50:31 --> Final output sent to browser
+DEBUG - 2019-08-27 12:50:31 --> Total execution time: 3.1376
+DEBUG - 2019-08-27 12:50:32 --> Config Class Initialized
+DEBUG - 2019-08-27 12:50:32 --> Config Class Initialized
+DEBUG - 2019-08-27 12:50:32 --> Hooks Class Initialized
+DEBUG - 2019-08-27 12:50:32 --> Hooks Class Initialized
+DEBUG - 2019-08-27 12:50:32 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 12:50:32 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 12:50:32 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 12:50:32 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 12:50:32 --> URI Class Initialized
+DEBUG - 2019-08-27 12:50:32 --> URI Class Initialized
+DEBUG - 2019-08-27 12:50:32 --> Router Class Initialized
+DEBUG - 2019-08-27 12:50:32 --> Router Class Initialized
+ERROR - 2019-08-27 12:50:32 --> 404 Page Not Found --> assets
+ERROR - 2019-08-27 12:50:33 --> 404 Page Not Found --> assets
+DEBUG - 2019-08-27 12:50:33 --> Config Class Initialized
+DEBUG - 2019-08-27 12:50:33 --> Hooks Class Initialized
+DEBUG - 2019-08-27 12:50:33 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 12:50:33 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 12:50:33 --> URI Class Initialized
+DEBUG - 2019-08-27 12:50:33 --> Router Class Initialized
+DEBUG - 2019-08-27 12:50:34 --> Output Class Initialized
+DEBUG - 2019-08-27 12:50:34 --> Security Class Initialized
+DEBUG - 2019-08-27 12:50:34 --> Input Class Initialized
+DEBUG - 2019-08-27 12:50:34 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 12:50:34 --> Language Class Initialized
+DEBUG - 2019-08-27 12:50:34 --> Loader Class Initialized
+DEBUG - 2019-08-27 12:50:34 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 12:50:34 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 12:50:34 --> Session Class Initialized
+DEBUG - 2019-08-27 12:50:34 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 12:50:34 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 12:50:34 --> Session routines successfully run
+DEBUG - 2019-08-27 12:50:35 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 12:50:35 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 12:50:35 --> Pagination Class Initialized
+DEBUG - 2019-08-27 12:50:35 --> Controller Class Initialized
+DEBUG - 2019-08-27 12:50:35 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 12:50:35 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 12:50:35 --> Model Class Initialized
+DEBUG - 2019-08-27 12:50:35 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 12:50:35 --> Model Class Initialized
+DEBUG - 2019-08-27 12:50:35 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 12:50:35 --> Helper loaded: student_functions_helper
+DEBUG - 2019-08-27 12:50:35 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 12:50:35 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 12:50:36 --> File loaded: application/views/front/register.php
+DEBUG - 2019-08-27 12:50:36 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 12:50:36 --> Final output sent to browser
+DEBUG - 2019-08-27 12:50:36 --> Total execution time: 2.6299
+DEBUG - 2019-08-27 12:54:43 --> Config Class Initialized
+DEBUG - 2019-08-27 12:54:43 --> Hooks Class Initialized
+DEBUG - 2019-08-27 12:54:43 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 12:54:43 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 12:54:43 --> URI Class Initialized
+DEBUG - 2019-08-27 12:54:43 --> Router Class Initialized
+DEBUG - 2019-08-27 12:54:43 --> Output Class Initialized
+DEBUG - 2019-08-27 12:54:43 --> Security Class Initialized
+DEBUG - 2019-08-27 12:54:43 --> Input Class Initialized
+DEBUG - 2019-08-27 12:54:43 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 12:54:44 --> Language Class Initialized
+DEBUG - 2019-08-27 12:54:44 --> Loader Class Initialized
+DEBUG - 2019-08-27 12:54:44 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 12:54:44 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 12:54:44 --> Session Class Initialized
+DEBUG - 2019-08-27 12:54:44 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 12:54:44 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 12:54:44 --> Session routines successfully run
+DEBUG - 2019-08-27 12:54:44 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 12:54:44 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 12:54:44 --> Pagination Class Initialized
+DEBUG - 2019-08-27 12:54:44 --> Controller Class Initialized
+DEBUG - 2019-08-27 12:54:45 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 12:54:45 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 12:54:45 --> Model Class Initialized
+DEBUG - 2019-08-27 12:54:45 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 12:54:45 --> Model Class Initialized
+DEBUG - 2019-08-27 12:54:45 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 12:54:45 --> Helper loaded: student_functions_helper
+DEBUG - 2019-08-27 12:54:45 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 12:54:45 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 12:54:45 --> File loaded: application/views/front/register.php
+DEBUG - 2019-08-27 12:54:45 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 12:54:45 --> Final output sent to browser
+DEBUG - 2019-08-27 12:54:46 --> Total execution time: 2.8935
+DEBUG - 2019-08-27 12:55:55 --> Config Class Initialized
+DEBUG - 2019-08-27 12:55:55 --> Hooks Class Initialized
+DEBUG - 2019-08-27 12:55:55 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 12:55:55 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 12:55:56 --> URI Class Initialized
+DEBUG - 2019-08-27 12:55:56 --> Router Class Initialized
+DEBUG - 2019-08-27 12:55:56 --> Output Class Initialized
+DEBUG - 2019-08-27 12:55:56 --> Security Class Initialized
+DEBUG - 2019-08-27 12:55:56 --> Input Class Initialized
+DEBUG - 2019-08-27 12:55:56 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 12:55:56 --> Language Class Initialized
+DEBUG - 2019-08-27 12:55:56 --> Loader Class Initialized
+DEBUG - 2019-08-27 12:55:56 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 12:55:56 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 12:55:56 --> Session Class Initialized
+DEBUG - 2019-08-27 12:55:57 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 12:55:57 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 12:55:57 --> Session routines successfully run
+DEBUG - 2019-08-27 12:55:57 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 12:55:57 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 12:55:57 --> Pagination Class Initialized
+DEBUG - 2019-08-27 12:55:57 --> Controller Class Initialized
+DEBUG - 2019-08-27 12:55:57 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 12:55:57 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 12:55:57 --> Model Class Initialized
+DEBUG - 2019-08-27 12:55:58 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 12:55:58 --> Model Class Initialized
+DEBUG - 2019-08-27 12:55:58 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 12:55:58 --> Helper loaded: student_functions_helper
+DEBUG - 2019-08-27 12:55:58 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 12:55:58 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 12:55:58 --> File loaded: application/views/front/register.php
+DEBUG - 2019-08-27 12:55:58 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 12:55:58 --> Final output sent to browser
+DEBUG - 2019-08-27 12:55:58 --> Total execution time: 3.0728
+DEBUG - 2019-08-27 12:56:48 --> Config Class Initialized
+DEBUG - 2019-08-27 12:56:48 --> Hooks Class Initialized
+DEBUG - 2019-08-27 12:56:48 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 12:56:48 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 12:56:48 --> URI Class Initialized
+DEBUG - 2019-08-27 12:56:48 --> Router Class Initialized
+DEBUG - 2019-08-27 12:56:48 --> Output Class Initialized
+DEBUG - 2019-08-27 12:56:48 --> Security Class Initialized
+DEBUG - 2019-08-27 12:56:49 --> Input Class Initialized
+DEBUG - 2019-08-27 12:56:49 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 12:56:49 --> Language Class Initialized
+DEBUG - 2019-08-27 12:56:49 --> Loader Class Initialized
+DEBUG - 2019-08-27 12:56:49 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 12:56:49 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 12:56:49 --> Session Class Initialized
+DEBUG - 2019-08-27 12:56:49 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 12:56:49 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 12:56:49 --> Session routines successfully run
+DEBUG - 2019-08-27 12:56:49 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 12:56:49 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 12:56:49 --> Pagination Class Initialized
+DEBUG - 2019-08-27 12:56:50 --> Controller Class Initialized
+DEBUG - 2019-08-27 12:56:50 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 12:56:50 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 12:56:50 --> Model Class Initialized
+DEBUG - 2019-08-27 12:56:50 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 12:56:50 --> Model Class Initialized
+DEBUG - 2019-08-27 12:56:50 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 12:56:50 --> Helper loaded: student_functions_helper
+DEBUG - 2019-08-27 12:56:50 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 12:56:50 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 12:56:50 --> File loaded: application/views/front/register.php
+DEBUG - 2019-08-27 12:56:50 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 12:56:50 --> Final output sent to browser
+DEBUG - 2019-08-27 12:56:50 --> Total execution time: 2.4852
+DEBUG - 2019-08-27 12:58:12 --> Config Class Initialized
+DEBUG - 2019-08-27 12:58:13 --> Hooks Class Initialized
+DEBUG - 2019-08-27 12:58:13 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 12:58:13 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 12:58:13 --> URI Class Initialized
+DEBUG - 2019-08-27 12:58:13 --> Router Class Initialized
+DEBUG - 2019-08-27 12:58:13 --> Output Class Initialized
+DEBUG - 2019-08-27 12:58:13 --> Security Class Initialized
+DEBUG - 2019-08-27 12:58:13 --> Input Class Initialized
+DEBUG - 2019-08-27 12:58:13 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 12:58:13 --> Language Class Initialized
+DEBUG - 2019-08-27 12:58:13 --> Loader Class Initialized
+DEBUG - 2019-08-27 12:58:14 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 12:58:14 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 12:58:14 --> Session Class Initialized
+DEBUG - 2019-08-27 12:58:14 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 12:58:14 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 12:58:14 --> Session routines successfully run
+DEBUG - 2019-08-27 12:58:14 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 12:58:14 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 12:58:14 --> Pagination Class Initialized
+DEBUG - 2019-08-27 12:58:14 --> Controller Class Initialized
+DEBUG - 2019-08-27 12:58:14 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 12:58:14 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 12:58:14 --> Model Class Initialized
+DEBUG - 2019-08-27 12:58:14 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 12:58:15 --> Model Class Initialized
+DEBUG - 2019-08-27 12:58:15 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 12:58:15 --> Helper loaded: student_functions_helper
+DEBUG - 2019-08-27 12:58:15 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 12:58:15 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 12:58:15 --> File loaded: application/views/front/register.php
+DEBUG - 2019-08-27 12:58:15 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 12:58:15 --> Final output sent to browser
+DEBUG - 2019-08-27 12:58:15 --> Total execution time: 2.4752
+DEBUG - 2019-08-27 12:58:36 --> Config Class Initialized
+DEBUG - 2019-08-27 12:58:36 --> Hooks Class Initialized
+DEBUG - 2019-08-27 12:58:36 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 12:58:36 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 12:58:36 --> URI Class Initialized
+DEBUG - 2019-08-27 12:58:36 --> Router Class Initialized
+DEBUG - 2019-08-27 12:58:36 --> Output Class Initialized
+DEBUG - 2019-08-27 12:58:36 --> Security Class Initialized
+DEBUG - 2019-08-27 12:58:36 --> Input Class Initialized
+DEBUG - 2019-08-27 12:58:36 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 12:58:37 --> Language Class Initialized
+DEBUG - 2019-08-27 12:58:37 --> Loader Class Initialized
+DEBUG - 2019-08-27 12:58:37 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 12:58:37 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 12:58:37 --> Session Class Initialized
+DEBUG - 2019-08-27 12:58:37 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 12:58:37 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 12:58:37 --> Session routines successfully run
+DEBUG - 2019-08-27 12:58:37 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 12:58:37 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 12:58:37 --> Pagination Class Initialized
+DEBUG - 2019-08-27 12:58:37 --> Controller Class Initialized
+DEBUG - 2019-08-27 12:58:38 --> Model Class Initialized
+DEBUG - 2019-08-27 12:58:38 --> File loaded: application/ajax/ajax_query.php
+DEBUG - 2019-08-27 12:58:38 --> Final output sent to browser
+DEBUG - 2019-08-27 12:58:38 --> Total execution time: 2.0925
+DEBUG - 2019-08-27 12:58:40 --> Config Class Initialized
+DEBUG - 2019-08-27 12:58:40 --> Hooks Class Initialized
+DEBUG - 2019-08-27 12:58:40 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 12:58:40 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 12:58:40 --> URI Class Initialized
+DEBUG - 2019-08-27 12:58:40 --> Router Class Initialized
+DEBUG - 2019-08-27 12:58:40 --> Output Class Initialized
+DEBUG - 2019-08-27 12:58:40 --> Security Class Initialized
+DEBUG - 2019-08-27 12:58:41 --> Input Class Initialized
+DEBUG - 2019-08-27 12:58:41 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 12:58:41 --> Language Class Initialized
+DEBUG - 2019-08-27 12:58:41 --> Loader Class Initialized
+DEBUG - 2019-08-27 12:58:41 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 12:58:41 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 12:58:41 --> Session Class Initialized
+DEBUG - 2019-08-27 12:58:41 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 12:58:41 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 12:58:41 --> Session routines successfully run
+DEBUG - 2019-08-27 12:58:41 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 12:58:41 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 12:58:42 --> Pagination Class Initialized
+DEBUG - 2019-08-27 12:58:42 --> Controller Class Initialized
+DEBUG - 2019-08-27 12:58:42 --> Model Class Initialized
+DEBUG - 2019-08-27 12:58:42 --> File loaded: application/ajax/ajax_query.php
+DEBUG - 2019-08-27 12:58:42 --> Final output sent to browser
+DEBUG - 2019-08-27 12:58:42 --> Total execution time: 2.0054
+DEBUG - 2019-08-27 12:58:42 --> Config Class Initialized
+DEBUG - 2019-08-27 12:58:42 --> Hooks Class Initialized
+DEBUG - 2019-08-27 12:58:42 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 12:58:42 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 12:58:42 --> URI Class Initialized
+DEBUG - 2019-08-27 12:58:42 --> Router Class Initialized
+DEBUG - 2019-08-27 12:58:43 --> Output Class Initialized
+DEBUG - 2019-08-27 12:58:43 --> Security Class Initialized
+DEBUG - 2019-08-27 12:58:43 --> Input Class Initialized
+DEBUG - 2019-08-27 12:58:43 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 12:58:43 --> Language Class Initialized
+DEBUG - 2019-08-27 12:58:43 --> Loader Class Initialized
+DEBUG - 2019-08-27 12:58:43 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 12:58:43 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 12:58:43 --> Session Class Initialized
+DEBUG - 2019-08-27 12:58:43 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 12:58:43 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 12:58:43 --> Session routines successfully run
+DEBUG - 2019-08-27 12:58:43 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 12:58:43 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 12:58:43 --> Pagination Class Initialized
+DEBUG - 2019-08-27 12:58:43 --> Controller Class Initialized
+DEBUG - 2019-08-27 12:58:43 --> Model Class Initialized
+DEBUG - 2019-08-27 12:58:44 --> File loaded: application/ajax/ajax_query.php
+DEBUG - 2019-08-27 12:58:44 --> Final output sent to browser
+DEBUG - 2019-08-27 12:58:44 --> Total execution time: 1.5397
+DEBUG - 2019-08-27 12:58:50 --> Config Class Initialized
+DEBUG - 2019-08-27 12:58:50 --> Hooks Class Initialized
+DEBUG - 2019-08-27 12:58:50 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 12:58:50 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 12:58:50 --> URI Class Initialized
+DEBUG - 2019-08-27 12:58:50 --> Router Class Initialized
+DEBUG - 2019-08-27 12:58:50 --> Output Class Initialized
+DEBUG - 2019-08-27 12:58:51 --> Security Class Initialized
+DEBUG - 2019-08-27 12:58:51 --> Input Class Initialized
+DEBUG - 2019-08-27 12:58:51 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 12:58:51 --> Language Class Initialized
+DEBUG - 2019-08-27 12:58:51 --> Loader Class Initialized
+DEBUG - 2019-08-27 12:58:51 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 12:58:51 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 12:58:51 --> Session Class Initialized
+DEBUG - 2019-08-27 12:58:51 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 12:58:51 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 12:58:51 --> Session routines successfully run
+DEBUG - 2019-08-27 12:58:51 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 12:58:51 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 12:58:52 --> Pagination Class Initialized
+DEBUG - 2019-08-27 12:58:52 --> Controller Class Initialized
+DEBUG - 2019-08-27 12:58:52 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 12:58:52 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 12:58:52 --> Model Class Initialized
+DEBUG - 2019-08-27 12:58:52 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 12:58:52 --> Model Class Initialized
+DEBUG - 2019-08-27 12:58:52 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 12:58:52 --> Helper loaded: student_functions_helper
+DEBUG - 2019-08-27 12:58:52 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 12:58:52 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 12:58:52 --> File loaded: application/views/front/register.php
+DEBUG - 2019-08-27 12:58:52 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 12:58:53 --> Final output sent to browser
+DEBUG - 2019-08-27 12:58:53 --> Total execution time: 2.6993
+DEBUG - 2019-08-27 13:02:51 --> Config Class Initialized
+DEBUG - 2019-08-27 13:02:51 --> Hooks Class Initialized
+DEBUG - 2019-08-27 13:02:51 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 13:02:52 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 13:02:52 --> URI Class Initialized
+DEBUG - 2019-08-27 13:02:52 --> Router Class Initialized
+DEBUG - 2019-08-27 13:02:52 --> Output Class Initialized
+DEBUG - 2019-08-27 13:02:52 --> Security Class Initialized
+DEBUG - 2019-08-27 13:02:52 --> Input Class Initialized
+DEBUG - 2019-08-27 13:02:52 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 13:02:52 --> Language Class Initialized
+DEBUG - 2019-08-27 13:02:52 --> Loader Class Initialized
+DEBUG - 2019-08-27 13:02:52 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 13:02:52 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 13:02:52 --> Session Class Initialized
+DEBUG - 2019-08-27 13:02:53 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 13:02:53 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 13:02:53 --> Session routines successfully run
+DEBUG - 2019-08-27 13:02:53 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 13:02:53 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 13:02:53 --> Pagination Class Initialized
+DEBUG - 2019-08-27 13:02:53 --> Controller Class Initialized
+DEBUG - 2019-08-27 13:02:53 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 13:02:53 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 13:02:53 --> Model Class Initialized
+DEBUG - 2019-08-27 13:02:54 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 13:02:54 --> Model Class Initialized
+DEBUG - 2019-08-27 13:02:54 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 13:02:54 --> Helper loaded: student_functions_helper
+DEBUG - 2019-08-27 13:02:54 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 13:02:54 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 13:02:54 --> File loaded: application/views/front/register.php
+DEBUG - 2019-08-27 13:02:54 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 13:02:54 --> Final output sent to browser
+DEBUG - 2019-08-27 13:02:54 --> Total execution time: 2.8099
+DEBUG - 2019-08-27 14:08:42 --> Config Class Initialized
+DEBUG - 2019-08-27 14:08:42 --> Hooks Class Initialized
+DEBUG - 2019-08-27 14:08:42 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 14:08:42 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 14:08:42 --> URI Class Initialized
+DEBUG - 2019-08-27 14:08:42 --> Router Class Initialized
+DEBUG - 2019-08-27 14:08:42 --> No URI present. Default controller set.
+DEBUG - 2019-08-27 14:08:42 --> Output Class Initialized
+DEBUG - 2019-08-27 14:08:42 --> Security Class Initialized
+DEBUG - 2019-08-27 14:08:42 --> Input Class Initialized
+DEBUG - 2019-08-27 14:08:43 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 14:08:43 --> Language Class Initialized
+DEBUG - 2019-08-27 14:08:43 --> Loader Class Initialized
+DEBUG - 2019-08-27 14:08:43 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 14:08:43 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 14:08:43 --> Session Class Initialized
+DEBUG - 2019-08-27 14:08:43 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 14:08:43 --> Database Driver Class Initialized
+ERROR - 2019-08-27 14:08:43 --> Session: The session cookie was not signed.
+DEBUG - 2019-08-27 14:08:43 --> Session routines successfully run
+DEBUG - 2019-08-27 14:08:43 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 14:08:43 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 14:08:43 --> Pagination Class Initialized
+DEBUG - 2019-08-27 14:08:43 --> Controller Class Initialized
+DEBUG - 2019-08-27 14:08:43 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 14:08:43 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 14:08:44 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 14:08:44 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 14:08:44 --> Model Class Initialized
+DEBUG - 2019-08-27 14:08:44 --> File loaded: application/views/front/slider.php
+ERROR - 2019-08-27 14:08:44 --> Severity: Notice  --> Undefined variable: check_user C:\xampp\htdocs\starsfair\application\views\front\sidebar-left.php 23
+DEBUG - 2019-08-27 14:08:44 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 14:08:44 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 14:08:44 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 14:08:44 --> File loaded: application/views/front/page.php
+DEBUG - 2019-08-27 14:08:44 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 14:08:44 --> Final output sent to browser
+DEBUG - 2019-08-27 14:08:45 --> Total execution time: 2.6913
+DEBUG - 2019-08-27 16:19:41 --> Config Class Initialized
+DEBUG - 2019-08-27 16:19:42 --> Hooks Class Initialized
+DEBUG - 2019-08-27 16:19:42 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 16:19:42 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 16:19:42 --> URI Class Initialized
+DEBUG - 2019-08-27 16:19:42 --> Router Class Initialized
+DEBUG - 2019-08-27 16:19:42 --> No URI present. Default controller set.
+DEBUG - 2019-08-27 16:19:43 --> Output Class Initialized
+DEBUG - 2019-08-27 16:19:43 --> Security Class Initialized
+DEBUG - 2019-08-27 16:19:43 --> Input Class Initialized
+DEBUG - 2019-08-27 16:19:43 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 16:19:43 --> Language Class Initialized
+DEBUG - 2019-08-27 16:19:43 --> Loader Class Initialized
+DEBUG - 2019-08-27 16:19:43 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 16:19:43 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 16:19:43 --> Session Class Initialized
+DEBUG - 2019-08-27 16:19:44 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 16:19:44 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 16:19:45 --> A session cookie was not found.
+DEBUG - 2019-08-27 16:19:45 --> Session routines successfully run
+DEBUG - 2019-08-27 16:19:45 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 16:19:45 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 16:19:45 --> Pagination Class Initialized
+DEBUG - 2019-08-27 16:19:45 --> Controller Class Initialized
+DEBUG - 2019-08-27 16:19:45 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 16:19:46 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 16:19:46 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 16:19:46 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 16:19:46 --> Model Class Initialized
+DEBUG - 2019-08-27 16:19:46 --> File loaded: application/views/front/slider.php
+ERROR - 2019-08-27 16:19:46 --> Severity: Notice  --> Undefined variable: check_user C:\xampp\htdocs\starsfair\application\views\front\sidebar-left.php 23
+DEBUG - 2019-08-27 16:19:46 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 16:19:46 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 16:19:46 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 16:19:47 --> File loaded: application/views/front/page.php
+DEBUG - 2019-08-27 16:19:47 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 16:19:47 --> Final output sent to browser
+DEBUG - 2019-08-27 16:19:47 --> Total execution time: 5.9671
+DEBUG - 2019-08-27 17:32:42 --> Config Class Initialized
+DEBUG - 2019-08-27 17:32:43 --> Hooks Class Initialized
+DEBUG - 2019-08-27 17:32:43 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 17:32:43 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 17:32:43 --> URI Class Initialized
+DEBUG - 2019-08-27 17:32:43 --> Router Class Initialized
+DEBUG - 2019-08-27 17:32:43 --> No URI present. Default controller set.
+DEBUG - 2019-08-27 17:32:43 --> Output Class Initialized
+DEBUG - 2019-08-27 17:32:43 --> Security Class Initialized
+DEBUG - 2019-08-27 17:32:43 --> Input Class Initialized
+DEBUG - 2019-08-27 17:32:43 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 17:32:43 --> Language Class Initialized
+DEBUG - 2019-08-27 17:32:43 --> Loader Class Initialized
+DEBUG - 2019-08-27 17:32:43 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 17:32:43 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 17:32:44 --> Session Class Initialized
+DEBUG - 2019-08-27 17:32:44 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 17:32:44 --> Database Driver Class Initialized
+ERROR - 2019-08-27 17:32:44 --> Session: The session cookie was not signed.
+DEBUG - 2019-08-27 17:32:44 --> Session routines successfully run
+DEBUG - 2019-08-27 17:32:44 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 17:32:44 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 17:32:44 --> Pagination Class Initialized
+DEBUG - 2019-08-27 17:32:44 --> Controller Class Initialized
+DEBUG - 2019-08-27 17:32:44 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 17:32:44 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 17:32:44 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 17:32:44 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 17:32:45 --> Model Class Initialized
+DEBUG - 2019-08-27 17:32:45 --> File loaded: application/views/front/slider.php
+ERROR - 2019-08-27 17:32:45 --> Severity: Notice  --> Undefined variable: check_user C:\xampp\htdocs\starsfair\application\views\front\sidebar-left.php 23
+DEBUG - 2019-08-27 17:32:45 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 17:32:45 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 17:32:45 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 17:32:45 --> File loaded: application/views/front/page.php
+DEBUG - 2019-08-27 17:32:45 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 17:32:45 --> Final output sent to browser
+DEBUG - 2019-08-27 17:32:45 --> Total execution time: 2.6395
+DEBUG - 2019-08-27 17:32:46 --> Config Class Initialized
+DEBUG - 2019-08-27 17:32:46 --> Config Class Initialized
+DEBUG - 2019-08-27 17:32:46 --> Hooks Class Initialized
+DEBUG - 2019-08-27 17:32:46 --> Hooks Class Initialized
+DEBUG - 2019-08-27 17:32:46 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 17:32:46 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 17:32:46 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 17:32:46 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 17:32:47 --> URI Class Initialized
+DEBUG - 2019-08-27 17:32:47 --> URI Class Initialized
+DEBUG - 2019-08-27 17:32:47 --> Router Class Initialized
+DEBUG - 2019-08-27 17:32:47 --> Router Class Initialized
+ERROR - 2019-08-27 17:32:47 --> 404 Page Not Found --> assets
+ERROR - 2019-08-27 17:32:47 --> 404 Page Not Found --> assets
+DEBUG - 2019-08-27 17:44:34 --> Config Class Initialized
+DEBUG - 2019-08-27 17:44:42 --> Hooks Class Initialized
+DEBUG - 2019-08-27 17:44:42 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 17:44:42 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 17:44:42 --> URI Class Initialized
+DEBUG - 2019-08-27 17:44:42 --> Router Class Initialized
+DEBUG - 2019-08-27 17:44:42 --> No URI present. Default controller set.
+DEBUG - 2019-08-27 17:44:42 --> Output Class Initialized
+DEBUG - 2019-08-27 17:44:42 --> Security Class Initialized
+DEBUG - 2019-08-27 17:44:42 --> Input Class Initialized
+DEBUG - 2019-08-27 17:44:42 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 17:44:42 --> Language Class Initialized
+DEBUG - 2019-08-27 17:44:42 --> Loader Class Initialized
+DEBUG - 2019-08-27 17:44:42 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 17:44:42 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 17:44:43 --> Session Class Initialized
+DEBUG - 2019-08-27 17:44:43 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 17:44:43 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 17:44:43 --> Session routines successfully run
+DEBUG - 2019-08-27 17:44:43 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 17:44:43 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 17:44:43 --> Pagination Class Initialized
+DEBUG - 2019-08-27 17:44:43 --> Controller Class Initialized
+DEBUG - 2019-08-27 17:44:43 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 17:44:43 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 17:44:43 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 17:44:43 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 17:44:43 --> Model Class Initialized
+DEBUG - 2019-08-27 17:44:43 --> File loaded: application/views/front/slider.php
+ERROR - 2019-08-27 17:44:43 --> Severity: Notice  --> Undefined variable: check_user C:\xampp\htdocs\starsfair\application\views\front\sidebar-left.php 23
+DEBUG - 2019-08-27 17:44:44 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 17:44:44 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 17:44:44 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 17:44:44 --> File loaded: application/views/front/page.php
+DEBUG - 2019-08-27 17:44:44 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 17:44:44 --> Final output sent to browser
+DEBUG - 2019-08-27 17:44:44 --> Total execution time: 9.6831
+DEBUG - 2019-08-27 18:28:24 --> Config Class Initialized
+DEBUG - 2019-08-27 18:28:24 --> Hooks Class Initialized
+DEBUG - 2019-08-27 18:28:24 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 18:28:24 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 18:28:24 --> URI Class Initialized
+DEBUG - 2019-08-27 18:28:24 --> Router Class Initialized
+DEBUG - 2019-08-27 18:28:24 --> No URI present. Default controller set.
+DEBUG - 2019-08-27 18:28:24 --> Output Class Initialized
+DEBUG - 2019-08-27 18:28:24 --> Security Class Initialized
+DEBUG - 2019-08-27 18:28:25 --> Input Class Initialized
+DEBUG - 2019-08-27 18:28:25 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 18:28:25 --> Language Class Initialized
+DEBUG - 2019-08-27 18:28:25 --> Loader Class Initialized
+DEBUG - 2019-08-27 18:28:25 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 18:28:25 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 18:28:25 --> Session Class Initialized
+DEBUG - 2019-08-27 18:28:25 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 18:28:25 --> Database Driver Class Initialized
+ERROR - 2019-08-27 18:28:25 --> Session: The session cookie was not signed.
+DEBUG - 2019-08-27 18:28:26 --> Session routines successfully run
+DEBUG - 2019-08-27 18:28:26 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 18:28:26 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 18:28:26 --> Pagination Class Initialized
+DEBUG - 2019-08-27 18:28:26 --> Controller Class Initialized
+DEBUG - 2019-08-27 18:28:26 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 18:28:26 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 18:28:26 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 18:28:26 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 18:28:26 --> Model Class Initialized
+DEBUG - 2019-08-27 18:28:26 --> File loaded: application/views/front/slider.php
+ERROR - 2019-08-27 18:28:26 --> Severity: Notice  --> Undefined variable: check_user C:\xampp\htdocs\starsfair\application\views\front\sidebar-left.php 23
+DEBUG - 2019-08-27 18:28:26 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 18:28:26 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 18:28:27 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 18:28:27 --> File loaded: application/views/front/page.php
+DEBUG - 2019-08-27 18:28:27 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 18:28:27 --> Final output sent to browser
+DEBUG - 2019-08-27 18:28:27 --> Total execution time: 2.9754
+DEBUG - 2019-08-27 18:28:27 --> Config Class Initialized
+DEBUG - 2019-08-27 18:28:27 --> Config Class Initialized
+DEBUG - 2019-08-27 18:28:27 --> Hooks Class Initialized
+DEBUG - 2019-08-27 18:28:27 --> Hooks Class Initialized
+DEBUG - 2019-08-27 18:28:27 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 18:28:27 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 18:28:28 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 18:28:28 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 18:28:28 --> URI Class Initialized
+DEBUG - 2019-08-27 18:28:28 --> URI Class Initialized
+DEBUG - 2019-08-27 18:28:28 --> Router Class Initialized
+DEBUG - 2019-08-27 18:28:28 --> Router Class Initialized
+ERROR - 2019-08-27 18:28:28 --> 404 Page Not Found --> assets
+ERROR - 2019-08-27 18:28:28 --> 404 Page Not Found --> assets
+DEBUG - 2019-08-27 18:28:32 --> Config Class Initialized
+DEBUG - 2019-08-27 18:28:32 --> Hooks Class Initialized
+DEBUG - 2019-08-27 18:28:32 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 18:28:32 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 18:28:32 --> URI Class Initialized
+DEBUG - 2019-08-27 18:28:32 --> Router Class Initialized
+DEBUG - 2019-08-27 18:28:32 --> No URI present. Default controller set.
+DEBUG - 2019-08-27 18:28:32 --> Output Class Initialized
+DEBUG - 2019-08-27 18:28:32 --> Security Class Initialized
+DEBUG - 2019-08-27 18:28:32 --> Input Class Initialized
+DEBUG - 2019-08-27 18:28:32 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 18:28:33 --> Language Class Initialized
+DEBUG - 2019-08-27 18:28:33 --> Loader Class Initialized
+DEBUG - 2019-08-27 18:28:33 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 18:28:33 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 18:28:33 --> Session Class Initialized
+DEBUG - 2019-08-27 18:28:33 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 18:28:33 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 18:28:33 --> Session routines successfully run
+DEBUG - 2019-08-27 18:28:33 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 18:28:33 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 18:28:33 --> Pagination Class Initialized
+DEBUG - 2019-08-27 18:28:33 --> Controller Class Initialized
+DEBUG - 2019-08-27 18:28:33 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 18:28:34 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 18:28:34 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 18:28:34 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 18:28:34 --> Model Class Initialized
+DEBUG - 2019-08-27 18:28:34 --> File loaded: application/views/front/slider.php
+ERROR - 2019-08-27 18:28:34 --> Severity: Notice  --> Undefined variable: check_user C:\xampp\htdocs\starsfair\application\views\front\sidebar-left.php 23
+DEBUG - 2019-08-27 18:28:34 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 18:28:34 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 18:28:34 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 18:28:34 --> File loaded: application/views/front/page.php
+DEBUG - 2019-08-27 18:28:34 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 18:28:34 --> Final output sent to browser
+DEBUG - 2019-08-27 18:28:34 --> Total execution time: 2.6587
+DEBUG - 2019-08-27 18:28:35 --> Config Class Initialized
+DEBUG - 2019-08-27 18:28:35 --> Config Class Initialized
+DEBUG - 2019-08-27 18:28:35 --> Hooks Class Initialized
+DEBUG - 2019-08-27 18:28:36 --> Hooks Class Initialized
+DEBUG - 2019-08-27 18:28:36 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 18:28:36 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 18:28:36 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 18:28:36 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 18:28:36 --> URI Class Initialized
+DEBUG - 2019-08-27 18:28:36 --> Router Class Initialized
+DEBUG - 2019-08-27 18:28:36 --> URI Class Initialized
+DEBUG - 2019-08-27 18:28:36 --> Router Class Initialized
+ERROR - 2019-08-27 18:28:36 --> 404 Page Not Found --> assets
+ERROR - 2019-08-27 18:28:36 --> 404 Page Not Found --> assets
+DEBUG - 2019-08-27 18:28:48 --> Config Class Initialized
+DEBUG - 2019-08-27 18:28:48 --> Hooks Class Initialized
+DEBUG - 2019-08-27 18:28:48 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 18:28:48 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 18:28:48 --> URI Class Initialized
+DEBUG - 2019-08-27 18:28:48 --> Router Class Initialized
+DEBUG - 2019-08-27 18:28:48 --> No URI present. Default controller set.
+DEBUG - 2019-08-27 18:28:48 --> Output Class Initialized
+DEBUG - 2019-08-27 18:28:48 --> Security Class Initialized
+DEBUG - 2019-08-27 18:28:48 --> Input Class Initialized
+DEBUG - 2019-08-27 18:28:48 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 18:28:49 --> Language Class Initialized
+DEBUG - 2019-08-27 18:28:49 --> Loader Class Initialized
+DEBUG - 2019-08-27 18:28:49 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 18:28:49 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 18:28:49 --> Session Class Initialized
+DEBUG - 2019-08-27 18:28:49 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 18:28:49 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 18:28:49 --> Session routines successfully run
+DEBUG - 2019-08-27 18:28:49 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 18:28:49 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 18:28:49 --> Pagination Class Initialized
+DEBUG - 2019-08-27 18:28:49 --> Controller Class Initialized
+DEBUG - 2019-08-27 18:28:50 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 18:28:50 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 18:28:50 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 18:28:50 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 18:28:50 --> Model Class Initialized
+DEBUG - 2019-08-27 18:28:50 --> File loaded: application/views/front/slider.php
+ERROR - 2019-08-27 18:28:50 --> Severity: Notice  --> Undefined variable: check_user C:\xampp\htdocs\starsfair\application\views\front\sidebar-left.php 23
+DEBUG - 2019-08-27 18:28:50 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 18:28:50 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 18:28:50 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 18:28:50 --> File loaded: application/views/front/page.php
+DEBUG - 2019-08-27 18:28:50 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 18:28:50 --> Final output sent to browser
+DEBUG - 2019-08-27 18:28:50 --> Total execution time: 2.7920
+DEBUG - 2019-08-27 18:28:51 --> Config Class Initialized
+DEBUG - 2019-08-27 18:28:51 --> Config Class Initialized
+DEBUG - 2019-08-27 18:28:51 --> Hooks Class Initialized
+DEBUG - 2019-08-27 18:28:51 --> Hooks Class Initialized
+DEBUG - 2019-08-27 18:28:51 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 18:28:52 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 18:28:52 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 18:28:52 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 18:28:52 --> URI Class Initialized
+DEBUG - 2019-08-27 18:28:52 --> URI Class Initialized
+DEBUG - 2019-08-27 18:28:52 --> Router Class Initialized
+DEBUG - 2019-08-27 18:28:52 --> Router Class Initialized
+ERROR - 2019-08-27 18:28:52 --> 404 Page Not Found --> assets
+ERROR - 2019-08-27 18:28:52 --> 404 Page Not Found --> assets
+DEBUG - 2019-08-27 18:28:57 --> Config Class Initialized
+DEBUG - 2019-08-27 18:28:57 --> Hooks Class Initialized
+DEBUG - 2019-08-27 18:28:57 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 18:28:57 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 18:28:57 --> URI Class Initialized
+DEBUG - 2019-08-27 18:28:57 --> Router Class Initialized
+DEBUG - 2019-08-27 18:28:57 --> No URI present. Default controller set.
+DEBUG - 2019-08-27 18:28:58 --> Output Class Initialized
+DEBUG - 2019-08-27 18:28:58 --> Security Class Initialized
+DEBUG - 2019-08-27 18:28:58 --> Input Class Initialized
+DEBUG - 2019-08-27 18:28:58 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 18:28:58 --> Language Class Initialized
+DEBUG - 2019-08-27 18:28:58 --> Loader Class Initialized
+DEBUG - 2019-08-27 18:28:58 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 18:28:58 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 18:28:58 --> Session Class Initialized
+DEBUG - 2019-08-27 18:28:58 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 18:28:58 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 18:28:58 --> Session routines successfully run
+DEBUG - 2019-08-27 18:28:59 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 18:28:59 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 18:28:59 --> Pagination Class Initialized
+DEBUG - 2019-08-27 18:28:59 --> Controller Class Initialized
+DEBUG - 2019-08-27 18:28:59 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 18:28:59 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 18:28:59 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 18:28:59 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 18:28:59 --> Model Class Initialized
+DEBUG - 2019-08-27 18:28:59 --> File loaded: application/views/front/slider.php
+ERROR - 2019-08-27 18:28:59 --> Severity: Notice  --> Undefined variable: check_user C:\xampp\htdocs\starsfair\application\views\front\sidebar-left.php 23
+DEBUG - 2019-08-27 18:28:59 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 18:28:59 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 18:29:00 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 18:29:00 --> File loaded: application/views/front/page.php
+DEBUG - 2019-08-27 18:29:00 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 18:29:00 --> Final output sent to browser
+DEBUG - 2019-08-27 18:29:00 --> Total execution time: 2.7961
+DEBUG - 2019-08-27 18:29:01 --> Config Class Initialized
+DEBUG - 2019-08-27 18:29:01 --> Config Class Initialized
+DEBUG - 2019-08-27 18:29:01 --> Hooks Class Initialized
+DEBUG - 2019-08-27 18:29:01 --> Hooks Class Initialized
+DEBUG - 2019-08-27 18:29:01 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 18:29:01 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 18:29:01 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 18:29:01 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 18:29:01 --> URI Class Initialized
+DEBUG - 2019-08-27 18:29:01 --> URI Class Initialized
+DEBUG - 2019-08-27 18:29:01 --> Router Class Initialized
+DEBUG - 2019-08-27 18:29:01 --> Router Class Initialized
+ERROR - 2019-08-27 18:29:01 --> 404 Page Not Found --> assets
+ERROR - 2019-08-27 18:29:01 --> 404 Page Not Found --> assets
+DEBUG - 2019-08-27 18:29:47 --> Config Class Initialized
+DEBUG - 2019-08-27 18:29:48 --> Hooks Class Initialized
+DEBUG - 2019-08-27 18:29:48 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 18:29:48 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 18:29:48 --> URI Class Initialized
+DEBUG - 2019-08-27 18:29:48 --> Router Class Initialized
+DEBUG - 2019-08-27 18:29:48 --> No URI present. Default controller set.
+DEBUG - 2019-08-27 18:29:48 --> Output Class Initialized
+DEBUG - 2019-08-27 18:29:48 --> Security Class Initialized
+DEBUG - 2019-08-27 18:29:48 --> Input Class Initialized
+DEBUG - 2019-08-27 18:29:48 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 18:29:48 --> Language Class Initialized
+DEBUG - 2019-08-27 18:29:48 --> Loader Class Initialized
+DEBUG - 2019-08-27 18:29:48 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 18:29:49 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 18:29:49 --> Session Class Initialized
+DEBUG - 2019-08-27 18:29:49 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 18:29:49 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 18:29:49 --> Session routines successfully run
+DEBUG - 2019-08-27 18:29:49 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 18:29:49 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 18:29:49 --> Pagination Class Initialized
+DEBUG - 2019-08-27 18:29:49 --> Controller Class Initialized
+DEBUG - 2019-08-27 18:29:49 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 18:29:49 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 18:29:49 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 18:29:49 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 18:29:49 --> Model Class Initialized
+DEBUG - 2019-08-27 18:29:50 --> File loaded: application/views/front/slider.php
+ERROR - 2019-08-27 18:29:50 --> Severity: Notice  --> Undefined variable: check_user C:\xampp\htdocs\starsfair\application\views\front\sidebar-left.php 23
+DEBUG - 2019-08-27 18:29:50 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 18:29:50 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 18:29:50 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 18:29:50 --> File loaded: application/views/front/page.php
+DEBUG - 2019-08-27 18:29:50 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 18:29:50 --> Final output sent to browser
+DEBUG - 2019-08-27 18:29:50 --> Total execution time: 2.7222
+DEBUG - 2019-08-27 18:29:51 --> Config Class Initialized
+DEBUG - 2019-08-27 18:29:51 --> Hooks Class Initialized
+DEBUG - 2019-08-27 18:29:51 --> Config Class Initialized
+DEBUG - 2019-08-27 18:29:51 --> Hooks Class Initialized
+DEBUG - 2019-08-27 18:29:51 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 18:29:51 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 18:29:51 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 18:29:51 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 18:29:51 --> URI Class Initialized
+DEBUG - 2019-08-27 18:29:52 --> Router Class Initialized
+DEBUG - 2019-08-27 18:29:52 --> URI Class Initialized
+DEBUG - 2019-08-27 18:29:52 --> Router Class Initialized
+ERROR - 2019-08-27 18:29:52 --> 404 Page Not Found --> assets
+ERROR - 2019-08-27 18:29:52 --> 404 Page Not Found --> assets
+DEBUG - 2019-08-27 18:31:03 --> Config Class Initialized
+DEBUG - 2019-08-27 18:31:03 --> Hooks Class Initialized
+DEBUG - 2019-08-27 18:31:03 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 18:31:03 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 18:31:03 --> URI Class Initialized
+DEBUG - 2019-08-27 18:31:03 --> Router Class Initialized
+DEBUG - 2019-08-27 18:31:03 --> No URI present. Default controller set.
+DEBUG - 2019-08-27 18:31:03 --> Output Class Initialized
+DEBUG - 2019-08-27 18:31:03 --> Security Class Initialized
+DEBUG - 2019-08-27 18:31:03 --> Input Class Initialized
+DEBUG - 2019-08-27 18:31:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 18:31:04 --> Language Class Initialized
+DEBUG - 2019-08-27 18:31:04 --> Loader Class Initialized
+DEBUG - 2019-08-27 18:31:04 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 18:31:04 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 18:31:04 --> Session Class Initialized
+DEBUG - 2019-08-27 18:31:04 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 18:31:04 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 18:31:04 --> Session routines successfully run
+DEBUG - 2019-08-27 18:31:04 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 18:31:04 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 18:31:04 --> Pagination Class Initialized
+DEBUG - 2019-08-27 18:31:04 --> Controller Class Initialized
+DEBUG - 2019-08-27 18:31:04 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 18:31:04 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 18:31:05 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 18:31:05 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 18:31:05 --> Model Class Initialized
+DEBUG - 2019-08-27 18:31:05 --> File loaded: application/views/front/slider.php
+ERROR - 2019-08-27 18:31:05 --> Severity: Notice  --> Undefined variable: check_user C:\xampp\htdocs\starsfair\application\views\front\sidebar-left.php 23
+DEBUG - 2019-08-27 18:31:05 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 18:31:05 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 18:31:05 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 18:31:05 --> File loaded: application/views/front/page.php
+DEBUG - 2019-08-27 18:31:05 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 18:31:05 --> Final output sent to browser
+DEBUG - 2019-08-27 18:31:05 --> Total execution time: 2.5354
+DEBUG - 2019-08-27 18:31:06 --> Config Class Initialized
+DEBUG - 2019-08-27 18:31:06 --> Config Class Initialized
+DEBUG - 2019-08-27 18:31:06 --> Hooks Class Initialized
+DEBUG - 2019-08-27 18:31:06 --> Hooks Class Initialized
+DEBUG - 2019-08-27 18:31:06 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 18:31:06 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 18:31:06 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 18:31:06 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 18:31:06 --> URI Class Initialized
+DEBUG - 2019-08-27 18:31:06 --> URI Class Initialized
+DEBUG - 2019-08-27 18:31:06 --> Router Class Initialized
+DEBUG - 2019-08-27 18:31:06 --> Router Class Initialized
+ERROR - 2019-08-27 18:31:06 --> 404 Page Not Found --> assets
+ERROR - 2019-08-27 18:31:06 --> 404 Page Not Found --> assets
+DEBUG - 2019-08-27 18:59:25 --> Config Class Initialized
+DEBUG - 2019-08-27 18:59:25 --> Hooks Class Initialized
+DEBUG - 2019-08-27 18:59:25 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 18:59:26 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 18:59:26 --> URI Class Initialized
+DEBUG - 2019-08-27 18:59:26 --> Router Class Initialized
+DEBUG - 2019-08-27 18:59:26 --> No URI present. Default controller set.
+DEBUG - 2019-08-27 18:59:26 --> Output Class Initialized
+DEBUG - 2019-08-27 18:59:26 --> Security Class Initialized
+DEBUG - 2019-08-27 18:59:26 --> Input Class Initialized
+DEBUG - 2019-08-27 18:59:26 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 18:59:26 --> Language Class Initialized
+DEBUG - 2019-08-27 18:59:26 --> Loader Class Initialized
+DEBUG - 2019-08-27 18:59:26 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 18:59:26 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 18:59:26 --> Session Class Initialized
+DEBUG - 2019-08-27 18:59:26 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 18:59:26 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 18:59:26 --> Session routines successfully run
+DEBUG - 2019-08-27 18:59:26 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 18:59:26 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 18:59:26 --> Pagination Class Initialized
+DEBUG - 2019-08-27 18:59:26 --> Controller Class Initialized
+DEBUG - 2019-08-27 18:59:26 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 18:59:26 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 18:59:26 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 18:59:26 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 18:59:26 --> Model Class Initialized
+DEBUG - 2019-08-27 18:59:26 --> File loaded: application/views/front/slider.php
+ERROR - 2019-08-27 18:59:26 --> Severity: Notice  --> Undefined variable: check_user C:\xampp\htdocs\starsfair\application\views\front\sidebar-left.php 23
+DEBUG - 2019-08-27 18:59:26 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 18:59:26 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 18:59:27 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 18:59:27 --> File loaded: application/views/front/page.php
+DEBUG - 2019-08-27 18:59:27 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 18:59:27 --> Final output sent to browser
+DEBUG - 2019-08-27 18:59:27 --> Total execution time: 1.2717
+DEBUG - 2019-08-27 18:59:27 --> Config Class Initialized
+DEBUG - 2019-08-27 18:59:27 --> Config Class Initialized
+DEBUG - 2019-08-27 18:59:27 --> Hooks Class Initialized
+DEBUG - 2019-08-27 18:59:27 --> Hooks Class Initialized
+DEBUG - 2019-08-27 18:59:27 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 18:59:27 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 18:59:27 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 18:59:27 --> URI Class Initialized
+DEBUG - 2019-08-27 18:59:27 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 18:59:27 --> Router Class Initialized
+ERROR - 2019-08-27 18:59:27 --> 404 Page Not Found --> assets
+DEBUG - 2019-08-27 18:59:27 --> URI Class Initialized
+DEBUG - 2019-08-27 18:59:27 --> Router Class Initialized
+ERROR - 2019-08-27 18:59:27 --> 404 Page Not Found --> assets
+DEBUG - 2019-08-27 19:01:59 --> Config Class Initialized
+DEBUG - 2019-08-27 19:01:59 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:01:59 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:01:59 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:01:59 --> URI Class Initialized
+DEBUG - 2019-08-27 19:02:00 --> Router Class Initialized
+DEBUG - 2019-08-27 19:02:00 --> No URI present. Default controller set.
+DEBUG - 2019-08-27 19:02:00 --> Output Class Initialized
+DEBUG - 2019-08-27 19:02:00 --> Security Class Initialized
+DEBUG - 2019-08-27 19:02:00 --> Input Class Initialized
+DEBUG - 2019-08-27 19:02:00 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 19:02:00 --> Language Class Initialized
+DEBUG - 2019-08-27 19:02:00 --> Loader Class Initialized
+DEBUG - 2019-08-27 19:02:00 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 19:02:00 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 19:02:00 --> Session Class Initialized
+DEBUG - 2019-08-27 19:02:01 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 19:02:01 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 19:02:01 --> Session routines successfully run
+DEBUG - 2019-08-27 19:02:01 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 19:02:01 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 19:02:01 --> Pagination Class Initialized
+DEBUG - 2019-08-27 19:02:01 --> Controller Class Initialized
+DEBUG - 2019-08-27 19:02:01 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:02:01 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:02:01 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 19:02:01 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:02:01 --> Model Class Initialized
+DEBUG - 2019-08-27 19:02:01 --> File loaded: application/views/front/slider.php
+ERROR - 2019-08-27 19:02:02 --> Severity: Notice  --> Undefined variable: check_user C:\xampp\htdocs\starsfair\application\views\front\sidebar-left.php 23
+DEBUG - 2019-08-27 19:02:02 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 19:02:02 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 19:02:02 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 19:02:02 --> File loaded: application/views/front/page.php
+DEBUG - 2019-08-27 19:02:02 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 19:02:02 --> Final output sent to browser
+DEBUG - 2019-08-27 19:02:02 --> Total execution time: 2.8747
+DEBUG - 2019-08-27 19:02:03 --> Config Class Initialized
+DEBUG - 2019-08-27 19:02:03 --> Config Class Initialized
+DEBUG - 2019-08-27 19:02:03 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:02:03 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:02:03 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:02:03 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:02:03 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:02:03 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:02:03 --> URI Class Initialized
+DEBUG - 2019-08-27 19:02:03 --> Router Class Initialized
+DEBUG - 2019-08-27 19:02:03 --> URI Class Initialized
+DEBUG - 2019-08-27 19:02:03 --> Router Class Initialized
+ERROR - 2019-08-27 19:02:03 --> 404 Page Not Found --> assets
+ERROR - 2019-08-27 19:02:03 --> 404 Page Not Found --> assets
+DEBUG - 2019-08-27 19:14:51 --> Config Class Initialized
+DEBUG - 2019-08-27 19:14:51 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:14:51 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:14:51 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:14:51 --> URI Class Initialized
+DEBUG - 2019-08-27 19:14:51 --> Router Class Initialized
+DEBUG - 2019-08-27 19:14:51 --> No URI present. Default controller set.
+DEBUG - 2019-08-27 19:14:51 --> Output Class Initialized
+DEBUG - 2019-08-27 19:14:52 --> Security Class Initialized
+DEBUG - 2019-08-27 19:14:52 --> Input Class Initialized
+DEBUG - 2019-08-27 19:14:52 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 19:14:52 --> Language Class Initialized
+DEBUG - 2019-08-27 19:14:52 --> Loader Class Initialized
+DEBUG - 2019-08-27 19:14:52 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 19:14:52 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 19:14:52 --> Session Class Initialized
+DEBUG - 2019-08-27 19:14:52 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 19:14:52 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 19:14:52 --> Session routines successfully run
+DEBUG - 2019-08-27 19:14:52 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 19:14:52 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 19:14:52 --> Pagination Class Initialized
+DEBUG - 2019-08-27 19:14:52 --> Controller Class Initialized
+DEBUG - 2019-08-27 19:14:52 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:14:52 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:14:52 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 19:14:52 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:14:52 --> Model Class Initialized
+DEBUG - 2019-08-27 19:14:52 --> File loaded: application/views/front/slider.php
+ERROR - 2019-08-27 19:14:52 --> Severity: Notice  --> Undefined variable: check_user C:\xampp\htdocs\starsfair\application\views\front\sidebar-left.php 23
+DEBUG - 2019-08-27 19:14:52 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 19:14:52 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 19:14:52 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 19:14:52 --> File loaded: application/views/front/page.php
+DEBUG - 2019-08-27 19:14:52 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 19:14:53 --> Final output sent to browser
+DEBUG - 2019-08-27 19:14:53 --> Total execution time: 1.2389
+DEBUG - 2019-08-27 19:14:53 --> Config Class Initialized
+DEBUG - 2019-08-27 19:14:53 --> Config Class Initialized
+DEBUG - 2019-08-27 19:14:53 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:14:53 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:14:53 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:14:53 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:14:53 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:14:53 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:14:53 --> URI Class Initialized
+DEBUG - 2019-08-27 19:14:53 --> Router Class Initialized
+DEBUG - 2019-08-27 19:14:53 --> URI Class Initialized
+ERROR - 2019-08-27 19:14:53 --> 404 Page Not Found --> assets
+DEBUG - 2019-08-27 19:14:53 --> Router Class Initialized
+ERROR - 2019-08-27 19:14:53 --> 404 Page Not Found --> assets
+DEBUG - 2019-08-27 19:15:24 --> Config Class Initialized
+DEBUG - 2019-08-27 19:15:25 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:15:25 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:15:25 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:15:25 --> URI Class Initialized
+DEBUG - 2019-08-27 19:15:25 --> Router Class Initialized
+DEBUG - 2019-08-27 19:15:25 --> No URI present. Default controller set.
+DEBUG - 2019-08-27 19:15:25 --> Output Class Initialized
+DEBUG - 2019-08-27 19:15:25 --> Security Class Initialized
+DEBUG - 2019-08-27 19:15:25 --> Input Class Initialized
+DEBUG - 2019-08-27 19:15:25 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 19:15:25 --> Language Class Initialized
+DEBUG - 2019-08-27 19:15:25 --> Loader Class Initialized
+DEBUG - 2019-08-27 19:15:25 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 19:15:26 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 19:15:26 --> Session Class Initialized
+DEBUG - 2019-08-27 19:15:26 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 19:15:26 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 19:15:26 --> Session routines successfully run
+DEBUG - 2019-08-27 19:15:26 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 19:15:26 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 19:15:26 --> Pagination Class Initialized
+DEBUG - 2019-08-27 19:15:26 --> Controller Class Initialized
+DEBUG - 2019-08-27 19:15:26 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:15:26 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:15:26 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 19:15:26 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:15:26 --> Model Class Initialized
+DEBUG - 2019-08-27 19:15:27 --> File loaded: application/views/front/slider.php
+ERROR - 2019-08-27 19:15:27 --> Severity: Notice  --> Undefined variable: check_user C:\xampp\htdocs\starsfair\application\views\front\sidebar-left.php 23
+DEBUG - 2019-08-27 19:15:27 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 19:15:27 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 19:15:27 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 19:15:27 --> File loaded: application/views/front/page.php
+DEBUG - 2019-08-27 19:15:27 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 19:15:27 --> Final output sent to browser
+DEBUG - 2019-08-27 19:15:27 --> Total execution time: 2.6034
+DEBUG - 2019-08-27 19:15:31 --> Config Class Initialized
+DEBUG - 2019-08-27 19:15:31 --> Config Class Initialized
+DEBUG - 2019-08-27 19:15:31 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:15:31 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:15:31 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:15:31 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:15:31 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:15:31 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:15:31 --> URI Class Initialized
+DEBUG - 2019-08-27 19:15:31 --> URI Class Initialized
+DEBUG - 2019-08-27 19:15:31 --> Router Class Initialized
+DEBUG - 2019-08-27 19:15:32 --> Router Class Initialized
+ERROR - 2019-08-27 19:15:32 --> 404 Page Not Found --> assets
+ERROR - 2019-08-27 19:15:32 --> 404 Page Not Found --> assets
+DEBUG - 2019-08-27 19:15:43 --> Config Class Initialized
+DEBUG - 2019-08-27 19:15:43 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:15:43 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:15:43 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:15:43 --> URI Class Initialized
+DEBUG - 2019-08-27 19:15:43 --> Router Class Initialized
+DEBUG - 2019-08-27 19:15:43 --> No URI present. Default controller set.
+DEBUG - 2019-08-27 19:15:44 --> Output Class Initialized
+DEBUG - 2019-08-27 19:15:44 --> Security Class Initialized
+DEBUG - 2019-08-27 19:15:44 --> Input Class Initialized
+DEBUG - 2019-08-27 19:15:44 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 19:15:44 --> Language Class Initialized
+DEBUG - 2019-08-27 19:15:44 --> Loader Class Initialized
+DEBUG - 2019-08-27 19:15:44 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 19:15:44 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 19:15:44 --> Session Class Initialized
+DEBUG - 2019-08-27 19:15:44 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 19:15:44 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 19:15:44 --> Session routines successfully run
+DEBUG - 2019-08-27 19:15:44 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 19:15:45 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 19:15:45 --> Pagination Class Initialized
+DEBUG - 2019-08-27 19:15:45 --> Controller Class Initialized
+DEBUG - 2019-08-27 19:15:45 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:15:45 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:15:45 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 19:15:45 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:15:45 --> Model Class Initialized
+DEBUG - 2019-08-27 19:15:45 --> File loaded: application/views/front/slider.php
+ERROR - 2019-08-27 19:15:45 --> Severity: Notice  --> Undefined variable: check_user C:\xampp\htdocs\starsfair\application\views\front\sidebar-left.php 23
+DEBUG - 2019-08-27 19:15:45 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 19:15:45 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 19:15:45 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 19:15:45 --> File loaded: application/views/front/page.php
+DEBUG - 2019-08-27 19:15:46 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 19:15:46 --> Final output sent to browser
+DEBUG - 2019-08-27 19:15:46 --> Total execution time: 2.6751
+DEBUG - 2019-08-27 19:15:47 --> Config Class Initialized
+DEBUG - 2019-08-27 19:15:47 --> Config Class Initialized
+DEBUG - 2019-08-27 19:15:47 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:15:47 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:15:47 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:15:47 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:15:47 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:15:47 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:15:47 --> URI Class Initialized
+DEBUG - 2019-08-27 19:15:47 --> URI Class Initialized
+DEBUG - 2019-08-27 19:15:47 --> Router Class Initialized
+DEBUG - 2019-08-27 19:15:47 --> Router Class Initialized
+ERROR - 2019-08-27 19:15:47 --> 404 Page Not Found --> assets
+ERROR - 2019-08-27 19:15:47 --> 404 Page Not Found --> assets
+DEBUG - 2019-08-27 19:16:12 --> Config Class Initialized
+DEBUG - 2019-08-27 19:16:12 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:16:12 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:16:12 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:16:12 --> URI Class Initialized
+DEBUG - 2019-08-27 19:16:12 --> Router Class Initialized
+DEBUG - 2019-08-27 19:16:12 --> No URI present. Default controller set.
+DEBUG - 2019-08-27 19:16:12 --> Output Class Initialized
+DEBUG - 2019-08-27 19:16:12 --> Security Class Initialized
+DEBUG - 2019-08-27 19:16:12 --> Input Class Initialized
+DEBUG - 2019-08-27 19:16:13 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 19:16:13 --> Language Class Initialized
+DEBUG - 2019-08-27 19:16:13 --> Loader Class Initialized
+DEBUG - 2019-08-27 19:16:13 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 19:16:13 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 19:16:13 --> Session Class Initialized
+DEBUG - 2019-08-27 19:16:13 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 19:16:13 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 19:16:13 --> Session routines successfully run
+DEBUG - 2019-08-27 19:16:13 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 19:16:13 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 19:16:13 --> Pagination Class Initialized
+DEBUG - 2019-08-27 19:16:14 --> Controller Class Initialized
+DEBUG - 2019-08-27 19:16:14 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:16:14 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:16:14 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 19:16:14 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:16:14 --> Model Class Initialized
+DEBUG - 2019-08-27 19:16:14 --> File loaded: application/views/front/slider.php
+ERROR - 2019-08-27 19:16:14 --> Severity: Notice  --> Undefined variable: check_user C:\xampp\htdocs\starsfair\application\views\front\sidebar-left.php 23
+DEBUG - 2019-08-27 19:16:14 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 19:16:14 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 19:16:14 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 19:16:14 --> File loaded: application/views/front/page.php
+DEBUG - 2019-08-27 19:16:14 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 19:16:14 --> Final output sent to browser
+DEBUG - 2019-08-27 19:16:15 --> Total execution time: 2.8538
+DEBUG - 2019-08-27 19:16:15 --> Config Class Initialized
+DEBUG - 2019-08-27 19:16:15 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:16:15 --> Config Class Initialized
+DEBUG - 2019-08-27 19:16:16 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:16:16 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:16:16 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:16:16 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:16:16 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:16:16 --> URI Class Initialized
+DEBUG - 2019-08-27 19:16:16 --> URI Class Initialized
+DEBUG - 2019-08-27 19:16:16 --> Router Class Initialized
+DEBUG - 2019-08-27 19:16:16 --> Router Class Initialized
+ERROR - 2019-08-27 19:16:16 --> 404 Page Not Found --> assets
+ERROR - 2019-08-27 19:16:16 --> 404 Page Not Found --> assets
+DEBUG - 2019-08-27 19:17:02 --> Config Class Initialized
+DEBUG - 2019-08-27 19:17:02 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:17:02 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:17:02 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:17:02 --> URI Class Initialized
+DEBUG - 2019-08-27 19:17:02 --> Router Class Initialized
+DEBUG - 2019-08-27 19:17:03 --> No URI present. Default controller set.
+DEBUG - 2019-08-27 19:17:03 --> Output Class Initialized
+DEBUG - 2019-08-27 19:17:03 --> Security Class Initialized
+DEBUG - 2019-08-27 19:17:03 --> Input Class Initialized
+DEBUG - 2019-08-27 19:17:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 19:17:03 --> Language Class Initialized
+DEBUG - 2019-08-27 19:17:03 --> Loader Class Initialized
+DEBUG - 2019-08-27 19:17:03 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 19:17:03 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 19:17:03 --> Session Class Initialized
+DEBUG - 2019-08-27 19:17:03 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 19:17:03 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 19:17:04 --> Session routines successfully run
+DEBUG - 2019-08-27 19:17:04 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 19:17:04 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 19:17:04 --> Pagination Class Initialized
+DEBUG - 2019-08-27 19:17:04 --> Controller Class Initialized
+DEBUG - 2019-08-27 19:17:04 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:17:04 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:17:04 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 19:17:04 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:17:04 --> Model Class Initialized
+DEBUG - 2019-08-27 19:17:04 --> File loaded: application/views/front/slider.php
+ERROR - 2019-08-27 19:17:04 --> Severity: Notice  --> Undefined variable: check_user C:\xampp\htdocs\starsfair\application\views\front\sidebar-left.php 23
+DEBUG - 2019-08-27 19:17:05 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 19:17:05 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 19:17:05 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 19:17:05 --> File loaded: application/views/front/page.php
+DEBUG - 2019-08-27 19:17:05 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 19:17:05 --> Final output sent to browser
+DEBUG - 2019-08-27 19:17:05 --> Total execution time: 2.7813
+DEBUG - 2019-08-27 19:17:06 --> Config Class Initialized
+DEBUG - 2019-08-27 19:17:06 --> Config Class Initialized
+DEBUG - 2019-08-27 19:17:06 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:17:06 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:17:06 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:17:06 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:17:06 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:17:06 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:17:06 --> URI Class Initialized
+DEBUG - 2019-08-27 19:17:06 --> URI Class Initialized
+DEBUG - 2019-08-27 19:17:06 --> Router Class Initialized
+DEBUG - 2019-08-27 19:17:06 --> Router Class Initialized
+ERROR - 2019-08-27 19:17:06 --> 404 Page Not Found --> assets
+ERROR - 2019-08-27 19:17:06 --> 404 Page Not Found --> assets
+DEBUG - 2019-08-27 19:17:29 --> Config Class Initialized
+DEBUG - 2019-08-27 19:17:29 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:17:29 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:17:29 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:17:29 --> URI Class Initialized
+DEBUG - 2019-08-27 19:17:29 --> Router Class Initialized
+DEBUG - 2019-08-27 19:17:29 --> No URI present. Default controller set.
+DEBUG - 2019-08-27 19:17:30 --> Output Class Initialized
+DEBUG - 2019-08-27 19:17:30 --> Security Class Initialized
+DEBUG - 2019-08-27 19:17:30 --> Input Class Initialized
+DEBUG - 2019-08-27 19:17:30 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 19:17:30 --> Language Class Initialized
+DEBUG - 2019-08-27 19:17:30 --> Loader Class Initialized
+DEBUG - 2019-08-27 19:17:30 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 19:17:30 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 19:17:30 --> Session Class Initialized
+DEBUG - 2019-08-27 19:17:30 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 19:17:31 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 19:17:31 --> Session garbage collection performed.
+DEBUG - 2019-08-27 19:17:31 --> Session routines successfully run
+DEBUG - 2019-08-27 19:17:31 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 19:17:31 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 19:17:31 --> Pagination Class Initialized
+DEBUG - 2019-08-27 19:17:31 --> Controller Class Initialized
+DEBUG - 2019-08-27 19:17:31 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:17:31 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:17:31 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 19:17:32 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:17:32 --> Model Class Initialized
+DEBUG - 2019-08-27 19:17:32 --> File loaded: application/views/front/slider.php
+ERROR - 2019-08-27 19:17:32 --> Severity: Notice  --> Undefined variable: check_user C:\xampp\htdocs\starsfair\application\views\front\sidebar-left.php 23
+DEBUG - 2019-08-27 19:17:32 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 19:17:32 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 19:17:32 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 19:17:32 --> File loaded: application/views/front/page.php
+DEBUG - 2019-08-27 19:17:32 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 19:17:32 --> Final output sent to browser
+DEBUG - 2019-08-27 19:17:32 --> Total execution time: 3.1475
+DEBUG - 2019-08-27 19:17:33 --> Config Class Initialized
+DEBUG - 2019-08-27 19:17:33 --> Config Class Initialized
+DEBUG - 2019-08-27 19:17:33 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:17:33 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:17:33 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:17:33 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:17:33 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:17:33 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:17:33 --> URI Class Initialized
+DEBUG - 2019-08-27 19:17:33 --> URI Class Initialized
+DEBUG - 2019-08-27 19:17:33 --> Router Class Initialized
+ERROR - 2019-08-27 19:17:33 --> 404 Page Not Found --> assets
+DEBUG - 2019-08-27 19:17:33 --> Router Class Initialized
+ERROR - 2019-08-27 19:17:33 --> 404 Page Not Found --> assets
+DEBUG - 2019-08-27 19:18:49 --> Config Class Initialized
+DEBUG - 2019-08-27 19:18:49 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:18:49 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:18:49 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:18:49 --> URI Class Initialized
+DEBUG - 2019-08-27 19:18:49 --> Router Class Initialized
+DEBUG - 2019-08-27 19:18:49 --> No URI present. Default controller set.
+DEBUG - 2019-08-27 19:18:49 --> Output Class Initialized
+DEBUG - 2019-08-27 19:18:49 --> Security Class Initialized
+DEBUG - 2019-08-27 19:18:50 --> Input Class Initialized
+DEBUG - 2019-08-27 19:18:50 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 19:18:50 --> Language Class Initialized
+DEBUG - 2019-08-27 19:18:50 --> Loader Class Initialized
+DEBUG - 2019-08-27 19:18:50 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 19:18:50 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 19:18:50 --> Session Class Initialized
+DEBUG - 2019-08-27 19:18:50 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 19:18:50 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 19:18:50 --> Session routines successfully run
+DEBUG - 2019-08-27 19:18:51 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 19:18:51 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 19:18:51 --> Pagination Class Initialized
+DEBUG - 2019-08-27 19:18:51 --> Controller Class Initialized
+DEBUG - 2019-08-27 19:18:51 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:18:51 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:18:51 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 19:18:51 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:18:51 --> Model Class Initialized
+DEBUG - 2019-08-27 19:18:51 --> File loaded: application/views/front/slider.php
+ERROR - 2019-08-27 19:18:51 --> Severity: Notice  --> Undefined variable: check_user C:\xampp\htdocs\starsfair\application\views\front\sidebar-left.php 23
+DEBUG - 2019-08-27 19:18:51 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 19:18:51 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 19:18:51 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 19:18:52 --> File loaded: application/views/front/page.php
+DEBUG - 2019-08-27 19:18:52 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 19:18:52 --> Final output sent to browser
+DEBUG - 2019-08-27 19:18:52 --> Total execution time: 2.9253
+DEBUG - 2019-08-27 19:18:52 --> Config Class Initialized
+DEBUG - 2019-08-27 19:18:52 --> Config Class Initialized
+DEBUG - 2019-08-27 19:18:52 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:18:52 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:18:52 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:18:52 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:18:52 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:18:52 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:18:52 --> URI Class Initialized
+DEBUG - 2019-08-27 19:18:52 --> URI Class Initialized
+DEBUG - 2019-08-27 19:18:52 --> Router Class Initialized
+DEBUG - 2019-08-27 19:18:52 --> Router Class Initialized
+ERROR - 2019-08-27 19:18:53 --> 404 Page Not Found --> assets
+ERROR - 2019-08-27 19:18:53 --> 404 Page Not Found --> assets
+DEBUG - 2019-08-27 19:19:03 --> Config Class Initialized
+DEBUG - 2019-08-27 19:19:03 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:19:03 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:19:03 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:19:03 --> URI Class Initialized
+DEBUG - 2019-08-27 19:19:03 --> Router Class Initialized
+DEBUG - 2019-08-27 19:19:04 --> No URI present. Default controller set.
+DEBUG - 2019-08-27 19:19:04 --> Output Class Initialized
+DEBUG - 2019-08-27 19:19:04 --> Security Class Initialized
+DEBUG - 2019-08-27 19:19:04 --> Input Class Initialized
+DEBUG - 2019-08-27 19:19:04 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 19:19:04 --> Language Class Initialized
+DEBUG - 2019-08-27 19:19:04 --> Loader Class Initialized
+DEBUG - 2019-08-27 19:19:04 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 19:19:04 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 19:19:04 --> Session Class Initialized
+DEBUG - 2019-08-27 19:19:04 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 19:19:05 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 19:19:05 --> Session routines successfully run
+DEBUG - 2019-08-27 19:19:05 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 19:19:05 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 19:19:05 --> Pagination Class Initialized
+DEBUG - 2019-08-27 19:19:05 --> Controller Class Initialized
+DEBUG - 2019-08-27 19:19:05 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:19:05 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:19:05 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 19:19:05 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:19:05 --> Model Class Initialized
+DEBUG - 2019-08-27 19:19:05 --> File loaded: application/views/front/slider.php
+ERROR - 2019-08-27 19:19:05 --> Severity: Notice  --> Undefined variable: check_user C:\xampp\htdocs\starsfair\application\views\front\sidebar-left.php 23
+DEBUG - 2019-08-27 19:19:06 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 19:19:06 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 19:19:06 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 19:19:06 --> File loaded: application/views/front/page.php
+DEBUG - 2019-08-27 19:19:06 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 19:19:06 --> Final output sent to browser
+DEBUG - 2019-08-27 19:19:06 --> Total execution time: 2.8119
+DEBUG - 2019-08-27 19:19:07 --> Config Class Initialized
+DEBUG - 2019-08-27 19:19:07 --> Config Class Initialized
+DEBUG - 2019-08-27 19:19:07 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:19:07 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:19:07 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:19:07 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:19:07 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:19:07 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:19:07 --> URI Class Initialized
+DEBUG - 2019-08-27 19:19:07 --> URI Class Initialized
+DEBUG - 2019-08-27 19:19:07 --> Router Class Initialized
+DEBUG - 2019-08-27 19:19:07 --> Router Class Initialized
+ERROR - 2019-08-27 19:19:07 --> 404 Page Not Found --> assets
+ERROR - 2019-08-27 19:19:07 --> 404 Page Not Found --> assets
+DEBUG - 2019-08-27 19:20:02 --> Config Class Initialized
+DEBUG - 2019-08-27 19:20:02 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:20:02 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:20:02 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:20:02 --> URI Class Initialized
+DEBUG - 2019-08-27 19:20:02 --> Router Class Initialized
+DEBUG - 2019-08-27 19:20:02 --> No URI present. Default controller set.
+DEBUG - 2019-08-27 19:20:03 --> Output Class Initialized
+DEBUG - 2019-08-27 19:20:03 --> Security Class Initialized
+DEBUG - 2019-08-27 19:20:03 --> Input Class Initialized
+DEBUG - 2019-08-27 19:20:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 19:20:03 --> Language Class Initialized
+DEBUG - 2019-08-27 19:20:03 --> Loader Class Initialized
+DEBUG - 2019-08-27 19:20:03 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 19:20:03 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 19:20:03 --> Session Class Initialized
+DEBUG - 2019-08-27 19:20:03 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 19:20:03 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 19:20:03 --> Session routines successfully run
+DEBUG - 2019-08-27 19:20:04 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 19:20:04 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 19:20:04 --> Pagination Class Initialized
+DEBUG - 2019-08-27 19:20:04 --> Controller Class Initialized
+DEBUG - 2019-08-27 19:20:04 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:20:04 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:20:04 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 19:20:04 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:20:04 --> Model Class Initialized
+DEBUG - 2019-08-27 19:20:04 --> File loaded: application/views/front/slider.php
+ERROR - 2019-08-27 19:20:04 --> Severity: Notice  --> Undefined variable: check_user C:\xampp\htdocs\starsfair\application\views\front\sidebar-left.php 23
+DEBUG - 2019-08-27 19:20:04 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 19:20:04 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 19:20:04 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 19:20:04 --> File loaded: application/views/front/page.php
+DEBUG - 2019-08-27 19:20:04 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 19:20:04 --> Final output sent to browser
+DEBUG - 2019-08-27 19:20:05 --> Total execution time: 2.4757
+DEBUG - 2019-08-27 19:20:05 --> Config Class Initialized
+DEBUG - 2019-08-27 19:20:05 --> Config Class Initialized
+DEBUG - 2019-08-27 19:20:05 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:20:05 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:20:05 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:20:05 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:20:05 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:20:05 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:20:05 --> URI Class Initialized
+DEBUG - 2019-08-27 19:20:05 --> URI Class Initialized
+DEBUG - 2019-08-27 19:20:05 --> Router Class Initialized
+DEBUG - 2019-08-27 19:20:06 --> Router Class Initialized
+ERROR - 2019-08-27 19:20:06 --> 404 Page Not Found --> assets
+ERROR - 2019-08-27 19:20:06 --> 404 Page Not Found --> assets
+DEBUG - 2019-08-27 19:20:44 --> Config Class Initialized
+DEBUG - 2019-08-27 19:20:44 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:20:44 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:20:44 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:20:44 --> URI Class Initialized
+DEBUG - 2019-08-27 19:20:44 --> Router Class Initialized
+DEBUG - 2019-08-27 19:20:44 --> No URI present. Default controller set.
+DEBUG - 2019-08-27 19:20:45 --> Output Class Initialized
+DEBUG - 2019-08-27 19:20:45 --> Security Class Initialized
+DEBUG - 2019-08-27 19:20:45 --> Input Class Initialized
+DEBUG - 2019-08-27 19:20:45 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 19:20:45 --> Language Class Initialized
+DEBUG - 2019-08-27 19:20:45 --> Loader Class Initialized
+DEBUG - 2019-08-27 19:20:45 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 19:20:45 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 19:20:45 --> Session Class Initialized
+DEBUG - 2019-08-27 19:20:45 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 19:20:45 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 19:20:45 --> Session routines successfully run
+DEBUG - 2019-08-27 19:20:45 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 19:20:45 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 19:20:46 --> Pagination Class Initialized
+DEBUG - 2019-08-27 19:20:46 --> Controller Class Initialized
+DEBUG - 2019-08-27 19:20:46 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:20:46 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:20:46 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 19:20:46 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:20:46 --> Model Class Initialized
+DEBUG - 2019-08-27 19:20:46 --> File loaded: application/views/front/slider.php
+ERROR - 2019-08-27 19:20:46 --> Severity: Notice  --> Undefined variable: check_user C:\xampp\htdocs\starsfair\application\views\front\sidebar-left.php 23
+DEBUG - 2019-08-27 19:20:46 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 19:20:46 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 19:20:46 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 19:20:46 --> File loaded: application/views/front/page.php
+DEBUG - 2019-08-27 19:20:47 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 19:20:47 --> Final output sent to browser
+DEBUG - 2019-08-27 19:20:47 --> Total execution time: 2.6422
+DEBUG - 2019-08-27 19:20:47 --> Config Class Initialized
+DEBUG - 2019-08-27 19:20:47 --> Config Class Initialized
+DEBUG - 2019-08-27 19:20:47 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:20:47 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:20:48 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:20:48 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:20:48 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:20:48 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:20:48 --> URI Class Initialized
+DEBUG - 2019-08-27 19:20:48 --> Router Class Initialized
+DEBUG - 2019-08-27 19:20:48 --> URI Class Initialized
+ERROR - 2019-08-27 19:20:48 --> 404 Page Not Found --> assets
+DEBUG - 2019-08-27 19:20:48 --> Router Class Initialized
+ERROR - 2019-08-27 19:20:48 --> 404 Page Not Found --> assets
