@@ -1,6 +1,6 @@
 <div class="col-md-3 sidebar">
-    	<div class="head_teacher_comment">
-        	<h4><i class="fa fa-bars logo_3_color" aria-hidden="true"></i> <?php if (empty($check_user)) { print "Login"; }else{ print "Profile"; } ?></h4>
+    	<div class="head_teacher_comment" >
+        	<h4 style=" "><i class="fa fa-bars logo_3_color" aria-hidden="true"></i> <?php if (empty($check_user)) { print "Login"; }else{ print "Profile"; } ?></h4>
             <div class="login_box">
             <?php 
 			if (empty($check_user)) { ?>
@@ -51,9 +51,13 @@
         <div class="notice">
         	<h4><i class="fa fa-bars logo_3_color" aria-hidden="true"></i> Incentives</h4>
             <ul>
-            	<li><i class="fa fa-star logo_3_color" aria-hidden="true"></i> Silver Star</li>
-				<li><i class="fa fa-star logo_3_color" aria-hidden="true"></i> Gold Star</li>
-                <li><i class="fa fa-star logo_3_color" aria-hidden="true"></i> Diamond Star</li>
+            	<li>One Star <i class="fa fa-star logo_3_color" aria-hidden="true"></i>.</li>
+				<li>Two Star <i class="fa fa-star logo_3_color" aria-hidden="true"></i> <i class="fa fa-star logo_3_color" aria-hidden="true"></i> .</li>
+                <li>Three Star <i class="fa fa-star logo_3_color" aria-hidden="true"></i><i class="fa fa-star logo_3_color" aria-hidden="true"></i><i class="fa fa-star logo_3_color" aria-hidden="true"></i>.</li>
+                <li>Four Star <i class="fa fa-star logo_3_color" aria-hidden="true"></i><i class="fa fa-star logo_3_color" aria-hidden="true"></i><i class="fa fa-star logo_3_color" aria-hidden="true"></i><i class="fa fa-star logo_3_color" aria-hidden="true"></i>.</li>
+                <li>Five Star <i class="fa fa-star logo_3_color" aria-hidden="true"></i><i class="fa fa-star logo_3_color" aria-hidden="true"></i><i class="fa fa-star logo_3_color" aria-hidden="true"></i><i class="fa fa-star logo_3_color" aria-hidden="true"></i><i class="fa fa-star logo_3_color" aria-hidden="true"></i>.</li>
+                <li>Six Star <i class="fa fa-star logo_3_color" aria-hidden="true"></i><i class="fa fa-star logo_3_color" aria-hidden="true"></i><i class="fa fa-star logo_3_color" aria-hidden="true"></i><i class="fa fa-star logo_3_color" aria-hidden="true"></i><i class="fa fa-star logo_3_color" aria-hidden="true"></i><i class="fa fa-star logo_3_color" aria-hidden="true"></i>.</li>
+                <li>Seven Star <i class="fa fa-star logo_3_color" aria-hidden="true"></i><i class="fa fa-star logo_3_color" aria-hidden="true"></i><i class="fa fa-star logo_3_color" aria-hidden="true"></i><i class="fa fa-star logo_3_color" aria-hidden="true"></i><i class="fa fa-star logo_3_color" aria-hidden="true"></i><i class="fa fa-star logo_3_color" aria-hidden="true"></i><i class="fa fa-star logo_3_color" aria-hidden="true"></i>.</li>
             </ul>
         </div>
         

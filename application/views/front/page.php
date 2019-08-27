@@ -13,3 +13,4 @@ if (empty($page_details->temp)) {
 	include("template/".$page_details->temp);	
 }
 ?>
+</div></div>
