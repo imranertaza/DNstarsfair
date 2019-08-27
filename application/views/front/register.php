@@ -36,9 +36,35 @@
                                         <input class="form-control" name="photo" type="file">
                                         <p class="help-block" id="progress_bar">Please put your photo</p>
                                     </div>
+
+                                    <div class="form-group">
+                                        <label>Division <sup class="required">*</sup></label>
+                                        <?php echo form_error('division', '<p class="error">', '</p>'); ?>
+                                        <input class="form-control" name="division" type="text" required>
+                                        <p class="help-block">Please put your Division</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>District <sup class="required">*</sup></label>
+                                        <?php echo form_error('district', '<p class="error">', '</p>'); ?>
+                                        <input class="form-control" name="district" type="text" required>
+                                        <p class="help-block">Please put your District</p>
+                                    </div>
                                         
                                 </div>
                                 <div class="col-lg-4">
+                                	<div class="form-group">
+                                        <label>Sub District <sup class="required">*</sup></label>
+                                        <?php echo form_error('subdistrict', '<p class="error">', '</p>'); ?>
+                                        <input class="form-control" name="subdistrict" type="text" required>
+                                        <p class="help-block">Please put your Sub District</p>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Union/Word <sup class="required">*</sup></label>
+                                        <?php echo form_error('unionWord', '<p class="error">', '</p>'); ?>
+                                        <input class="form-control" name="unionWord" type="text" required>
+                                        <p class="help-block">Please put your Sub Union/Word</p>
+                                    </div>
 
                                 		<div class="form-group">
                                             <label>Sponsor ID</label>
@@ -66,15 +92,16 @@
 
 
 
-                                        <div class="form-group">
+                                        
+                                </div>
+                                <div class="col-lg-4">
+                                	<div class="form-group">
                                             <label>Choose hand</label>
                                             <?php echo form_error('position', '<p class="error">', '</p>'); ?>
                                             <select class="form-control" name="position" id="hand" required>
                                             </select>
                                             <p class="help-block">Please choose a side to add</p>
                                         </div>
-                                </div>
-                                <div class="col-lg-4">
 
                                         <div class="form-group">
                                             <label>User Name <sup class="required">*</sup></label>

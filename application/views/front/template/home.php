@@ -25,31 +25,22 @@
                     <h1>Incentives Offers</h1>
                     </div>
                     
-                    <div class="col-md-12 text-center">
-                    <p><b><?php print $notice_title; ?></b></p>
-                    <p><?php print strip_tags($notice_description); ?></p>
-                    <p><a href="<?php print $dwn_path.$notice_file; ?>">Download</a></p>
-                    <div class="col-md-4 each_offer">
-                        <img src="<?php print base_url(); ?>assets/images/1int.jpg" />
-                    </div>
-                    <div class="col-md-4 each_offer">
-                        <img src="<?php print base_url(); ?>assets/images/2int.jpg" />
-                    </div>
-                    <div class="col-md-4 each_offer">
-                        <img src="<?php print base_url(); ?>assets/images/3int.jpg" />
-                    </div>
-                    <div class="col-md-4 each_offer">
-                        <img src="<?php print base_url(); ?>assets/images/4int.jpg" />
-                    </div>
-                    <div class="col-md-4 each_offer">
-                        <img src="<?php print base_url(); ?>assets/images/5int.jpg" />
-                    </div>
-                    <div class="col-md-4 each_offer">
-                        <img src="<?php print base_url(); ?>assets/images/6int.jpg" />
-                    </div>
+                    <div class="col-md-12" style="padding: 30px;">
                     
+                    <section class="customer-logos slider" style="padding: 30px;">
+                      <div class="slide"><img src="<?php print base_url(); ?>assets/images/1int.jpg"></div>
+                      <div class="slide"><img src="<?php print base_url(); ?>assets/images/2int.jpg"></div>
+                      <div class="slide"><img src="<?php print base_url(); ?>assets/images/3int.jpg"></div>
+                      <div class="slide"><img src="<?php print base_url(); ?>assets/images/4int.jpg"></div>
+                      <div class="slide"><img src="<?php print base_url(); ?>assets/images/5int.jpg"></div>
+                      <div class="slide"><img src="<?php print base_url(); ?>assets/images/6int.jpg"></div>
+                      <div class="slide"><img src="<?php print base_url(); ?>assets/images/7int.jpg"></div>
+                      
+                   </section>
 
-                </div>
+                    </div>
+
+
 
 
                 </div>

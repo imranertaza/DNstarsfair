@@ -43,6 +43,31 @@
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/front/js/jquery-migrate-1.2.1.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/front/slick/slick.js"></script>
 
+<script type="text/javascript">
+        $(document).ready(function(){
+        $('.customer-logos').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4
+                }
+            }, {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 3
+                }
+            }]
+        });
+    });
+    </script>
+
 <script type="application/javascript">
 $('.variable-width').slick({
   dots: false,
