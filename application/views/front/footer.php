@@ -9,7 +9,7 @@
             <div class="costomer_support_ditals"><?php print $footer_widget_description; ?></div><!--end of costomer_support_ditals-->
         </div><!--end of footer_left-->
         <div class="col-md-3">
-            <!--<div class="footer_menu_write">Quick Menu</div-->><!--end of footer_menu_write-->
+            <!--<div class="footer_menu_write">Quick Menu</div>--><!--end of footer_menu_write-->
             <div class="footer_menu">
                
             </div><!--end of footer_menu_write-->
