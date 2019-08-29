@@ -291,7 +291,7 @@ class member_form extends CI_Controller {
                     $this->load->library('upload', $config);
                     $this->upload->do_upload('photo');
 
-
+	
                     // Insert into user
                     $data_personal = array(
                         'email' => $_POST['email'],
@@ -299,14 +299,28 @@ class member_form extends CI_Controller {
                         'password' => md5($_POST['pass']),
                         'f_name' => $_POST['fname'],
                         'l_name' => "no_need",
-                        'address1' => "no_need",
+                        'address1' =>$_POST['addr'],
+                        'address2' => $_POST['per_addr'],
                         'phn_no' => $_POST['phone'],
+                        'nid' => $_POST['nid'],
+                        'father' => $_POST['father'],
+                        'mother' => $_POST['mother'],
+                        'religion' => $_POST['religion'],
+                        'sex' => $_POST['sex'],
+                        'blood' => $_POST['b_group'],
+                        'division' => $_POST['division'],	
+                        'district' => $_POST['district'],
+                        'upozila' => $_POST['upozila'],
+                        'union' => $_POST['union'],
+                        'post' => $_POST['post_code'],
+                        'nominee' => $_POST['non'],
+                        'relationship' => $_POST['relation'],
+                        'nom_dob' => $_POST['nodob'],
+                        'bank_name' => $_POST['banks'],
+                        'account_no' => $_POST['account_no'],
                         'balance' => '0',
                         'point' => '0',
-                        'status' => 'Inactive',
-                        'address2' => "no_need",
-                        'religion' => "no_need",
-                        'sex' => "no_need",
+                        'status' => 'Inactive',                        
                         'photo' => "no_need.jpg"
                     );                    
                     $this->db->insert('users', $data_personal);
@@ -331,7 +345,6 @@ class member_form extends CI_Controller {
                     $data_tree = array(
                         'u_id' => $userID,
                         'pr_id' => $pid,
-                        'ref_id' => "no_need",
                         'agent_id' => $this->session->userdata('user_id'),
                         'spon_id' => $spon_id
                     );
@@ -350,6 +363,7 @@ class member_form extends CI_Controller {
                     }
                     $this->db->where('u_id', $pid);
                     $this->db->update('tree', $data_left_right);
+
                     //pin update
                     $pin = array(
                     				'pin' =>$this->input->post('pin',TRUE), 
@@ -357,6 +371,7 @@ class member_form extends CI_Controller {
                 				);
                     $this->db->where('pin', $_POST['pin']);
                     $this->db->update('pins', $pin);
+
                     $this->session->set_flashdata("msg", "<div class='alert alert-success'>Successfully Registered. Please Login</div>");
                     redirect("member_form/login/");
 

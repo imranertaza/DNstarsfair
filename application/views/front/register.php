@@ -148,7 +148,7 @@
                                             <?php echo form_error('p_id', '<p class="error">', '</p>'); ?>
                                             <input class="form-control" name="p_id" type="text"  onchange="parent_check(this.value)" required>
                                             
-                                            <p class="help-block" id="parent_check">Please put your national ID</p>
+                                            <p class="help-block" id="parent_check">Please put your Placement ID</p>
                                         </div>
 
 
