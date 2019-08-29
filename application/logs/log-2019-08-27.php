@@ -9955,3 +9955,40 @@ DEBUG - 2019-08-27 19:20:48 --> URI Class Initialized
 ERROR - 2019-08-27 19:20:48 --> 404 Page Not Found --> assets
 DEBUG - 2019-08-27 19:20:48 --> Router Class Initialized
 ERROR - 2019-08-27 19:20:48 --> 404 Page Not Found --> assets
+DEBUG - 2019-08-27 19:25:02 --> Config Class Initialized
+DEBUG - 2019-08-27 19:25:02 --> Hooks Class Initialized
+DEBUG - 2019-08-27 19:25:02 --> Utf8 Class Initialized
+DEBUG - 2019-08-27 19:25:02 --> UTF-8 Support Enabled
+DEBUG - 2019-08-27 19:25:02 --> URI Class Initialized
+DEBUG - 2019-08-27 19:25:02 --> Router Class Initialized
+DEBUG - 2019-08-27 19:25:02 --> No URI present. Default controller set.
+DEBUG - 2019-08-27 19:25:02 --> Output Class Initialized
+DEBUG - 2019-08-27 19:25:02 --> Security Class Initialized
+DEBUG - 2019-08-27 19:25:02 --> Input Class Initialized
+DEBUG - 2019-08-27 19:25:02 --> Global POST and COOKIE data sanitized
+DEBUG - 2019-08-27 19:25:02 --> Language Class Initialized
+DEBUG - 2019-08-27 19:25:02 --> Loader Class Initialized
+DEBUG - 2019-08-27 19:25:03 --> Helper loaded: url_helper
+DEBUG - 2019-08-27 19:25:03 --> Helper loaded: path_helper
+DEBUG - 2019-08-27 19:25:03 --> Session Class Initialized
+DEBUG - 2019-08-27 19:25:03 --> Helper loaded: string_helper
+DEBUG - 2019-08-27 19:25:03 --> Database Driver Class Initialized
+DEBUG - 2019-08-27 19:25:03 --> Session routines successfully run
+DEBUG - 2019-08-27 19:25:03 --> Helper loaded: form_helper
+DEBUG - 2019-08-27 19:25:03 --> Form Validation Class Initialized
+DEBUG - 2019-08-27 19:25:03 --> Pagination Class Initialized
+DEBUG - 2019-08-27 19:25:03 --> Controller Class Initialized
+DEBUG - 2019-08-27 19:25:03 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:25:03 --> Form_validation class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:25:03 --> Helper loaded: settings_functions_helper
+DEBUG - 2019-08-27 19:25:03 --> Pagination class already loaded. Second attempt ignored.
+DEBUG - 2019-08-27 19:25:03 --> Model Class Initialized
+DEBUG - 2019-08-27 19:25:03 --> File loaded: application/views/front/slider.php
+ERROR - 2019-08-27 19:25:04 --> Severity: Notice  --> Undefined variable: check_user C:\xampp\htdocs\starsfair\application\views\front\sidebar-left.php 23
+DEBUG - 2019-08-27 19:25:04 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 19:25:04 --> File loaded: application/views/front/sidebar-left.php
+DEBUG - 2019-08-27 19:25:04 --> File loaded: application/views/front/header.php
+DEBUG - 2019-08-27 19:25:04 --> File loaded: application/views/front/page.php
+DEBUG - 2019-08-27 19:25:04 --> File loaded: application/views/front/footer.php
+DEBUG - 2019-08-27 19:25:04 --> Final output sent to browser
+DEBUG - 2019-08-27 19:25:04 --> Total execution time: 2.0977
