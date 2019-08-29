@@ -28,13 +28,13 @@
                     <div class="col-md-12" style="padding: 30px;">
                     
                     <section class="customer-logos slider" style="padding: 30px;">
-                      <div class="slide"><img src="<?php print base_url(); ?>assets/images/1int.jpg"></div>
-                      <div class="slide"><img src="<?php print base_url(); ?>assets/images/2int.jpg"></div>
-                      <div class="slide"><img src="<?php print base_url(); ?>assets/images/3int.jpg"></div>
-                      <div class="slide"><img src="<?php print base_url(); ?>assets/images/4int.jpg"></div>
-                      <div class="slide"><img src="<?php print base_url(); ?>assets/images/5int.jpg"></div>
-                      <div class="slide"><img src="<?php print base_url(); ?>assets/images/6int.jpg"></div>
-                      <div class="slide"><img src="<?php print base_url(); ?>assets/images/7int.jpg"></div>
+                      <div class="slide"><img src="<?php print base_url(); ?>assets/images/1ster.JPG"></div>
+                      <div class="slide"><img src="<?php print base_url(); ?>assets/images/2ster.JPG"></div>
+                      <div class="slide"><img src="<?php print base_url(); ?>assets/images/3ster.JPG"></div>
+                      <div class="slide"><img src="<?php print base_url(); ?>assets/images/4 star.JPG"></div>
+                      <div class="slide"><img src="<?php print base_url(); ?>assets/images/5 star.JPG"></div>
+                      <div class="slide"><img src="<?php print base_url(); ?>assets/images/6 star.JPG"></div>
+                      <div class="slide"><img src="<?php print base_url(); ?>assets/images/7 star.JPG"></div>
                       
                    </section>
 
