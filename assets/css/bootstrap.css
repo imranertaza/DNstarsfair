@@ -899,7 +899,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #f3a356;
+  background-color: #dcba9a;
 }
 input,
 button,
@@ -916,7 +916,7 @@ a {
 a:hover,
 a:focus {
   color: #2a6496;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 a:focus {
   outline: thin dotted;
