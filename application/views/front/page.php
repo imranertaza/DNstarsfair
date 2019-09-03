@@ -7,11 +7,16 @@ if (empty($page_details->temp)) { ?>
 	<section class="content-section">
 		<div class="container-fluid wraper" >			
 			<div class="row">
-				<div class="container" >
+				<div class="container" id="area_pad">
 					<?php print $sidebar_left; ?>
-					<div class="col-md-8">
-			            <h1><?php print $page_details->page_title; ?></h1>
-			            <p><?php print $page_details->page_description; ?></p>
+					<div class="col-md-9">
+						<div class="header">
+			            	<h1><b><?php print $page_details->page_title; ?></b></h1>
+			            	<p class="border"></p>
+			            </div>
+			        	<div class="content">
+			            	<p><?php print $page_details->page_description; ?></p>
+			        	</div>
 			    	</div>
 			    </div>
 		    </div>

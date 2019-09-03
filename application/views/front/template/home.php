@@ -1,19 +1,23 @@
 <section class="slider-section">
   <div class="container-fluid slider_area">
-    
     <div class="row">
-      <img src="<?php print base_url(); ?>uploads/gallery/banner.jpg" width="100%">
+          
+            <div class="row">
+              <img src="<?php print base_url(); ?>uploads/gallery/banner.jpg" width="100%">
+            </div>
+          
     </div>
+
   </div>
 </section>
 
 <section class="content-section">
   <div class="container-fluid wraper">
   		<div class="row">
-          <div class="container">
+          <div class="container" id="area_pad">
             <div class="col-md-12 text-center">
-        	     <h1><?php print $title; ?></h1>
-               <center><p style="border-top: 1px solid; width: 200px;color: #005180 !important; margin-top: 25px;"></p></center>
+        	     <h1><b><?php print $title; ?></b></h1>
+               <center><p class="front-border"></p></center>
             </div>
             <div class="col-md-12  results" id="cont-padding">
               <p><?php print $description; ?></p>
@@ -25,16 +29,17 @@
 </section>
 
 <section class="incentives-offers-section">
-  <div class="container-fluid">
-      <div class="row">
-          <div class="col-md-12" >
-                <div class="urgent_notice">  
+  <div class="container-fluid" style="background-image: url('uploads/gallery/banner.jpg'); background-attachment: fixed; background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; ">
+      <div class="row" style="background-color: rgba(36, 29, 29, 0.42);">
+                <div class="container" id="area_pad">  
                       <div class="col-md-12 text-center" >
-                        <h1>Incentives Offers</h1> 
-                        <center><p style="border-top: 1px solid; width: 200px;color: #005180 !important; margin-top: 25px;"></p></center>                       
+                        <h1 ><b>Incentives Offers</b></h1> 
+                        <center><p class="front-border" ></p></center>                       
                       </div>                      
-                      <div class="col-md-12" id="cont-padding">                      
-                        <section class="customer-logos slider" style="padding: 30px;">
+                      <div class="col-md-12 results" style="margin-top:30px; ">                      
+                        <section class="customer-logos slider">
                           <div class="slide"><img src="<?php print base_url(); ?>assets/images/1ster.JPG"></div>
                           <div class="slide"><img src="<?php print base_url(); ?>assets/images/2ster.JPG"></div>
                           <div class="slide"><img src="<?php print base_url(); ?>assets/images/3ster.JPG"></div>
@@ -45,33 +50,62 @@
                        </section>
                       </div>
                 </div>
-          </div>
       </div>
   </div>
 </section>
 
 <section class="notice-section">
-  <div class="container-fluid wraper">
-      <div class="row">
-          <div class="col-md-12" >
-                <div class="urgent_notice">  
-                      <div class="col-md-12">
-                        <div class="col-md-12 text-center" >
-                          <h1>Notice</h1>
-                          <center><p style="border-top: 1px solid; width: 200px;color: #005180 !important; margin-top: 25px;"></p></center>
-                                                    
-                        </div>                         
-                        <div class="col-md-12  results" id="cont-padding">
-                          <ul class="notice text-center">                      
-                            <?php foreach($list_notice as $row) { ?>
-                              <li > <a style="font-size: 16px;" href=""><?php print $row->title; ?></a></li>
-                            <?php }?>                          
-                          </ul>
-                        </div>
-                        
+  <div class="container-fluid wraper" >
+      <div class="row" >
+            <div class="container" id="area_pad" style="" >  
+                  <div class="col-md-12">
+                      <div class="col-md-12 text-center" >
+                        <h1><b>Notice</b></h1>
+                        <center><p class="front-border"></p></center>       
+                      </div>                         
+                      <div class="col-md-12  results text-center" id="cont-padding" >
+
+                            
+                              <ul class="notice">                      
+                                <?php foreach($list_notice as $row) { ?>
+                                  <li ><p><a style="font-size: 16px;" href=""><?php print $row->title; ?></a></p></li>
+                                <?php }?>                          
+                              </ul>
+                            
+
+                         
+
+                      </div>
                     </div>
-                </div>
-          </div>
+            </div>
       </div>
   </div>
 </section>
+
+<section class="About-section">
+  <div class="container-fluid " style="background-image: url('uploads/gallery/bb (2).jpg'); background-attachment: fixed; background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; " >
+      <div class="row" style="background-color: rgba(36, 29, 29, 0.48);">
+            <div class="container" id="area_pad" >  
+                  <div class="col-md-12">
+                      <div class="col-md-12 text-center" >
+                        <h1><b>About Us</b></h1>
+                        <center><p class="front-border"></p></center>
+                                                    
+                      </div>                         
+                      <div class="col-md-12  results" id="cont-padding">
+                          <div class="col-md-8">
+                            <p class="font-size" style="color: white;"><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                          </div>
+                          <div class="col-md-4">
+                            <img src="<?php print base_url(); ?>uploads/gallery/bb (1).jpg" width="100%" class="img-rounded">
+                          </div>
+                    </div>
+                        
+                </div>
+            </div>
+      </div>
+  </div>
+</section>
+

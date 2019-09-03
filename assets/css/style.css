@@ -1,8 +1,9 @@
 body { 
 	  background-color:  #f3c599;
-	  /*margin:0; padding:0; font-size:13px;*/ 
-}
-h1 { color:#005180 !important; }
+	  margin:0; padding:0; font-size:13px; 
+
+  }
+h1 { color: #f68d31 !important; }
 .webbody {
 	width: 1170px;
     margin: 0 auto;
@@ -243,7 +244,7 @@ float: left;
 .sosal { font-size:32px; color:#fff;}
 .sosal:hover { color:#D2D9FF;}
 
-a:hover, a:focus { color: green !important; }
+a:hover, a:focus { color: #005180 !important; }
 
 .see_all {
     float: right;
@@ -473,4 +474,23 @@ h2{
 #font_size{
     font-size: 16px;
 }
+#area_pad{
+  padding: 50px;
+}
+.font-size{
+  font-size: 16px;
+}
+.front-border{
+  border-top: 2px solid; 
+  width: 200px;
+  color: #f68d31 !important; 
+  margin-top: 25px;
+}
+.border{
+  border-top: 1px solid; 
+  color: #f68d31 !important; 
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
 
