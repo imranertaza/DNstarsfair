@@ -1,12 +1,15 @@
 <section class="content-section">
     <div class="container-fluid wraper" >
         <div class="row">
-            <div class="container">
+            <div class="container" id="area_pad">
             <?php print $sidebar_left; ?>
         	<?php if (empty($check_user)) { ?>
         	<div class="col-md-9">
-                    <h1>Login</h1>
-                    <hr />
+                    <div class="header">           
+                        <h1><b>Login</b></h1>
+                        <p class="border"></p>
+                    </div>
+                    
                     <?php print $this->session->flashdata('msg'); ?>
                     <div class="row">
                     	<div class="col-md-6">

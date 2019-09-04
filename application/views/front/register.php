@@ -1,11 +1,13 @@
 <section class="content-section">
         <div class="container-fluid wraper" >
             <div class="row">
-                <div class="container">
+                <div class="container" id="area_pad">
                 <?php print $sidebar_left; ?>
                 	<div class="col-md-9">
-                            <h1>Register</h1>
-                            <hr />
+                            <div class="header">
+                                <h1><b>Register</b></h1>
+                                <p class="border"></p>
+                            </div>
                             <div class="row">
                             	<div class="col-md-12">
 
