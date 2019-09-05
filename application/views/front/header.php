@@ -45,21 +45,18 @@ print $this->global_settings->get_each_setting_value($key = 'site_title'); ?></t
 <body>
     <section class="header-section">
         <div class="main_body">
-            <div class="row">
                 <div class="container">                    	
                     <div class="col-md-3">
                       <strong style="margin-top:5px;"><a href="<?php echo base_url(); ?>">Stars Fair BD</a></strong>
                     </div>
                     <div class="col-md-1 col-md-offset-8 text-right">
                       <a href="<?php print base_url().$log_url; ?>"><?php print $log_title; ?></a>
-                    </div>
-                        
+                    </div>                        
                 </div>
-            </div>
         </div>
      <!--finish of the header-->
 
-        <div class="container-fluid" style="background-color: white;">
+        <div class="container-fluid wraper" >
             <div class="row" >
                 <div class="container" style="padding: 10px;">                      
                         <div class="col-md-4">

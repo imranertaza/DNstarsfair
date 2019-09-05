@@ -20,7 +20,7 @@
                             	<table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                         <tr>
-                                            <th width="20">ID</th>
+                                            <th width="20">No</th>
                                             <th width="206">Image</th>
                                             <th width="521">Title</th>
                                             <th width="72">Action</th>
@@ -28,13 +28,14 @@
                                     </thead>
                                     <tbody>
                                         <?php
+                                        $i='';
 										if (is_array($records)) {
 										foreach($records as $rows) {
 										?>
                                         
                                         <tr class="odd gradeX" id="sl_<?php print $rows->sl_id; ?>">
-                                            <td><?php print $rows->sl_id; ?></td>
-                                            <td><?php print $this->functions->view_image($rows->sl_id, 100, 100); ?></td>
+                                            <td><?php print ++$i; ?></td>
+                                            <td><img src="<?php echo base_url(); ?>uploads/gallery/<?php print $rows->image; ?>" width="50%" ></td>
                                             <td><?php print $rows->name; ?></td>
                                             <td class="center">
                                             <?php if ($this->functions->hasPermission('delete_slider') == true) { ?>

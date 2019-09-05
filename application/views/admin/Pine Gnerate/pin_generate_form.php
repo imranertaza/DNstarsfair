@@ -20,7 +20,7 @@
                                     <form method="post" action="<?php echo base_url(); ?>pin_generat/pin_generat_action">
                                         <div class="col-lg-4">
                                         <label>Agent Name <?php echo form_error('user_id') ?></label>
-                                        <input class="form-control" name="user_id" onchange="check_agent(this.value)" id="myInput" required>
+                                        <input class="form-control" name="user_id" onchange="check_agent(this.value)"  required>
                                         <p class="help-block help_text" id="spon_bar">Please put the Agent Name here</p>
                                         </div>
 
@@ -67,7 +67,7 @@
                   //$('#progress_bar').html(msg);
                 if (message==0) {
                     $('#spon_bar').html('<span style="color:red">Invalid Username</span>');
-                    document.getElementById('myInput').value = ''
+                     document.getElementById('myInput').value = ''
                 }else {
                     $('#spon_bar').html('<span style="color:green">Valid Username</span>');
                  }

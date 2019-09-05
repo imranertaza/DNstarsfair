@@ -1,11 +1,7 @@
 <section class="slider-section">
   <div class="container-fluid slider_area">
     <div class="row">
-          
-            <div class="row">
-              <img src="<?php print base_url(); ?>uploads/gallery/banner.jpg" width="100%">
-            </div>
-          
+        <img src="<?php print base_url(); ?>uploads/gallery/banner.jpg" width="100%">
     </div>
 
   </div>

@@ -295,6 +295,28 @@ function get_balance_by_id($user_id) {
 	$balance = empty($query->row()->balance) ? "0" : $query->row()->balance;
 	return $balance;
 }
+// Balance Update
+function update_balance($user_name,$balance){
+	$ci =& get_instance();
+	$ci->load->database();
+
+	$userId = get_userid_by_username($user_name);
+	$userBalance = get_balance_by_id($userId);
+
+	$totalBalance = $userBalance + $balance;
+
+			//update
+			$ci->db->trans_start();
+			$ci->db->query("UPDATE `users` SET `balance`= '$totalBalance' WHERE `ID` ='$userId'");
+			$query = $ci->db->trans_complete();
+
+	if ($query == 1) {
+			return $ci->session->set_flashdata('message', "<div class='alert alert-success' role='alert'>Balance Update Success</div>");
+		}else{
+			return $ci->session->set_flashdata('message', "<div class='alert alert-danger' role='alert'>Sorry! Balance Update Unsuccess</div>");
+		}
+
+}
 
 function get_commission_by_id($user_id) {
 	$ci =& get_instance();

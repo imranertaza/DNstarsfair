@@ -10,13 +10,12 @@ if (empty($page_details->temp)) { ?>
 				<div class="container" id="area_pad">
 					<?php print $sidebar_left; ?>
 					<div class="col-md-9">
-						<div class="header">
-			            	<h1><b><?php print $page_details->page_title; ?></b></h1>
-			            	<p class="border"></p>
-			            </div>
-			        	<div class="content">
-			            	<p><?php print $page_details->page_description; ?></p>
-			        	</div>
+						
+			            <h1><b><?php print $page_details->page_title; ?></b></h1>
+			            <p class="border"></p>			            
+			        	
+			            <p><?php print $page_details->page_description; ?></p>
+			        	
 			    	</div>
 			    </div>
 		    </div>

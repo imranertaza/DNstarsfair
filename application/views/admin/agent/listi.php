@@ -23,10 +23,10 @@
                                     	<form method="post" action="<?php print base_url(); ?>admin_area/member/<?php print $search; ?>/">
                                     	<tr>
                                             <td width="120">
-											<input type="text" name="username" class="form-control" />
+											                         <input type="text" name="username" class="form-control" />
                                             </td>
                                             <td width="120">
-											<input type="text" name="phone" class="form-control" />
+											                         <input type="text" name="phone" class="form-control" />
                                             </td>
                                             <td width="120"><input type="submit" class="btn btn-default btn btn-primary" name="add_attendance" value="Search"></td>
                                         </tr>
@@ -45,9 +45,9 @@
                                     </thead>
                                     <tbody>
                                         <?php
-										if ($records) {
-										foreach($records as $rows) {
-										?>
+										                          if ($records) {
+										                          foreach($records as $rows) {
+										                      ?>
                                         
                                         <tr class="odd gradeX" id="std_<?php print $rows->ID; ?>">
                                             <td>

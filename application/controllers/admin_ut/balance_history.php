@@ -18,14 +18,6 @@ class balance_history extends CI_Controller {
         }
     }
 
-//	public function index(){
-//	    redirect("member/general/dashboard/");
-//    }
-
-
-
-
-
     public function index()
     {
 
@@ -59,18 +51,28 @@ class balance_history extends CI_Controller {
 
 
     public function balance_update_action(){
-        $username = $this->input->post('username');
+        $user_name = $this->input->post('username');
         $balance = $this->input->post('balance');
 
+        //Insert
+            $sendarID = $this->session->userdata('user_id');
+            $receiverId = get_userid_by_username($user_name);
 
+            $data = array(
+                'sender_id' => $sendarID, 
+                'receiver_id' => $receiverId,
+                'purpose' => 'Get Balance Frome Admin',
+                'amount' => $balance,
+                
+            );
+            $insert = $this->db->insert('history_transection', $data);
         //Update Balance
-        $statusData = array(
-            'OP_game_balance' => $balance
-        );
-        $this->db->where('username', $username);
-        $this->db->update('users', $statusData);
+            update_balance($user_name,$balance);
+            redirect("admin_ut/balance_history/");
 
-        redirect("admin_ut/balance_history/");
+        
+
+
     }
 
 

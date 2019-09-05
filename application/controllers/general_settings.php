@@ -70,7 +70,7 @@ class general_settings extends CI_Controller {
 			$data['num_links'] = 5;
 			$get_segment_uri = $this->uri->segment(3);
 			$data['segment'] = empty($get_segment_uri) ? 0 : $get_segment_uri;
-			$q_slide = $this->db->query("SELECT * FROM `slider_gallery` WHERE `type` = 'slider' ORDER BY `sl_id` DESC LIMIT ".$data['segment'].", ".$data['per_page']);
+			$q_slide = $this->db->query("SELECT * FROM `slider_gallery` WHERE `type` = 'gallery' ORDER BY `sl_id` DESC");
 			if ($q_slide->num_rows() > 0) {
 				$data['records'] = $q_slide->result();
 			}else {
