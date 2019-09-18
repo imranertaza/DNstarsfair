@@ -91,9 +91,20 @@ function get_bank_name_by_id($bank_id) {
 	$ci->load->database();
 	$bank = $ci->db->query("SELECT `b_name` FROM `bank` WHERE `bnk_id` = '".$bank_id."'");
 	$bank_array = $bank->row();
-	$bank_name = $bank_array->b_name;
+	$bank_name = empty($bank_array->b_name) ? "Please Select" : $bank_array->b_name;
+
 	return $bank_name;
 }
+
+// function get_religion_by_id($religion_id ) {
+// 	$ci =& get_instance();
+// 	$ci->load->database();
+// 	$query = $ci->db->query("SELECT `value` FROM `global_settings` WHERE `title` = 'religion' AND `value` = `".$religion_id."`");
+// 	$religion_array = $religion->row();
+// 	$religion_name = empty($religion_array->b_name) ? "Please Select" : $religion_array->b_name;
+
+// 	return $religion_name;
+// }
 
 function group_name_by_id($id) {
 	$ci =& get_instance();

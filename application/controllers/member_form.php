@@ -277,19 +277,7 @@ class member_form extends CI_Controller {
                 if (($position == 1) || ($position == 2)) {
 
 
-                    //Image upload into temp file
-                    $photo_name = 'profile_' . time() . '.jpg';
-                    $config['upload_path'] = 'uploads/temp/';
-                    $config['allowed_types'] = 'gif|jpg|png';
-                    $config['file_name'] = $photo_name;
-                    $config['max_size'] = '100';
-                    $config['image_width'] = '1024';
-                    $config['image_height'] = '768';
-                    $config['is_image'] = 1;
-                    $config['max_size'] = 0;
-                    $this->session->set_userdata("config", $config);
-                    $this->load->library('upload', $config);
-                    $this->upload->do_upload('photo');
+                   
 
 	
                     // Insert into user
@@ -297,31 +285,14 @@ class member_form extends CI_Controller {
                         'email' => $_POST['email'],
                         'username' => $_POST['uname'],
                         'password' => md5($_POST['pass']),
-                        'f_name' => $_POST['fname'],
-                        'l_name' => "no_need",
-                        'address1' =>$_POST['addr'],
-                        'address2' => $_POST['per_addr'],
-                        'phn_no' => $_POST['phone'],
-                        'nid' => $_POST['nid'],
-                        'father' => $_POST['father'],
-                        'mother' => $_POST['mother'],
-                        'religion' => $_POST['religion'],
-                        'sex' => $_POST['sex'],
-                        'blood' => $_POST['b_group'],
+                        'f_name' => $_POST['fname'],                        
                         'division' => $_POST['division'],	
                         'district' => $_POST['district'],
                         'upozila' => $_POST['upozila'],
                         'union' => $_POST['union'],
-                        'post' => $_POST['post_code'],
-                        'nominee' => $_POST['non'],
-                        'relationship' => $_POST['relation'],
-                        'nom_dob' => $_POST['nodob'],
-                        'bank_name' => $_POST['banks'],
-                        'account_no' => $_POST['account_no'],
                         'balance' => '0',
                         'point' => '0',
-                        'status' => 'Inactive',                        
-                        'photo' => "no_need.jpg"
+                        'status' => 'Inactive'
                     );                    
                     $this->db->insert('users', $data_personal);
                     $userID = $this->db->insert_id();

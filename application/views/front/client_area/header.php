@@ -45,78 +45,44 @@ print $this->global_settings->get_each_setting_value($key = 'site_title'); ?></t
 
 </head>
 
-
-<!--start the header--->
-
 <body>
 
-<!-- <div class="main_body">-->
-<!--<div class="main_body">
-<div class="container">
-    <div class="row">
-        	<div class="row">
-                <div class="col-md-3">
-                    <strong style="margin-top:5px;"><a href="<?php echo base_url(); ?>">Libaral International Limited</a></strong>
+<section class="header-section">
+        <div class="main_body">
+                <div class="container">                     
+                    <div class="col-md-3">
+                      <strong style="margin-top:5px;"><a href="<?php echo base_url(); ?>">Stars Fair BD</a></strong>
+                    </div>
+                    <div class="col-md-1 col-md-offset-8 text-right">
+                      <a href="<?php print base_url().$log_url; ?>"><?php print $log_title; ?></a>
+                    </div>                        
                 </div>
-                <div class="col-md-1 col-md-offset-8 text-right">
-                    <a href="<?php print base_url().$log_url; ?>"><?php print $log_title; ?></a>
-                </div>
-            </div>
-    </div>
-</div>
-</div>-->
- <!--finish of the header--> 
-
-<div class="container-fluid">
-    <div class="header row">
-        <img src="<?php print base_url(); ?>assets/images/top_banner.jpg" width="100%" />
-    </div>
-</div>
-
-<div class="menul">
-<div class="container">    
-      <div class="row">
-      <div class="col-md-12">
-		<div class="row">
-      	<div class="menu">
-        	<ul>
-            	<li><a href="<?php echo base_url(); ?>">Home</a></li>
-<!--                <li><a href="--><?php //echo base_url(); ?><!--product/">Products</a></li>-->
-                <li><a href="<?php print base_url(); ?>details/page/marketing-plan/">Marketing Plan</a></li>
-                <li><a href="<?php print base_url(); ?>details/page/notice/">Notice</a></li>
-                <li><a href="<?php print base_url(); ?>gallery/">Event Gallery</a></li>
-                <li><a href="<?php print base_url(); ?>details/page/about-us/">About Us</a></li>
-                <li><a href="<?php print base_url(); ?>details/page/contact-us/">Contact Us</a></li>
-                <li><a href="<?php print base_url(); ?>member/general/dashboard/">My Area</a></li>
-                <li><a href="<?php print base_url().$log_url; ?>"><?php print $log_title; ?></a></li>
-                <br clear="all" />
-            </ul>
-        </div><!--end of menu-->
-		</div>
-      </div>
-      </div>
-</div> 
-</div>
-
-<div class="container">
-	<div class="row">
-		<div class="col-md-12 scroll">
-			<marquee direction="left" onmouseover="this.stop();" onmouseout="this.start();" behavior="scroll" scrollamount="1" scrolldelay="10" truespeed="1">
-                <?php 
-				if (is_array($list_notice)) {
-				foreach ($list_notice as $row) { ?>
-                <i class="fa fa-check-circle" aria-hidden="true"></i> <a href="<?php print base_url(); ?>downloads/details/<?php print $row->dwn_id; ?>.html"><?php print $row->title; ?></a> | 
-                <?php } }else { print $list_notice; } ?>
-            </marquee>
         </div>
-	</div>
-</div>
+     <!--finish of the header-->
 
-<div class="container slider_area">
-  <?php //include('slider.php');
-  print $slider; ?>
-</div>
+        <div class="container-fluid wraper" >
+            <div class="row" >
+                <div class="container" style="padding: 10px;">                      
+                        <div class="col-md-4">
+                            <a href="<?php echo base_url(); ?>"><img src="<?php print base_url(); ?>assets/images/logos.png" width="250" /></a>
+                        </div>
+                        <div class="col-md-8 " id="navigation">
+                            <div class="topnav">
+                              <a href="<?php echo base_url(); ?>">Home</a>
+                              <a href="<?php print base_url(); ?>details/page/notice/">Notice</a>
+                              <a href="<?php print base_url(); ?>gallery/">Event Gallery</a>
+                              <a href="<?php print base_url(); ?>details/page/about-us/">About Us</a>
+                              <a href="<?php print base_url(); ?>details/page/contact-us/">Contact Us</a>
+                              <a href="<?php print base_url(); ?>member_form/register/">Register</a>
+                              <a href="<?php print base_url().$log_url; ?>"><?php print $log_title; ?></a>
+                            </div>
+                        </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </section>
 
 
-<div class="container wraper">
-	<div class="row">
+

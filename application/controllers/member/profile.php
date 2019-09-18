@@ -150,6 +150,129 @@ class profile extends CI_Controller {
 
     }
 
+    public function profile_update(){
+        $this->load->helper('student_functions_helper');
+
+        $data['dwn_path'] = base_url() . "uploads/downloads/";
+        $notice_list = $this->db->query("SELECT * FROM `downloads` WHERE `cat_id` IN (5) ORDER BY `dwn_id` DESC LIMIT 0, 5");
+        if ($notice_list->num_rows() > 0) {
+            $data['list_notice'] = $notice_list->result();
+        } else {
+            $data['list_notice'] = 'No notice published';
+        }
+
+        $data['footer_widget_title'] = $this->functions->show_widget('title', 8);
+        $data['footer_widget_description'] = $this->functions->show_widget('description', 8);
+
+        $data['footer_widget2_title'] = $this->functions->show_widget('title', 9);
+        $data['footer_widget2_description'] = $this->functions->show_widget('description', 9);
+
+        $data['page_title'] = 'home';
+        $data['slider'] = '';
+
+        $id = $this->session->userdata('user_id');
+
+        if ($this->m_logged_in == true) {
+            $data['log_url'] = 'member_form/logout_member.html';
+            $data['log_title'] = 'Logout';
+            $data['check_user'] = $this->session->userdata('m_logged_in');
+            $data['ID'] = $this->session->userdata('user_id');
+            $data['u_name'] = get_field_by_id_from_table('users', 'username', 'ID', $id);
+            $data['f_name'] = get_field_by_id_from_table('users', 'f_name', 'ID', $id);
+            $data['l_name'] = get_field_by_id_from_table('users', 'l_name', 'ID', $id);
+            $data['balance'] = get_field_by_id_from_table('users', 'balance', 'ID', $id);
+            $data['point'] = get_field_by_id_from_table('users', 'point', 'ID', $id);
+            $data['role'] = get_field_by_id_from_table('user_roles', 'roleID', 'userID', $id);          
+            $data['sidebar_left'] = $this->load->view('front/client_area/sidebar-left', $data, true);
+            $this->load->view('front/client_area/header', $data);
+
+            $query = $this->db->get_where('users', array('ID' => $id));
+            $data['row'] = $query->row();
+            $data['user'] = $query->result();
+
+
+
+            $this->load->view('front/client_area/member/update', $data);
+            $this->load->view('front/client_area/footer', $data);
+        } else {
+            redirect("member_form/login/");
+        }
+    }
+
+    public function profile_update_action(){
+
+            $this->rules();
+
+            if ($this->form_validation->run() == TRUE) {
+
+            $userId = $this->session->userdata('user_id');
+
+            $data = array(
+                        'f_name' =>$this->input->post('fname',TRUE), 
+                        'l_name' =>$this->input->post('lname',TRUE), 
+                        'address1' =>$this->input->post('addr',TRUE), 
+                        'address2' =>$this->input->post('per_addr',TRUE), 
+                        'phn_no' =>$this->input->post('phone',TRUE), 
+                        'nid' =>$this->input->post('nid',TRUE), 
+                        'father' =>$this->input->post('father',TRUE), 
+                        'mother' =>$this->input->post('mother',TRUE) 
+            );
+
+            $this->db->where('ID', $userId);
+            $this->db->update('users', $data);
+
+            $this->session->set_flashdata("msg", "<div class='alert alert-success'>Successfully Registered. Please Login</div>");
+                redirect("member/profile/profile_update/");
+        }else{
+                $this->session->set_flashdata("msg", validation_errors('<div class="alert alert-warning">', '</div>'));
+                redirect("member/profile/profile_update/");
+            }  
+    }
+
+    public function personal_update_action(){
+
+       
+
+            $userId = $this->session->userdata('user_id');
+
+            $data = array(
+                        'blood' =>$this->input->post('b_group',TRUE), 
+                        'division' =>$this->input->post('division',TRUE), 
+                        'district' =>$this->input->post('district',TRUE), 
+                        'nominee' =>$this->input->post('non',TRUE), 
+                        'relationship' =>$this->input->post('relation',TRUE), 
+                        'nominee' =>$this->input->post('nodob',TRUE), 
+                        'sex' =>$this->input->post('sex',TRUE), 
+                        'bank_name' =>$this->input->post('banks',TRUE), 
+                        'account_no' =>$this->input->post('account_no',TRUE),
+                        'upozila' =>$this->input->post('upozila',TRUE),
+                        'union' =>$this->input->post('union',TRUE),
+                        'post' =>$this->input->post('post_code',TRUE),
+                        'religion' =>$this->input->post('religion',TRUE)
+            );
+            
+
+            $this->db->where('ID', $userId);
+            $this->db->update('users', $data);
+            print $this->db->last_query();
+            $this->session->set_flashdata("msg", "<div class='alert alert-success'>Successfully Updated </div>");
+                redirect("member/profile/profile_update/");
+        
+    }
+
+
+    private function rules() {
+        //$this->form_validation->set_rules('fname', 'First Name', 'required|xss_clean|encode_php_tags');
+        //$this->form_validation->set_rules('phone', 'Phone', 'trim|regex_match[/^[9]{11}$/]');
+        // $this->form_validation->set_rules('spon_id', 'Sponsor ID', 'required|xss_clean|encode_php_tags');
+        // $this->form_validation->set_rules('p_id', 'Placement ID', 'required|xss_clean|encode_php_tags');
+        // $this->form_validation->set_rules('position', 'Hand/Position', 'required|xss_clean|encode_php_tags|integer|min_length[1]|max_length[1]|is_natural_no_zero');
+        // $this->form_validation->set_rules('uname', 'Username', 'required|min_length[5]|max_length[20]|is_unique[users.username]');
+        // $this->form_validation->set_rules('pass', 'Password', 'required|matches[con_pass]|min_length[6]|max_length[20]');
+        // $this->form_validation->set_rules('con_pass', 'Password Confirmation', 'required||min_length[6]|max_length[20]');
+        // $this->form_validation->set_rules('email', 'Email', 'required|valid_email');
+    }
+
 
     public function __passChangeRules(){
         $this->form_validation->set_rules('current_pass', 'Current Password', 'trim|required');

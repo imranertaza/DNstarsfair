@@ -31,7 +31,6 @@
 				print "Username: ".$u_name."<br />";
 				print "First Name: ".$f_name."<br />";
 				print "Last Name: ".$l_name."<br />";
-				print "Game Balance: ".$gameBalance." BDT <br />";
 				print "Balance: ".number_format($balance, 2)."<br />";
 				print "Commission: ".number_format(get_field_by_id_from_table('users', 'commission', 'ID', $ID), 2)."<br />";
 			?>
@@ -46,7 +45,7 @@
             <ul>
 				<?php if (($check_user == true) && ($role == 4)) { ?>
             	<li><a href="<?php print base_url(); ?>agent/dashboard/">Dashboard</a></li>
-                <li><a href="<?php print base_url(); ?>profile/">My Profile</a></li>
+                <li><a href="<?php print base_url(); ?>agent/profile/">My Profile</a></li>
                 <li><a href="<?php print base_url(); ?>agent/agent_pin/">Pin Generate</a></li>
                 <li><a href="#">Product Inventory</a></li>
                 <li><a href="#">Purchased Products</a></li>

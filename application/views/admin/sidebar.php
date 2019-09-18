@@ -180,35 +180,35 @@
                         
                         
                         
-<!--                        <li>-->
-<!--                            <a href="#"><i class="fa fa-puzzle-piece fa-fw"></i> Location<span class="fa arrow"></span></a>-->
-<!--                            <ul class="nav nav-second-level">-->
-<!--                                <li>-->
-<!--                                    <a href="--><?php //echo base_url(); ?><!--location/add_division.html"><i class="fa fa-plus-square fa-fw"></i> Add Division</a>-->
-<!--                                </li>-->
-<!--                                <li>-->
-<!--                                    <a href="--><?php //echo base_url(); ?><!--location/list_division.html"><i class="fa fa-list fa-fw"></i> List Division </a>-->
-<!--                                </li>-->
-<!--                                <li>-->
-<!--                                    <a href="--><?php //echo base_url(); ?><!--location/add_district.html"><i class="fa fa-plus-square fa-fw"></i> Add District</a>-->
-<!--                                </li>-->
-<!--                                <li>-->
-<!--                                    <a href="--><?php //echo base_url(); ?><!--location/district_list.html"><i class="fa fa-list fa-fw"></i> List District</a>-->
-<!--                                </li>-->
-<!--                                <li>-->
-<!--                                    <a href="--><?php //echo base_url(); ?><!--location/add_thana.html"><i class="fa fa-plus-square fa-fw"></i> Add Thana/Upazila</a>-->
-<!--                                </li>-->
-<!--                                <li>-->
-<!--                                    <a href="--><?php //echo base_url(); ?><!--location/thana_list.html"><i class="fa fa-list fa-fw"></i> List Thana/Upazila</a>-->
-<!--                                </li>-->
-<!--                                <li>-->
-<!--                                    <a href="--><?php //echo base_url(); ?><!--location/add_word.html"><i class="fa fa-plus-square fa-fw"></i> Add Union/Ward</a>-->
-<!--                                </li>-->
-<!--                                <li>-->
-<!--                                    <a href="--><?php //echo base_url(); ?><!--location/word_list.html"><i class="fa fa-list fa-fw"></i> List Union/Ward</a>-->
-<!--                                </li>-->
-<!--                            </ul>-->
-<!--                        </li>-->
+                        <li>
+                            <a href="#"><i class="fa fa-puzzle-piece fa-fw"></i> Location<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="<?php echo base_url(); ?>location/add_division.html"><i class="fa fa-plus-square fa-fw"></i> Add Division</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo base_url(); ?>location/list_division.html"><i class="fa fa-list fa-fw"></i> List Division </a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo base_url(); ?>location/add_district.html"><i class="fa fa-plus-square fa-fw"></i> Add District</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo base_url(); ?>location/district_list.html"><i class="fa fa-list fa-fw"></i> List District</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo base_url(); ?>location/add_thana.html"><i class="fa fa-plus-square fa-fw"></i> Add Thana/Upazila</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo base_url(); ?>location/thana_list.html"><i class="fa fa-list fa-fw"></i> List Thana/Upazila</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo base_url(); ?>location/add_word.html"><i class="fa fa-plus-square fa-fw"></i> Add Union/Ward</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo base_url(); ?>location/word_list.html"><i class="fa fa-list fa-fw"></i> List Union/Ward</a>
+                                </li>
+                            </ul>
+                        </li>
                         
                         
                         
