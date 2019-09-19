@@ -276,6 +276,19 @@ function get_location_type($type) {
 	return $output;
 }
 
+function get_location_Id($id) {
+	$ci =& get_instance();
+	$ci->load->database();
+
+	$query = $ci->db->query("SELECT `name` FROM `location` WHERE `lo_id` = '$id'");
+	
+	$location_name = $query->row();
+
+	$location = empty($location_name->name) ? "Please Select" : $location_name->name;
+			
+	return $location;
+}
+
 function bank_list() {
 	$ci =& get_instance();
 	$ci->load->database();

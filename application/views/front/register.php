@@ -1,145 +1,83 @@
-<section class="content-section">
-        <div class="container-fluid wraper" >
-            <div class="row">
-                <div class="container" id="area_pad">
-                <?php print $sidebar_left; ?>
-                	<div class="col-md-9">
-                            <div class="header">
-                                <h1><b>Register</b></h1>
-                                <p class="border"></p>
-                            </div>
-                            <div class="row">
-                            	<div class="col-md-12">
+<section class="content-section" >
+        <div class="container-fluid" >
+            <div class="row"  >
+                    <div class="werp col-md-12" style="background-image: url('<?php print base_url(); ?>uploads/gallery/gg.jpg');">
+                            <div class="container" style="padding: 100px;">
 
-                                    <?php print $this->session->flashdata('msg'); ?>
-
-                                    <div class="panel panel-default">
-                                        <div class="panel-body">
-                                        <div id="success_report"><?php /*if ($msg) { print $msg; } if ($success == true) { ?>
-                                        <meta http-equiv="refresh" content="1;url=<?php print base_url(); ?>store/" />
-                                        <?php }*/?></div>
-                                            <div class="row">
-                                                <form role="form" id="add_user" method="post" action="<?php print base_url(); ?>member/profile/profile_update_action" enctype="multipart/form-data">
-                                                <div class="col-lg-4">
-                                                    
-                                                        <div class="form-group">
-                                                            <label>Full Name <sup class="required">*</sup></label>
-                                                            <?php echo form_error('fname', '<p class="error">', '</p>'); ?>
-                                                            <input class="form-control" name="fname" type="text" required>
-                                                            <p class="help-block">Please put your first name</p>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <label>User Name <sup class="required">*</sup></label>
-                                                            <?php echo form_error('uname', '<p class="error">', '</p>'); ?>
-                                                            <input class="form-control" name="uname" type="text" onchange="check_valid_username(this.value)" required>
-                                                            <p class="help-block" id="user_valid">Please put username</p>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label>Password <sup class="required">*</sup></label>
-                                                            <?php echo form_error('pass', '<p class="error">', '</p>'); ?>
-                                                            <input class="form-control" name="pass" type="password" id="txtNewPassword" required>
-                                                            <p class="help-block">Please put password</p>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label>Confirm Password <sup class="required">*</sup></label>
-                                                            <?php echo form_error('con_pass', '<p class="error">', '</p>'); ?>
-                                                            <input class="form-control" name="con_pass" type="password" id="txtConfirmPassword" onChange="checkPasswordMatch();" required>
-                                                            <p class="help-block" id="divCheckPasswordMatch">Please put confirm password</p>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label>Email <sup class="required">*</sup></label>
-                                                            <?php echo form_error('email', '<p class="error">', '</p>'); ?>
-                                                            <input class="form-control" name="email" type="text" id="email" onchange="validate()" required>
-                                                            <p class="help-block" id="result">Please put your user email (it will be used for login)</p>
-                                                        </div>
-
-                                                        
-                                                        
-                                                </div>
-                                                <div class="col-lg-4">
-                                                			
-                                                		<div class="form-group">
-                                                            <label>Division <sup class="required">*</sup></label>
-                                                            <?php echo form_error('division', '<p class="error">', '</p>'); ?>
-                                                            <select name="division" class="form-control" onchange="get_district(this.value);" required>
-                                                            	<option value="0">Choose Division...</option>
-                                                                <?php print get_location(0); ?>
-                                                            </select>
-                                                            <p class="help-block">Please select division</p>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label>District <sup class="required">*</sup></label>
-                                                            <?php echo form_error('district', '<p class="error">', '</p>'); ?>
-                                                            <select name="district" class="form-control" id="district" onchange="get_thana(this.value);" required>
-                                                            	<option value="0">Select District...</option>
-                                                            </select>
-                                                            <p class="help-block">Please select district</p>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label>Upozila <sup class="required">*</sup></label>
-                                                            <?php echo form_error('upozila', '<p class="error">', '</p>'); ?>
-                                                            <select name="upozila" class="form-control" id="thana" onchange="get_ward(this.value);" required>
-                                                            	<option value="0">Select Thana/Upazila...</option>
-                                                            </select>
-                                                            <p class="help-block">Please select upozila </p>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label>Union/Ward <sup class="required">*</sup></label>
-                                                            <?php echo form_error('union', '<p class="error">', '</p>'); ?>
-                                                            <select name="union" class="form-control" id="ward" required>
-                                                            	<option value="0">Select Union/Ward...</option>
-                                                            </select>
-                                                            <p class="help-block">Please select union </p>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <label>Pin</label>
-                                                            <?php echo form_error('pin', '<p class="error">', '</p>'); ?>
-                                                            <input class="form-control" id="myInput" name="pin" type="text"  onchange="pin_check(this.value)" required>
-                                                            
-                                                            <p class="help-block" id="pin_bar">Please put your Pin</p>
-                                                        </div>
-                                                			
-                                                </div>
-                                                <div class="col-lg-4">
-                                                		<div class="form-group">
-                                                            <label>Sponsor ID</label>
-                                                            <?php echo form_error('spon_id', '<p class="error">', '</p>'); ?>
-                                                            <input class="form-control" name="spon_id" type="text"  onchange="check_spon(this.value)" required>
-                                                            <p class="help-block" id="spon_bar">Please put your phone</p>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <label>Placement ID</label>
-                                                            <?php echo form_error('p_id', '<p class="error">', '</p>'); ?>
-                                                            <input class="form-control" name="p_id" type="text"  onchange="parent_check(this.value)" required>
-                                                            
-                                                            <p class="help-block" id="parent_check">Please put your Placement ID</p>
-                                                        </div>
-
-                                                        <div class="form-group">
-                                                            <label>Choose hand</label>
-                                                            <?php echo form_error('position', '<p class="error">', '</p>'); ?>
-                                                            <select class="form-control" name="position" id="hand" required>
-                                                            </select>
-                                                            <p class="help-block">Please choose a side to add</p>
-                                                        </div>		
-                                                        
-                                                        <input type="submit" class="btn btn-default btn btn-primary" value="Register" name="add_user" />
-                                                </div>
-                                                </form>
-                                                <!-- /.col-lg-6 (nested) -->
-                                            </div>
-                                            <!-- /.row (nested) -->
+                            <div class="header inner "  style=" background: url('<?php print base_url(); ?>uploads/gallery/banner6.jpg'); background-repeat: no-repeat; background-size: cover; ">
+                                <form id="regform" role="form" id="add_user" method="post" action="<?php print base_url(); ?>member_form/register_action">
+                                    <h3>Registration Form</h3>
+                                    <p><?php print $this->session->flashdata('msg'); ?></p>
+                                    <div class="form-register">
+                                        <div class="form-wrapper">
+                                            <label for="">Full Name</label>
+                                            <?php echo form_error('fname', '<p class="error">', '</p>'); ?>
+                                            <input name="fname" type="text" class=" reg ">
                                         </div>
-                                        <!-- /.panel-body -->
+                                        <div class="form-wrapper">
+                                            <label for="">User Name</label>
+                                            <?php echo form_error('uname', '<p class="error">', '</p>'); ?>
+                                            <input name="uname" type="text" onchange="check_valid_username(this.value)" required class=" reg">
+                                            <b id="user_valid"></b>
+                                        </div>
                                     </div>
-                                    
-                                </div>
+                                    <div class="form-wrapper">
+                                        <label for="">Email</label>
+                                        <input name="email" type="text" id="email" onchange="validate()" class=" reg">
+                                        <b id="result"></b>
+                                    </div>
+                                    <div class="form-wrapper">
+                                        <label for="">Password</label>
+                                        <?php echo form_error('pass', '<p class="error">', '</p>'); ?>
+                                        <input name="pass" type="password" id="txtNewPassword" required class=" reg">
+                                        <b class="help-block"></b>
+                                    </div>
+                                    <div class="form-wrapper">
+                                        <label for="">Confirm Password</label>
+                                        <?php echo form_error('con_pass', '<p class="error">', '</p>'); ?>
+                                        <input name="con_pass" type="password" id="txtConfirmPassword" onChange="checkPasswordMatch();" required class=" reg"><b id="divCheckPasswordMatch"></b>
+                                    </div>
+
+                                    <div class="form-register">
+                                        <div class="form-wrapper">
+                                            <label for="">Pin</label>
+                                            <input id="myInput" name="pin" type="text"  onchange="pin_check(this.value)" required class=" reg"><b id="pin_bar"></b>
+                                        </div>
+                                        <div class="form-wrapper">
+                                            <label for="">Sponsor ID</label>
+                                            <?php echo form_error('spon_id', '<p class="error">', '</p>'); ?>
+                                            <input name="spon_id" type="text"  onchange="check_spon(this.value)" required class=" reg">
+                                            <b id="spon_bar"></b>
+                                        </div>
+                                    </div>
+                                    <div class="form-register">
+                                        <div class="form-wrapper">
+                                            <label for="">Placement ID</label>
+                                            <input name="p_id" type="text"  onchange="parent_check(this.value)" required class=" reg"><b id="parent_check"></b>
+                                        </div>
+                                        <div class="form-wrapper" >
+                                            <label for="">Choose hand</label>
+                                            <?php echo form_error('reg', '<p class="error">', '</p>'); ?>
+                                            <select class="reg" name="position" id="hand" style="background-color:#3e6278;" required>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> I caccept the Terms of Use & Privacy Policy.
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <button type="submit" name="add_user">Register Now</button>
+                                </form>
                             </div>
+
+
                     </div>
-                </div>
+
+
+            </div>
         </div>
     </div>
 </section>
@@ -293,7 +231,7 @@ function parent_check(uname){
 						 dataType: "text",
 						 data: {username: uname},
 						 beforeSend: function(){
-							   $('#hand').css( 'color','#238A09');
+							   $('#hand').css( 'color','#ffff');
 							   $('#hand').html('Progressing...');
 						 },
 						 success: function(msg){

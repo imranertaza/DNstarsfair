@@ -276,20 +276,12 @@ class member_form extends CI_Controller {
                 $position = $this->input->post('position');
                 if (($position == 1) || ($position == 2)) {
 
-
-                   
-
-	
                     // Insert into user
                     $data_personal = array(
                         'email' => $_POST['email'],
                         'username' => $_POST['uname'],
                         'password' => md5($_POST['pass']),
-                        'f_name' => $_POST['fname'],                        
-                        'division' => $_POST['division'],	
-                        'district' => $_POST['district'],
-                        'upozila' => $_POST['upozila'],
-                        'union' => $_POST['union'],
+                        'f_name' => $_POST['fname'],
                         'balance' => '0',
                         'point' => '0',
                         'status' => 'Inactive'

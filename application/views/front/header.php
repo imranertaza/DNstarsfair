@@ -39,6 +39,7 @@ print $this->global_settings->get_each_setting_value($key = 'site_title'); ?></t
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/bjqs.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/tree.css" />
 <script src="<?php echo base_url(); ?>assets/js/bjqs-1.3.js" type="text/javascript"></script>
+
 <!-- end of slider -->
 </head>
 

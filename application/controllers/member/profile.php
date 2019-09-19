@@ -254,10 +254,58 @@ class profile extends CI_Controller {
 
             $this->db->where('ID', $userId);
             $this->db->update('users', $data);
-            print $this->db->last_query();
             $this->session->set_flashdata("msg", "<div class='alert alert-success'>Successfully Updated </div>");
                 redirect("member/profile/profile_update/");
         
+    }
+
+    public function account_update_action(){
+
+        $userId = $this->session->userdata('user_id'); 
+
+            
+        $data = array(
+            'username' => $this->input->post('uname', TRUE),
+            'email' => $this->input->post('email', TRUE),
+        );
+        if ($this->input->post('pass', TRUE)) {
+            $data['password'] = md5($this->input->post('pass', TRUE));
+        }
+
+
+            $this->db->where('ID', $userId);
+            $this->db->update('users', $data);
+            $this->session->set_flashdata("msg", "<div class='alert alert-success'>Successfully Updated </div>");
+            redirect("member/profile/profile_update/");
+
+            
+
+
+    }
+
+    public function photo_update_action(){
+
+                    $userId = $this->session->userdata('user_id');
+                     //Image upload into temp file
+                    $photo_name = 'profile_' . time() . '.jpg';
+                    $config['upload_path'] = 'uploads/temp/';
+                    $config['allowed_types'] = 'gif|jpg|png';
+                    $config['file_name'] = $photo_name;
+                    $config['max_size'] = '100';
+                    $config['image_width'] = '1024';
+                    $config['image_height'] = '768';
+                    $config['is_image'] = 1;
+                    $config['max_size'] = 0;
+                    $this->session->set_userdata("config", $config);
+                    $this->load->library('upload', $config);
+                    $this->upload->do_upload('photo');
+
+                        $data = array('photo' =>$photo_name);
+
+                    $this->db->where('ID', $userId);
+                    $this->db->update('users', $data);
+                    $this->session->set_flashdata("msg", "<div class='alert alert-success'>Successfully Updated </div>");
+                    redirect("member/profile/profile_update/");
     }
 
 
