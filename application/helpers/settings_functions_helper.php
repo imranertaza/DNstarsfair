@@ -402,8 +402,9 @@ function get_username_by_id($id) {
 	$ci =& get_instance();
 	$ci->load->database();
 	$query = $ci->db->query("SELECT `username` FROM `users` WHERE `ID` = '$id'")->row();
-	//var_dump($query);
-	return $query->username;
+	$query->username;
+	$data = empty($query->username) ? 'No Data' : $query->username;
+	return $data;
 }
 
 function get_email_by_id($id) {

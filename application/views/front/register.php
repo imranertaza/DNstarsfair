@@ -2,9 +2,9 @@
         <div class="container-fluid" >
             <div class="row"  >
                     <div class="werp col-md-12" style="background-image: url('<?php print base_url(); ?>uploads/gallery/gg.jpg');">
-                            <div class="container" style="padding: 100px;">
-
-                            <div class="header inner "  style=" background: url('<?php print base_url(); ?>uploads/gallery/banner6.jpg'); background-repeat: no-repeat; background-size: cover; ">
+                            <div class="container" style="padding: 80px;">
+                            <div class="col-md-3"></div>
+                            <div class="header inner col-md-12"  style=" background: url('<?php print base_url(); ?>uploads/gallery/banner6.jpg'); background-repeat: no-repeat; background-size: cover; ">
                                 <form id="regform" role="form" id="add_user" method="post" action="<?php print base_url(); ?>member_form/register_action">
                                     <h3>Registration Form</h3>
                                     <p><?php print $this->session->flashdata('msg'); ?></p>
@@ -72,7 +72,7 @@
                                     <button type="submit" name="add_user">Register Now</button>
                                 </form>
                             </div>
-
+                            <div class="col-md-1"></div>
 
                     </div>
 
