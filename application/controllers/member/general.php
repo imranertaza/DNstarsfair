@@ -101,6 +101,7 @@ class general extends CI_Controller {
             $data['f_name'] = get_field_by_id_from_table('users', 'f_name', 'ID', $data['ID']);
             $data['l_name'] = get_field_by_id_from_table('users', 'l_name', 'ID', $data['ID']);
             $data['balance'] = get_field_by_id_from_table('users', 'balance', 'ID', $data['ID']);
+            $data['photo'] = get_field_by_id_from_table('users', 'photo', 'ID', $data['ID']);
             $data['point'] = get_field_by_id_from_table('users', 'point', 'ID', $data['ID']);
             $data['lpoint'] = get_field_by_id_from_table('users', 'lpoint', 'ID', $data['ID']);
             $data['rpoint'] = get_field_by_id_from_table('users', 'rpoint', 'ID', $data['ID']);
@@ -119,6 +120,7 @@ class general extends CI_Controller {
             $data['min_matching_com'] = get_field_by_id_from_table("global_settings", "value", "title", "min_matching_point");
 
             $data['sidebar_left'] = $this->load->view('front/client_area/sidebar-left', $data, true);
+
             $this->load->view('front/client_area/header', $data);
             $this->load->view('front/client_area/member/tree', $data);
             $this->load->view('front/client_area/footer', $data);

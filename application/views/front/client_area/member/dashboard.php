@@ -7,7 +7,10 @@
           <div class="col-md-9">
             <div class="right_contant dashboard_right">
               <div class="top_right_content">
-                <h1> Dashboard Statement </h1>
+                
+                  <h1> Dashboard Statement </h1>
+                
+                
                 <hr />
                   <?php if ($row->status == "Inactive") { ?>
                       <div class="alert alert-warning" role="alert">

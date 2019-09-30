@@ -481,11 +481,14 @@ function view_user_image($user_id, $w, $h) {
     if(!empty($user_info)) {
         $style = ($user_info[0]->status == "Inactive") ? 'style="border: 2px solid red;"' : "";
     }
-    if (!empty($user_info->photo)) {
-        return '<div class="pre_image"><img '.$style.' src="'.base_url().'assets/timthumb.php?src='.base_url().'uploads/user_image/'.$user_info['photo'].'&amp;w='.$w.'&amp;h='.$h.'&amp;zc=1" class="profile_img level" /></div>';
+    
+    if (!empty($user_info[0]->photo)) {
+        return '<img '.$style.' src="'.base_url().'assets/timthumb.php?src='.base_url().'uploads/temp/'.$user_info[0]->photo.'&amp;w='.$w.'&amp;h='.$h.'&amp;zc=1" class=" level" style="border:1px solid;" />';
+        
     }else {
-				return '<div class="pre_image"><img '.$style.' src="'.base_url().'assets/timthumb.php?src='.base_url().'uploads/user_image/no_thumb.jpg&amp;w='.$w.'&amp;h='.$h.'&amp;zc=1" class="profile_img level" /></div>';
+				return '<img '.$style.' src="'.base_url().'assets/timthumb.php?src='.base_url().'uploads/user_image/images.png&amp;w='.$w.'&amp;h='.$h.'&amp;zc=1" class=" level" style="border:1px solid;" />';
 			}
+
 	}
 	
 function view_user_image_leve2($user_id, $w, $h) {		
@@ -498,10 +501,10 @@ function view_user_image_leve2($user_id, $w, $h) {
             if(!empty($user_info)) {
                 $style = ($user_info[0]->status == "Inactive") ? 'style="border: 2px solid red;"' : "";
             }
-            if (!empty($user_info->photo)) {
-                return '<div class="pre_image"><img '.$style.' src="'.base_url().'assets/timthumb.php?src='.base_url().'uploads/user_image/'.$user_info['photo'].'&amp;w='.$w.'&amp;h='.$h.'&amp;zc=1" class="profile_img level2" /></div>';
+            if (!empty($user_info[0]->photo)) {
+                return '<img '.$style.' src="'.base_url().'assets/timthumb.php?src='.base_url().'uploads/user_image/'.$user_info[0]->photo.'&amp;w='.$w.'&amp;h='.$h.'&amp;zc=1" class="level2" style="border:1px solid;" />';
             }else {
-                return '<div class="pre_image"><img '.$style.' src="'.base_url().'assets/timthumb.php?src='.base_url().'uploads/user_image/no_thumb.jpg&amp;w='.$w.'&amp;h='.$h.'&amp;zc=1" class="profile_img level2" /></div>';
+                return '<img '.$style.' src="'.base_url().'assets/timthumb.php?src='.base_url().'uploads/user_image/images.png&amp;w='.$w.'&amp;h='.$h.'&amp;zc=1" class=" level2" style="border:1px solid;" />';
             }
 	}
 	
@@ -515,10 +518,10 @@ function view_user_image_leve3($user_id, $w, $h) {
             if(!empty($user_info)) {
                 $style = ($user_info[0]->status == "Inactive") ? 'style="border: 2px solid red;"' : "";
             }
-            if (!empty($user_info->photo)) {
-                return '<div class="pre_image"><img '.$style.' src="'.base_url().'assets/timthumb.php?src='.base_url().'uploads/user_image/'.$user_info['photo'].'&amp;w='.$w.'&amp;h='.$h.'&amp;zc=1" class="profile_img level3" /></div>';
+            if (!empty($user_info[0]->photo)) {
+                return '<img '.$style.' src="'.base_url().'assets/timthumb.php?src='.base_url().'uploads/user_image/'.$user_info[0]->photo.'&amp;w='.$w.'&amp;h='.$h.'&amp;zc=1" class="level3" style="border:1px solid;" />';
             }else {
-                return '<div class="pre_image"><img '.$style.' src="'.base_url().'assets/timthumb.php?src='.base_url().'uploads/user_image/no_thumb.jpg&amp;w='.$w.'&amp;h='.$h.'&amp;zc=1" class="profile_img level3" /></div>';
+                return '<img '.$style.' src="'.base_url().'assets/timthumb.php?src='.base_url().'uploads/user_image/images.png&amp;w='.$w.'&amp;h='.$h.'&amp;zc=1" class="level3" style="border:1px solid;" />';
             }
 	}
 	
