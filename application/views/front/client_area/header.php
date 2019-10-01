@@ -54,7 +54,7 @@ print $this->global_settings->get_each_setting_value($key = 'site_title'); ?></t
                       <strong style="margin-top:5px;"><a href="<?php echo base_url(); ?>">Stars Fair BD</a></strong>
                     </div>
                     <div class="col-md-1 col-md-offset-8 text-right">
-                      <a href="<?php print base_url().$log_url; ?>"><?php print $log_title; ?></a>
+                      <a class="nav-link" href="<?php print base_url().$log_url; ?>"><?php print $log_title; ?></a>
                     </div>                        
                 </div>
         </div>

@@ -1,6 +1,6 @@
 <div class="container-fluid wraper">
   <div class="row">
-        <div class="container" id="area_pad">
+        <div class="container" id="area_pad" >
 
           <?php print $sidebar_left; ?>
 
@@ -8,7 +8,7 @@
             <div class="right_contant dashboard_right">
               <div class="top_right_content">
                 
-                  <h1> Dashboard Statement </h1>
+                  <h1> <b>Dashboard Statement</b> </h1>
                 
                 
                 <hr />
@@ -70,6 +70,7 @@
                           </tr>
                         </tbody>
                       </table>
+                      
                     </div>
                   </div>
               </div>

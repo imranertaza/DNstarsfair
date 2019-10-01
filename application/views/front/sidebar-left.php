@@ -1,4 +1,4 @@
-<div class="col-md-3 sidebar">
+<div class="col-md-3 sidebar" style="background-color: white;">
     	<div class="head_teacher_comment" >
         	<h4 style=" "><i class="fa fa-bars logo_3_color" aria-hidden="true"></i> <?php if (empty($check_user)) { print "Login"; }else{ print "Profile"; } ?></h4>
             <div class="login_box">

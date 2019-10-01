@@ -221,10 +221,10 @@ float: left;
     margin: 20px 0 0 26px;
 }
 
-.sidebar { border:3px solid #fc922a; padding:0 !important; margin-top:25px;}
+.sidebar { border:3px solid #082638; padding:0 !important; margin-top:25px;}
 .results ul { margin-bottom:0px; }
-.head_teacher_comment h4, .important_links h4, .results h4, .notice h4 { margin:0; padding:5px 10px; background:#fc922a; color:#fff;}
-.important_links ul, .results ul, .notice ul, .important_links1 ul { list-style:none; padding:10px 15px;}
+.head_teacher_comment h4, .important_links h4, .results h4, .notice h4 { margin:0; padding:5px 10px; background:#082638; color:#fff;}
+.important_links ul, .results ul, .notice ul, .important_links1 ul { list-style:none; padding:;}
 .important_links ul li a, .results ul li a, .notice ul li a, .important_links1 ul li a { color:#000; font-size:12px;}
 .head_teacher { text-align:center; margin:10px;}
 .teacher_comment { text-align:justify; margin:0 10px; font-size:12px;}
@@ -498,7 +498,11 @@ h2{
 
 
 
-
+.gallery{
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  
+}
 
 .werp{
     
@@ -661,3 +665,35 @@ button {
 
 
    
+#viewport {
+  padding-left: 250px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#content {
+  width: 100%;
+  position: relative;
+  margin-right: 0;
+}
+
+/* Sidebar Styles */
+
+
+
+
+/*#sidebar*/
+
+ .nav a{
+  background: none;
+  border-bottom: 1px solid #455A64;
+  color: black;
+  font-size: 14px;
+  padding: 16px 24px;
+}
+
+.nav a i{
+  margin-right: 16px;
+}
