@@ -18,8 +18,8 @@
 				print "<div style='text-align: center;'> <b>Username:</b> ".$u_name."</div><br />";
 
 				print "<li><a><b>Full Name :</b><span style='float: right;' > ".$f_name."</span></a></li>";
-                print "<li><a><b>Commission :</b> <span style='float: right;'>".number_format(get_field_by_id_from_table('users', 'commission', 'ID', $ID), 2)."</span> </a></li>";
-                print "<li><a><b>Balance :</b> <span style='float: right;'> ".number_format(get_field_by_id_from_table('users', 'balance', 'ID', $ID), 2)."</span> </a></li>";
+                print "<li><a><b>Commission :</b> <span style='float: right;'> (TK) ".number_format(get_field_by_id_from_table('users', 'commission', 'ID', $ID), 2)."</span> </a></li>";
+                print "<li><a><b>Balance :</b> <span style='float: right;'>(TK) ".number_format(get_field_by_id_from_table('users', 'balance', 'ID', $ID), 2)."</span> </a></li>";
 			?>
             
 			<?php }
@@ -35,11 +35,13 @@
             <?php } */
             
 			if (($check_user == true) && ($role == 4)){
-				print "Username: ".$u_name."<br />";
-				print " First Name: ".$f_name." <br />";
-				print " Last Name: ".$l_name."<br />";
-				print " Balance: ".number_format($balance, 2)."<br /> ";
-				print " Commission: ".number_format(get_field_by_id_from_table('users', 'commission', 'ID', $ID), 2)."<br />";
+                print "<div style='text-align: center; margin-top:20px;' >".view_user_image($ID, 90, 90)."</div><br>";
+				print "<div style='text-align: center;'> <b>First Name:</b> ".$u_name."</div><br />";
+
+				print "<li><a><b> First Name:</b> <span style='float: right;' >".$f_name." </span></a></li>";
+				print "<li><a><b> Last Name:</b> <span style='float: right;' >".$l_name."</span></a></li>";
+				print "<li><a><b> Balance:</b> <span style='float: right;' > (TK) ".number_format($balance, 2)."</span></a></li> ";
+				print "<li><a><b> Commission: </b> <span style='float: right;' > (TK) ".number_format(get_field_by_id_from_table('users', 'commission', 'ID', $ID), 2)."</span></a></li>";
 			?>
             
             
@@ -54,19 +56,19 @@
         	<h4><i class="fa fa-bars logo_3_color" aria-hidden="true"></i> Menus</h4>            
             <ul class="nav">
 				<?php if (($check_user == true) && ($role == 4)) { ?>                
-            	<li><a href="<?php print base_url(); ?>agent/dashboard/">Dashboard</a></li>
-                <li><a href="<?php print base_url(); ?>agent/profile/">My Profile</a></li>
-                <li><a href="<?php print base_url(); ?>agent/agent_pin/">Pin Generate</a></li>
-                <li><a href="#">Product Inventory</a></li>
-                <li><a href="#">Purchased Products</a></li>
-                <li><a href="#">Product Sales History</a></li>
-                <li><a href="#">Sales</a></li>
-                <li><a href="#">Sales Commission History</a></li>                
-                <li><a href="#">Load Balance</a></li>
-                <li><a href="#">Load Balance History</a></li>
-                <li><a href="#">Transaction</a></li>
-                <li><a href="#">Transaction Balance History</a></li>
-                <li><a href="#">Expensive History</a></li>
+            	<li><a href="<?php print base_url(); ?>agent/dashboard/"><i class="fa fa-tachometer"></i> Dashboard</a></li>
+                <li><a href="<?php print base_url(); ?>agent/profile/"><i class="fa fa-user"></i> My Profile</a></li>
+                <li><a href="<?php print base_url(); ?>agent/agent_pin/"><i class="fa fa-refresh"></i> Pin Generate</a></li>
+                <li><a href="#"><i class="fa fa-indent"></i> Product Inventory</a></li>
+                <li><a href="#"><i class="fa fa-truck"></i> Purchased Products</a></li>
+                <li><a href="#"><i class="fa fa-file-text"></i> Product Sales History</a></li>
+                <li><a href="#"><i class="fa fa-briefcase"></i> Sales</a></li>
+                <li><a href="#"><i class="fa fa-file-text"></i> Sales Commission History</a></li>                
+                <li><a href="#"><i class="fa fa-arrow-circle-down"></i> Load Balance</a></li>
+                <li><a href="#"><i class="fa fa-file-text"></i> Load Balance History</a></li>
+                <li><a href="#"><i class="fa fa-paper-plane-o"></i> Transaction</a></li>
+                <li><a href="#"><i class="fa fa-file-text"></i> Transaction Balance History</a></li>
+                <li><a href="#"><i class="fa fa-file-text"></i> Expensive History</a></li>
                 
                 
                 
@@ -96,37 +98,37 @@
                 <?php
                 if (($check_user == true) && ($role == 6)) { ?>
                     <li>
-                        <a href="<?php print base_url(); ?>agent/dashboard/">Dashboard</a>
+                        <a href="<?php print base_url(); ?>member/dashboard/"><i class="fa fa-tachometer"></i> Dashboard</a>
                     </li>
                     <li>
-                        <a href="<?php print base_url(); ?>member/general/tree/">My Tree</a>
+                        <a href="<?php print base_url(); ?>member/general/tree/"><i class="fa fa-sitemap"></i> My Tree</a>
                     </li>
                     <li>
-                        <a href="<?php print base_url(); ?>member/profile/">Profile</a>
+                        <a href="<?php print base_url(); ?>member/profile/"><i class="fa fa-user"></i> Profile</a>
                     </li>
                     <li>
-                        <a href="<?php print base_url(); ?>member/profile/profile_update/">Edit Profile</a>
+                        <a href="<?php print base_url(); ?>member/profile/profile_update/"><i class="fa fa-pencil-square-o"></i> Edit Profile</a>
                     </li>
                     <li>
-                        <a href="<?php print base_url(); ?>member/general/referrals/">Referrals</a>
+                        <a href="<?php print base_url(); ?>member/general/referrals/"><i class="fa fa-share-alt-square"></i> Referrals</a>
                     </li>
                     <li>
-                        <a href="<?php print base_url(); ?>member/general/withdraw/">Withdraw</a>
+                        <a href="<?php print base_url(); ?>member/general/withdraw/"><i class="fa fa-paper-plane-o"></i> Withdraw</a>
                     </li>
                     <li>
-                        <a href="<?php print base_url(); ?>member/general/withdraw_report/">Withdraw Report</a>
+                        <a href="<?php print base_url(); ?>member/general/withdraw_report/"><i class="fa fa-file-text"></i> Withdraw Report</a>
                     </li>
                     <li>
-                        <a href="<?php print base_url(); ?>member/general/matching_report/">Matching Report</a>
+                        <a href="<?php print base_url(); ?>member/general/matching_report/"><i class="fa fa-file-text"></i> Matching Report</a>
+                    </li>
+                    <!-- <li>
+                        <a href="<?php //print base_url(); ?>member/general/transfer_money/">Transfer Money</a>
                     </li>
                     <li>
-                        <a href="<?php print base_url(); ?>member/general/transfer_money/">Transfer Money</a>
-                    </li>
+                        <a href="<?php //print base_url(); ?>member/general/transfer_history/">Transfer Money History</a>
+                    </li> -->
                     <li>
-                        <a href="<?php print base_url(); ?>member/general/transfer_history/">Transfer Money History</a>
-                    </li>
-                    <li>
-                        <a href="">Product Purchase History</a>
+                        <a href=""><i class="fa fa-file-text"></i>Product Purchase History</a>
                     </li>
 
             	<!-- <li><a href="<?php //print base_url(); ?>member/general/dashboard/">Dashboard</a></li>
