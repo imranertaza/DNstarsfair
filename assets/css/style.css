@@ -679,11 +679,6 @@ button {
   margin-right: 0;
 }
 
-/* Sidebar Styles */
-
-
-
-
 /*#sidebar*/
 
  .nav a{
@@ -696,4 +691,10 @@ button {
 
 .nav a i{
   margin-right: 16px;
+}
+
+.dash_body{
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  background-color: #082638;
 }

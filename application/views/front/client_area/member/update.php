@@ -1,6 +1,6 @@
-<div class="container-fluid wraper">
+<div class="container-fluid dash_body">
   <div class="row">
-        <div class="container" id="area_pad">	
+        <div class="container wraper" style="padding-bottom: 20px;">	
 			<?php print $sidebar_left; ?>
 
 		    <div class="col-md-9">

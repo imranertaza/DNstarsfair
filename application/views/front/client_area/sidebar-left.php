@@ -128,6 +128,9 @@
                         <a href="<?php //print base_url(); ?>member/general/transfer_history/">Transfer Money History</a>
                     </li> -->
                     <li>
+                        <a href=""><i class="fa fa-indent"></i>Product</a>
+                    </li>
+                    <li>
                         <a href=""><i class="fa fa-file-text"></i>Product Purchase History</a>
                     </li>
 

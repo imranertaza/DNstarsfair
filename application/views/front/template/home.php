@@ -56,21 +56,16 @@
             <div class="container" id="area_pad" style="" >  
                   <div class="col-md-12">
                       <div class="col-md-12 text-center" >
-                        <h1><b>Notice</b></h1>
+                        <h1><b>Products</b></h1>
                         <center><p class="front-border"></p></center>       
                       </div>                         
-                      <div class="col-md-12  results text-center" id="cont-padding" >
-
-                            
-                              <ul class="notice">                      
-                                <?php foreach($list_notice as $row) { ?>
-                                  <li ><p><a style="font-size: 16px;" href=""><?php print $row->title; ?></a></p></li>
-                                <?php }?>                          
-                              </ul>
-                            
-
-                         
-
+                      <div class="col-md-12  results " id="cont-padding" >
+                          <div class="col-md-4">
+                            <img src="<?php print base_url(); ?>uploads/gallery/pexels-photo-46710.jpeg" width="100%" class="img-rounded">
+                          </div>
+                          <div class="col-md-8">
+                            <p class="font-size" ><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                          </div>
                       </div>
                     </div>
             </div>
@@ -104,4 +99,27 @@
       </div>
   </div>
 </section>
+
+<section class="notice-section">
+  <div class="container-fluid wraper" >
+      <div class="row" >
+            <div class="container" id="area_pad" style="" >  
+                  <div class="col-md-12">
+                      <div class="col-md-12 text-center" >
+                        <h1><b>Notice</b></h1>
+                        <center><p class="front-border"></p></center>       
+                      </div>                         
+                      <div class="col-md-12  results text-center" id="cont-padding" >
+                          <ul class="notice">                      
+                            <?php foreach($list_notice as $row) { ?>
+                              <li ><p><a style="font-size: 16px;" href=""><?php print $row->title; ?></a></p></li>
+                            <?php }?>                          
+                          </ul>
+                      </div>
+                    </div>
+            </div>
+      </div>
+  </div>
+</section>
+
 
