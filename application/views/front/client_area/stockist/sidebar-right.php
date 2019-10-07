@@ -1,4 +1,4 @@
-<div class="col-md-3 sidebar">
+<div class="col-md-3 sidebar"  >
 		
         <div class="head_teacher_comment">
         	<h4><i class="fa fa-bars logo_3_color" aria-hidden="true"></i> Cart</h4>

@@ -61,6 +61,7 @@
                 <li><a href="<?php print base_url(); ?>agent/agent_pin/"><i class="fa fa-refresh"></i> Pin Generate</a></li>
                 <li><a href="#"><i class="fa fa-indent"></i> Product Inventory</a></li>
                 <li><a href="#"><i class="fa fa-truck"></i> Purchased Products</a></li>
+                <li><a href="<?php print base_url(); ?>agent/product_sale/"><i class="fa fa-file-text"></i> Product Sales </a></li>
                 <li><a href="#"><i class="fa fa-file-text"></i> Product Sales History</a></li>
                 <li><a href="#"><i class="fa fa-briefcase"></i> Sales</a></li>
                 <li><a href="#"><i class="fa fa-file-text"></i> Sales Commission History</a></li>                

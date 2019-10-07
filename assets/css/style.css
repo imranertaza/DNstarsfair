@@ -293,17 +293,22 @@ a:hover, a:focus { color: #005180 !important; }
 
 .store tr th {background: #C33; color: #fff;}
 .store th, .store td{padding:5px;}
-.store tr:nth-child(even) {background: #bdbcbc}
-.store tr:nth-child(odd) {background: #ccc}
+.store tr:nth-child(even) {background: #dac2c2}
+.store tr:nth-child(odd) {background: #d4ad79}
 
-.cart tr th {background: #C33; color: #fff;}
+.cart tr th {background: #ff972b; color: #fff;}
 .cart th, .store td{padding:5px;}
-.cart tr:nth-child(even) {background: #bdbcbc}
-.cart tr:nth-child(odd) {background: #ccc}
+.cart tr:nth-child(even) {background: #c1b4a7}
+.cart tr:nth-child(odd) {background: #d2bba4}
 
+.store2 tr th {background: #082638; color: #fff;}
+.store2 th, .store td{padding:5px;}
+.store2 tr:nth-child(even) {background: #c1b4a7}
+.store2 tr:nth-child(odd) {background: #d2bba4}
 
-
-
+.con_table tr th {background: #082638; color: #fff;}
+.con_table tr:nth-child(even) {background: #c1b4a7}
+.con_table tr:nth-child(odd) {background: #d2bba4}
 .withdraw {
     width: 360px;
     margin: 0 auto;
