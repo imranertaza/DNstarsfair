@@ -527,9 +527,8 @@ function view_user_image_leve3($user_id, $w, $h) {
 	
 	
 	
-function get_total_left_right_point($id){
-	$ci =& get_instance();
-	$ci->load->database();
+function Tk_view($amount){
 	
-	
+	$TK = "(৳) $amount/-";
+	return $TK;
 }

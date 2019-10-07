@@ -51,7 +51,7 @@
                                           <tr>
                                             <td><?php echo $item->sale_id;?></td>
                                             <td><?php print get_username_by_id($item->u_id); ?></td>
-                                            <td><?php print get_total_price_of_a_sale($item->sale_id); ?></td>
+                                            <td><?php print Tk_view(get_total_price_of_a_sale($item->sale_id)); ?></td>
                                             <td><?php echo $item->time;?></td>
                                           </tr>
                                           <?php } ?>

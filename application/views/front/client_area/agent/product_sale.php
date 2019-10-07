@@ -12,7 +12,7 @@
 		            	<div class="row store2">
 		                    <div class="col-md-12 table-responsive">
 		                        <?php @print $msg; ?>
-		                        <table class="table-bordered table">
+		                        <table class="table-bordered table ">
 		                            <tr>
 		                                <th>Image</th>
 		                                <th>Code</th>
@@ -44,7 +44,7 @@
                                         <input type="hidden" value="<?php print $each_product->price; ?>" name="price" />
                                         </td>
                                         <td>
-                                        <input type="submit" class="btn btn-info" name="add_to_cart" value="Add to Cart" />
+                                        <input type="submit" class="btn btn-info btn-sm" name="add_to_cart" value="Add to Cart" />
                                         <input type="hidden" name="product_id" value="<?php print $each_product->pro_id; ?>" />
                                         </td>
                                         </form>

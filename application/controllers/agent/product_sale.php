@@ -308,7 +308,7 @@ class product_sale extends CI_Controller {
 
 
 				//user balance update
-						   $this->db->select('balance');
+				$this->db->select('balance');
 				$Balance = $this->db->get_where('users', array('ID' => $sessionId))->row();
 				$agentBalance = $Balance->balance - $totalamount;
 
@@ -318,7 +318,7 @@ class product_sale extends CI_Controller {
 
 
 				//admin balance update
-								$this->db->select('balance');
+				$this->db->select('balance');
 				$adminBal = $this->db->get_where('users', array('ID' => 1 ))->row();
 				$adminBalance = $adminBal->balance + $totalamount;
 
@@ -328,9 +328,13 @@ class product_sale extends CI_Controller {
 
 
 				//user point update
-					$point = array('point' =>$new_point);
+				$this->db->select_sum('point');
+				$point = $this->db->get_where('users', array('ID' => $userID))->row();
+				$totalpoint = $point->point + $new_point;
+
+					$pointdata = array('point' =>$totalpoint);
 					$this->db->where('ID', $userID);
-					$this->db->update('users', $point);
+					$this->db->update('users', $pointdata);
 
 						
 				//user status update point
