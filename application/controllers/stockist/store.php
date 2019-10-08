@@ -394,7 +394,7 @@ class store extends CI_Controller {
 					
 					
 					//Stockist commision statement (Insert into 'comm_stockist')
-					$data['sale_id'] = mysql_insert_id();
+					$data['sale_id'] = $this->db->insert_id();
 					$new_commission = $new_point * get_field_by_id_from_table("global_settings", "value", "title", "stockist_commission");
 					$stockist_com_state = array(
 							'u_id' => $this->session->userdata('user_id'),

@@ -45,7 +45,7 @@
                         </li>
                         <?php }
 
-                        /*if ($this->functions->hasPermission('std_list') == true) { ?>
+                        if ($this->functions->hasPermission('std_list') == true) { ?>
                         <li>
                             <a href="#"><i class="fa fa-list-ol" aria-hidden="true"></i> Products <span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
@@ -90,7 +90,7 @@
                                 <?php } ?>
                             </ul>
                         </li>
-                        <?php } */ if ($this->functions->hasPermission('std_list') == true) { ?>
+                        <?php }  if ($this->functions->hasPermission('std_list') == true) { ?>
                         <li>
                             <a href="#"><i class="fa fa-fw"></i> Member <span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
