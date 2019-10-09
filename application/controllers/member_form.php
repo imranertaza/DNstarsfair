@@ -277,6 +277,8 @@ class member_form extends CI_Controller {
                 $position = $this->input->post('position');
                 if (($position == 1) || ($position == 2)) {
 
+                $this->db->trans_start();	
+
                     // Insert into user
                     $data_personal = array(
                         'email' => $_POST['email'],
@@ -290,8 +292,6 @@ class member_form extends CI_Controller {
                     $this->db->insert('users', $data_personal);
                     $userID = $this->db->insert_id();
 
-
-
                     // Insert into user_role
                     $current_time = date('Y-M-D h:m:s');
                     $data_role = array(
@@ -300,7 +300,6 @@ class member_form extends CI_Controller {
                         'addDate' => $current_time
                     );
                     $this->db->insert('user_roles', $data_role);
-
 
                     // Insert into tree
                     $pid = get_ID_by_username($_POST['p_id']);
@@ -335,6 +334,174 @@ class member_form extends CI_Controller {
                 				);
                     $this->db->where('pin', $_POST['pin']);
                     $this->db->update('pins', $pin);
+
+	                //Sponsor commision will be added to main Commission
+	                $spon_id = get_field_by_id_from_table("tree", "spon_id", "u_id", $userID);
+	                $spons_previous_bal = get_field_by_id_from_table("users", "commission", "ID", $spon_id);
+	                $sponsor_com = get_field_by_id_from_table("global_settings", "value", "title", "sponsor_commission");
+	                $sponsor_commision = array(
+	                    'commission' => $spons_previous_bal + $sponsor_com,
+	                );
+	                $this->db->where('ID', $spon_id);
+	                $this->db->update('users', $sponsor_commision);
+
+	                // Sponsor commission Statement
+	                $spon_commision_statement = array(
+	                    'u_id' => $spon_id,
+	                    'purpose' => "Sponsor commission of a register new member",
+	                    'amount' => $sponsor_com,
+	                    'date' => date("Y-m-d h:i:s")
+	                );
+	                $this->db->insert('comm_spot', $spon_commision_statement);
+
+	                //All Users Perent_point will be increased And matching
+	                $min_matching_point = get_field_by_id_from_table("global_settings", "value", "title", "min_matching_point");
+	                $per_day_matching = get_field_by_id_from_table("global_settings", "value", "title", "per_day_matching");
+	                $matching_commission = get_field_by_id_from_table("global_settings", "value", "title", "matching_commission");
+
+	                $parent_id = get_field_by_id_from_table("tree", "pr_id", "u_id", $userID);
+	                $user_id = $userID;
+
+	                while (!empty($parent_id)) {
+
+	                    $old_lpoint = get_field_by_id_from_table("users", "lpoint", "ID", $parent_id);
+	                    $old_rpoint = get_field_by_id_from_table("users", "rpoint", "ID", $parent_id);
+
+	                    //Increasing Parent hand point (left or right)
+	                    $this->db->select('l_t, r_t');
+	                    $this->db->from('tree');
+	                    $this->db->where("u_id", $parent_id);
+	                    $hand = $this->db->get()->row();
+	                    if ($hand->l_t == $user_id) {
+	                        $point_hand = "lpoint";
+	                    }
+	                    if ($hand->r_t == $user_id) {
+	                        $point_hand = "rpoint";
+	                    }
+	                    $old_point = get_field_by_id_from_table("users", $point_hand, "ID", $parent_id);
+	                    $pr_point = array(
+	                        $point_hand => $old_point + $min_matching_point
+	                    );
+	                    $this->db->where('ID', $parent_id);
+	                    $this->db->update('users', $pr_point);
+
+	                    //Adding history of points
+	                    $current_lpoint = get_field_by_id_from_table("users", "lpoint", "ID", $parent_id);
+	                    $current_rpoint = get_field_by_id_from_table("users", "rpoint", "ID", $parent_id);
+	                    $current_commission = get_field_by_id_from_table("users", "commission", "ID", $parent_id);
+	                    $current_balance = get_field_by_id_from_table("users", "balance", "ID", $parent_id);
+	                    $history_point_data = array(
+	                        'u_id' => $parent_id,
+	                        $point_hand => $min_matching_point,
+	                        'current_left_point' => $current_lpoint,
+	                        'current_right_point' => $current_rpoint,
+	                        'current_commission' => $current_commission,
+	                        'current_balance' => $current_balance,
+	                        'type' => "Add",
+	                        'date' => date("Y-m-d h:i:s")
+	                    );
+	                    $this->db->insert('history_point', $history_point_data);
+
+	                    //Matching Commission
+	                    $com_taken_on_day = $this->db->query("SELECT * FROM `comm_matching` WHERE `u_id` = $parent_id AND `date` BETWEEN '" . date("Y-m-d") . " 00:00:00' AND '" . date("Y-m-d") . " 23:59:59'")->num_rows();
+	                    if ($com_taken_on_day < $per_day_matching) {
+
+	                        $lpoint = get_field_by_id_from_table("users", "lpoint", "ID", $parent_id);
+	                        $rpoint = get_field_by_id_from_table("users", "rpoint", "ID", $parent_id);
+
+	                        if (($lpoint >= $min_matching_point) && ($rpoint >= $min_matching_point) && !empty($hand->l_t) && !empty($hand->r_t)) {
+
+	                            $existing_com = get_field_by_id_from_table("users", "commission", "ID", $parent_id);
+
+	                            // Updating commission on user table
+	                            $data = array(
+	                                'commission' => $existing_com + $matching_commission
+	                            );
+	                            $this->db->where('ID', $parent_id);
+	                            $this->db->update('users', $data);
+
+	                            $matching_commission;
+	                                $data = array(
+	                                    'u_id' => $parent_id,
+	                                    'purpose' => 'Matching Commission'.date("Y-m-d h:i:s A"),
+	                                    'amount' => $matching_commission,
+	                                    'date' => date("Y-m-d h:i:s")
+	                                );
+	                                $this->db->insert('comm_matching', $data);
+
+	                            //Decreasing Left point
+	                            //$matching_point = $next_com_times * $min_matching_point;
+	                            $left_data = array(
+	                                'lpoint' => $lpoint - $min_matching_point,
+	                                'rpoint' => $rpoint - $min_matching_point
+	                            );
+	                            $this->db->where('ID', $parent_id);
+	                            $this->db->update('users', $left_data);
+
+	                            //Deducting history of points
+	                            $current_lpoint = get_field_by_id_from_table("users", "lpoint", "ID", $parent_id);
+	                            $current_rpoint = get_field_by_id_from_table("users", "rpoint", "ID", $parent_id);
+	                            $current_commission = get_field_by_id_from_table("users", "commission", "ID", $parent_id);
+	                            $current_balance = get_field_by_id_from_table("users", "balance", "ID", $parent_id);
+	                            $deducting_point_data = array(
+	                                'u_id' => $parent_id,
+	                                'lpoint' => $min_matching_point,
+	                                'rpoint' => $min_matching_point,
+	                                'current_left_point' => $current_lpoint,
+	                                'current_right_point' => $current_rpoint,
+	                                'current_commission' => $current_commission,
+	                                'current_balance' => $current_balance,
+	                                'type' => "Deduct",
+	                                'date' => date("Y-m-d h:i:s")
+	                            );
+	                            $this->db->insert('history_point', $deducting_point_data);
+
+	                        }
+
+	                    }
+
+	                    //Flash existing point after 25
+	                    //$total_comm_taken = $com_taken_on_day + 1;
+	                    if ($com_taken_on_day >= $per_day_matching) {
+
+	                        if ($old_lpoint <> $old_rpoint) {
+	                            if ($old_lpoint > $old_rpoint) {
+	                                $flash_hand = "rpoint";
+	                            } else {
+	                                $flash_hand = "lpoint";
+	                            }
+
+	                            $flashdata = array(
+	                                $flash_hand => 0
+	                            );
+	                            $this->db->where('ID', $parent_id);
+	                            $this->db->update('users', $flashdata);
+
+	                            //Flushing history of points
+	                            $current_lpoint = get_field_by_id_from_table("users", "lpoint", "ID", $parent_id);
+	                            $current_rpoint = get_field_by_id_from_table("users", "rpoint", "ID", $parent_id);
+	                            $current_commission = get_field_by_id_from_table("users", "commission", "ID", $parent_id);
+	                            $current_balance = get_field_by_id_from_table("users", "balance", "ID", $parent_id);
+	                            $flushing_point_data = array(
+	                                'u_id' => $parent_id,
+	                                $flash_hand => $min_matching_point,
+	                                'current_left_point' => $current_lpoint,
+	                                'current_right_point' => $current_rpoint,
+	                                'current_commission' => $current_commission,
+	                                'current_balance' => $current_balance,
+	                                'type' => "Flush",
+	                                'date' => date("Y-m-d h:i:s")
+	                            );
+	                            $this->db->insert('history_point', $flushing_point_data);
+
+	                       	}
+
+	                    }
+	                    $user_id = $parent_id;
+	                    $parent_id = get_field_by_id_from_table("tree", "pr_id", "u_id", $parent_id);
+	                }
+
+                $this->db->trans_complete();
 
                     $this->session->set_flashdata("msg", "<div class='alert alert-success'>Successfully Registered. Please Login</div>");
                     redirect("member_form/login/");

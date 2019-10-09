@@ -488,6 +488,8 @@ class general extends CI_Controller {
 
         if($previous_bal_of_sender >= $amount) {
             if ($amount > 4) {
+
+            $this->db->trans_start();
                 // Deducting balance of sender
                 $new_balance_of_serder = array(
                     'balance' => $previous_bal_of_sender - $amount
@@ -503,7 +505,8 @@ class general extends CI_Controller {
                 );
                 $this->db->where('ID', $receiver_id);
                 $this->db->update('users', $new_balance_of_receiver);
-
+                
+            $this->db->trans_complete();
 
                 $this->session->set_flashdata('msg', "<div class='alert alert-success' role='alert'>Success!</div>");
             } else {

@@ -561,7 +561,7 @@ class store extends CI_Controller {
 					}
 					$parent_id = get_field_by_id_from_table("tree", "pr_id", "u_id", $parent_id);
 					}
-
+				$this->db->trans_complete();
 
 					$data['msg'] = '<p class="success">Successfully Purchased</p>';
 					$this->cart->destroy();
