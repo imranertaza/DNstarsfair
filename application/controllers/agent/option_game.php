@@ -103,6 +103,7 @@ class option_game extends CI_Controller {
         if ($previous_bal >= $amount) {
             if ($gameStatus == "Active") {
 
+            $this->db->trans_start();
                 // Deducting balance of user
                 $new_balance = array(
                     'OP_game_balance' => $previous_bal - $amount
@@ -132,6 +133,7 @@ class option_game extends CI_Controller {
                 );
                 $this->db->insert('history_op_game_participate', $history_participate);
                 $this->session->set_flashdata('msg', "<div class='alert alert-success' role='alert'>Success!</div>");
+            $this->db->trans_complete();
 
             }else {
                 $this->session->set_flashdata('msg', "<div class='alert alert-danger' role='alert'>Sorry! no more bid in this game.</div>");

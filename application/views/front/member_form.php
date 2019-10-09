@@ -7,8 +7,7 @@
                             <div class="col-md-3"></div>
                             
                             <?php if (empty($check_user)) { ?>
-                            <div class="header inner col-md-8"  style=" background: url('<?php print base_url(); ?>uploads/gallery/log_back.jpg'); background-repeat: no-repeat; background-size: cover; ">
-                                <?php print $this->session->flashdata('msg'); ?>
+                            <div class="header inner col-md-8"  style=" background: url('<?php print base_url(); ?>uploads/gallery/log_back.jpg'); background-repeat: no-repeat; background-size: cover; ">                               
 
                                 <form id="regform" role="form" id="login" method="post" action="<?php print base_url(); ?>member_form/login/">
                                     <h3>Login Form</h3>

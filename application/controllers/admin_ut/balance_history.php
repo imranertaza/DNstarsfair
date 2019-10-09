@@ -54,6 +54,10 @@ class balance_history extends CI_Controller {
         $user_name = $this->input->post('username');
         $balance = $this->input->post('balance');
 
+        $adminBalance = get_field_by_id_from_table('users', 'balance', 'ID', 1);
+        $totalAdminBalance = $adminBalance - $balance;
+
+        $this->db->trans_start();
         //Insert
             $sendarID = $this->session->userdata('user_id');
             $receiverId = get_userid_by_username($user_name);
@@ -62,12 +66,20 @@ class balance_history extends CI_Controller {
                 'sender_id' => $sendarID, 
                 'receiver_id' => $receiverId,
                 'purpose' => 'Get Balance Frome Admin',
-                'amount' => $balance,
-                
+                'amount' => $balance,                
             );
+
             $insert = $this->db->insert('history_transection', $data);
         //Update Balance
             update_balance($user_name,$balance);
+        //Update Admin Balance
+            $admindata = array(
+                'balance' => $totalAdminBalance,               
+            );
+            $this->db->where('ID', 1);
+            $this->db->update('users', $admindata);
+
+        $this->db->trans_complete();
             redirect("admin_ut/balance_history/");
 
         
