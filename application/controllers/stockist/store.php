@@ -285,7 +285,7 @@ class store extends CI_Controller {
 		$new_balance = 0;
 
 		
-		// If user confirm to purchase products
+		//If user confirm to purchase products
 		if (isset($_POST['confirm'])) {
 			$total_price  = $this->cart->total();
 			$product_into = array();

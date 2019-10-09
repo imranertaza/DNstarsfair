@@ -66,7 +66,7 @@
                               <td><strong>Status</strong></td>
                               <td>
                                   <?php $class =  ($row->status == "Active") ? "btn btn-success" : "btn btn-danger"; ?>
-                                  <a href="<?php print base_url(); ?>member/general/change_status/" class="<?php print $class; ?>"><?php echo $row->status;?></a></td>
+                                  <a href="#" class="<?php print $class; ?>"><?php echo $row->status;?></a></td>
                           </tr>
                         </tbody>
                       </table>

@@ -18,8 +18,9 @@
 				print "<div style='text-align: center;'> <b>Username:</b> ".$u_name."</div><br />";
 
 				print "<li><a><b>Full Name :</b><span style='float: right;' > ".$f_name."</span></a></li>";
-                print "<li><a><b>Commission :</b> <span style='float: right;'> (TK) ".number_format(get_field_by_id_from_table('users', 'commission', 'ID', $ID), 2)."</span> </a></li>";
-                print "<li><a><b>Balance :</b> <span style='float: right;'>(TK) ".number_format(get_field_by_id_from_table('users', 'balance', 'ID', $ID), 2)."</span> </a></li>";
+                print "<li><a><b>Point :</b><span style='float: right;' > ".$point."</span></a></li>";
+                print "<li><a><b>Commission :</b> <span style='float: right;'> ".Tk_view(number_format(get_field_by_id_from_table('users', 'commission', 'ID', $ID), 2))."</span> </a></li>";
+                print "<li><a><b>Balance :</b> <span style='float: right;'>".Tk_view(number_format(get_field_by_id_from_table('users', 'balance', 'ID', $ID), 2))."</span> </a></li>";
 			?>
             
 			<?php }
@@ -40,8 +41,8 @@
 
 				print "<li><a><b> First Name:</b> <span style='float: right;' >".$f_name." </span></a></li>";
 				print "<li><a><b> Last Name:</b> <span style='float: right;' >".$l_name."</span></a></li>";
-				print "<li><a><b> Balance:</b> <span style='float: right;' > (TK) ".number_format($balance, 2)."</span></a></li> ";
-				print "<li><a><b> Commission: </b> <span style='float: right;' > (TK) ".number_format(get_field_by_id_from_table('users', 'commission', 'ID', $ID), 2)."</span></a></li>";
+				print "<li><a><b> Balance:</b> <span style='float: right;' >".Tk_view(number_format($balance, 2))."</span></a></li> ";
+				print "<li><a><b> Commission: </b> <span style='float: right;' >".Tk_view(number_format(get_field_by_id_from_table('users', 'commission', 'ID', $ID), 2))."</span></a></li>";
 			?>
             
             
@@ -61,6 +62,7 @@
                 <li><a href="<?php print base_url(); ?>agent/agent_pin/"><i class="fa fa-refresh"></i> Pin Generate</a></li>
                 <li><a href="#"><i class="fa fa-indent"></i> Product Inventory</a></li>
                 <li><a href="#"><i class="fa fa-truck"></i> Purchased Products</a></li>
+                <li><a href="<?php print base_url(); ?>agent/product_sale/"><i class="fa fa-file-text"></i> Product Sales </a></li>
                 <li><a href="#"><i class="fa fa-file-text"></i> Product Sales History</a></li>
                 <li><a href="#"><i class="fa fa-briefcase"></i> Sales</a></li>
                 <li><a href="#"><i class="fa fa-file-text"></i> Sales Commission History</a></li>                
