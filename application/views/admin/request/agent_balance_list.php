@@ -28,7 +28,7 @@
                                         <p class="help-block help_text" id="spon_bar">Please put the Agent Name here</p>
                                 </th>
                                 <th width="100"><input class="form-control" name="balance" required></th>
-                                <th width="100"><button type="submit" name="add_download" class="btn btn-default btn btn-primary">Update Balance</button></th>
+                                <th width="100"><button type="submit" name="add_download" class="btn btn-default btn btn-primary">Load Balance</button></th>
                             </tr>
                             </form>
                             </tbody>

@@ -460,15 +460,14 @@ class general extends CI_Controller {
 
             if (($amount >= $min_withdraw_amount) && ($amount <= $previous_bal_of_user)) {
 
+            $this->db->trans_start();
                 // Discreasing balance of the user
                 $new_balance_of_user = array(
                     'balance' => $previous_bal_of_user - $amount
                 );
                 $this->db->where('ID', $ID);
                 $this->db->update('users', $new_balance_of_user);
-
-
-
+                
                 // Added Transection history to history_transection_pm
                 $nagad_load_data = array(
                     'receiver_id' => $ID,
@@ -479,6 +478,8 @@ class general extends CI_Controller {
 
                 $this->db->insert('history_withdraw_nagad', $nagad_load_data);
                 $this->session->set_flashdata('msg', "<div class='alert alert-success' role='alert'>Success!</div>");
+            $this->db->trans_complete();
+
             }else {
                 $this->session->set_flashdata('msg', "<div class='alert alert-danger' role='alert'>Sorry! Withdraw did not success.</div>");
             }

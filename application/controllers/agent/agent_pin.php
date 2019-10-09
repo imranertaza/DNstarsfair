@@ -81,20 +81,27 @@ class agent_pin extends CI_Controller {
 	}
 
 	public function pin_generat_action(){
+
 				$ID = $this->session->userdata('user_id');
 				$pinAmount = $this->input->post('amount',TRUE);
 				$balance = get_field_by_id_from_table('users', 'balance', 'ID', $ID);
 				$active_amount = get_field_by_id_from_table('global_settings', 'value', 'title','active_amount');
+				$adminBalance = get_field_by_id_from_table('users', 'balance', 'ID', 1);
+
+				
 				//Amount Generate
 				$totalAmount = $active_amount*$pinAmount;
 				//Updated Data
 				$UpdateBalance = $balance - $totalAmount;
+				//Update Admin balance
+				$totalAdminBalance = $adminBalance + $totalAmount;
 
 				if ($balance >= $totalAmount) {
+
 					$num_pins = $this->input->post('amount',TRUE);
 	    			$usrID = $this->input->post('user_id',TRUE);
 
-
+	    			$this->db->trans_start();
 	    			//Balance Update
 	            	$balanceData = array(
 						        'balance' => $UpdateBalance,
@@ -102,7 +109,14 @@ class agent_pin extends CI_Controller {
 	            	$this->db->where('ID', $ID);
 	            	$this->db->update('users', $balanceData);
 
+	            	//Update Admin balance
+	            	$adminBalanceData = array(
+						        'balance' => $totalAdminBalance,
+						);
+	            	$this->db->where('ID', 1);
+	            	$this->db->update('users', $adminBalanceData);
 
+	            	//pin generate
 	    			for($i = 1; $i <= $num_pins; $i++) {
 		   
 		            	//Pin Generate
@@ -121,7 +135,10 @@ class agent_pin extends CI_Controller {
 						);
 		            	$this->db->insert('history_balance', $hisBalance);
 
+		        
 	            	}
+	            	$this->db->trans_complete();
+
 	            	$this->session->set_flashdata('msg', "<div class='alert alert-success' role='alert'>Create PIN Success</div>");
 	            	redirect(site_url('agent/agent_pin/'));
 
