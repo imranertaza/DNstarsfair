@@ -9,13 +9,11 @@ class user_login extends CI_model {
 		$result = $this->db->query($sql);
 		$row  = $result->row();
 		if ($result->num_rows() === 1) {
-			$newdata = array(
+			$admindata = array(
 					   'user_id'  => $row->ID,
-					   /*'username'  => $row->username,
-					   'email'     => $row->email,*/
 					   'logged_in' => 1
 				   );
-			$this->session->set_userdata($newdata);
+			$this->session->set_userdata($admindata);
 			return 1;
 		}else {
 			return false;
@@ -42,10 +40,6 @@ class user_login extends CI_model {
 					   'user_id'  => $row->ID,
 					   /*'u_name'  	=> $row->username,
 					   'email'  	=> $row->email,
-					   'f_name' 	=> $row->f_name,
-					   'l_name' 	=> $row->l_name,
-					   'address' 	=> $row->address1,
-					   'phn_no'  	=> $row->phn_no,
 					   'balance' 	=> $row->balance,
 					   'point'     	=> $row->point,*/
 					   'role'		=> $role->roleID,

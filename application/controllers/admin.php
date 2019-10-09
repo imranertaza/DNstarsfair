@@ -35,8 +35,9 @@ class admin extends CI_Controller {
 	 */
 	public function index()
 	{
-		$data ['failed'] = '';
-		$this->load->view('admin/login', $data);
+		// $data ['failed'] = '';
+		// $this->load->view('admin/login', $data);
+		redirect("admin/login");
 	}
 	
 	
@@ -58,8 +59,9 @@ class admin extends CI_Controller {
 				$this->load->view('admin/index');
 				$this->load->view('admin/footer');
 			}else {
-				$data ['failed'] = 1;
-				$this->load->view('admin/login', $data);
+				// $data ['failed'] = 1;
+				// $this->load->view('admin/login', $data);
+				redirect("admin/login");
 			}
 		
 		

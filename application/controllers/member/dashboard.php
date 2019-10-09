@@ -47,6 +47,7 @@ class dashboard extends CI_Controller {
 		$data['page_title'] = 'home';
 		$data['slider'] = '';
 		
+		print $this->m_logged_in;
 		if ($this->m_logged_in == true) {
 			$data['log_url'] = 'member_form/logout_member.html';
 			$data['log_title'] = 'Logout';
@@ -71,13 +72,6 @@ class dashboard extends CI_Controller {
 			$this->load->view('front/client_area/footer', $data);
 		}else{
 		    redirect("member_form/login/");
-//			$data['check_user'] = '';
-//			$data['log_url'] = 'member_form/login.html';
-//			$data['log_title'] = 'Login';
-//			$data['sidebar_left'] = $this->load->view('front/sidebar-left', $data, true);
-//			$this->load->view('front/header', $data);
-//			$this->load->view('front/member_form', $data);
-//			$this->load->view('front/footer', $data);
 		}
 		
 	}
