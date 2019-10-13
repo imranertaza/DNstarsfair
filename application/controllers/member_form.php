@@ -293,7 +293,7 @@ class member_form extends CI_Controller {
                     $userID = $this->db->insert_id();
 
                     // Insert into user_role
-                    $current_time = date('Y-M-D h:m:s');
+                    $current_time = date('Y-m-d h:m:s');
                     $data_role = array(
                         'userID' => $userID,
                         'roleID' => 6,

@@ -11,7 +11,8 @@
                 <input type="submit" name="login" value="login" id="login"  class="log1"  />
 
             </form>
-            <?php } if (($check_user == true) && ($role == 6)){
+            <?php } 
+            if (($check_user == true) && ($role == 6)){
                 
                 
                 print "<div style='text-align: center; margin-top:20px;' >".view_user_image($ID, 90, 90)."</div><br>";
