@@ -223,6 +223,8 @@ function user_type_list() {
 }
 
 
+
+
 /*function get_list_global_settings($title) {
 	$ci =& get_instance();
 	$ci->load->database();

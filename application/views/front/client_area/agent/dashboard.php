@@ -74,7 +74,7 @@
                                             </tr>
                                             <tr>
                                               <td><strong>Available Balance</strong></td>
-                                              <td><?php echo $profile->balance;?></td>
+                                              <td><?php echo Tk_view($profile->balance)?></td>
                                             </tr>
                                             <tr>
                                               <td><strong>Mobile Number</strong></td>
