@@ -2,7 +2,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">Agent Balance List</h1>
-                    <?php echo $this->session->flashdata('message'); ?>
+                    <?php print $this->session->flashdata('msg'); ?>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>

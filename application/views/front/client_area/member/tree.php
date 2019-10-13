@@ -18,12 +18,12 @@
                                 <td colspan="2"><strong><?php print $u_name;?></strong></td>
                               </tr>
                               <tr>
-                                <td>Left LP</td>
-                                <td><?php print $lpoint; ?></td>
+                                <td>Left Point</td>
+                                <td><?php print $lpoint; ?> Pt.</td>
                               </tr>
                               <tr>
-                                <td>Right LP</td>
-                                <td><?php print $rpoint; ?></td>
+                                <td>Right Point</td>
+                                <td><?php print $rpoint; ?> Pt.</td>
                               </tr>
                               <tr>
                                 <td>Member Search</td>
