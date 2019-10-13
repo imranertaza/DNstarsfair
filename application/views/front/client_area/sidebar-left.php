@@ -19,7 +19,7 @@
 				print "<div style='text-align: center;'> <b>Username:</b> ".$u_name."</div><br />";
 
 				print "<li><a><b>Full Name :</b><span style='float: right;' > ".$f_name."</span></a></li>";
-                print "<li><a><b>Point :</b><span style='float: right;' > ".$point."</span></a></li>";
+                print "<li><a><b>Point :</b><span style='float: right;' > ".$point." Pt.</span></a></li>";
                 print "<li><a><b>Commission :</b> <span style='float: right;'> ".Tk_view(number_format(get_field_by_id_from_table('users', 'commission', 'ID', $ID), 2))."</span> </a></li>";
                 print "<li><a><b>Balance :</b> <span style='float: right;'>".Tk_view(number_format(get_field_by_id_from_table('users', 'balance', 'ID', $ID), 2))."</span> </a></li>";
 			?>

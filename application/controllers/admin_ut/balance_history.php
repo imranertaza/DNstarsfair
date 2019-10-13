@@ -51,12 +51,15 @@ class balance_history extends CI_Controller {
 
 
     public function balance_update_action(){
+
         $user_name = $this->input->post('username');
         $balance = $this->input->post('balance');
 
         $adminBalance = get_field_by_id_from_table('users', 'balance', 'ID', 1);
         $totalAdminBalance = $adminBalance - $balance;
 
+        if ($adminBalance >= $balance) {
+        
         $this->db->trans_start();
         //Insert
             $sendarID = $this->session->userdata('user_id');
@@ -80,19 +83,16 @@ class balance_history extends CI_Controller {
             $this->db->update('users', $admindata);
 
         $this->db->trans_complete();
-            redirect("admin_ut/balance_history/");
-
         
-
+            $this->session->set_flashdata('msg', "<div class='alert alert-success' role='alert'>Your payment complete..</div>");
+            redirect("admin_ut/balance_history/");
+        }
+        else{
+           $this->session->set_flashdata('msg', "<div class='alert alert-danger' role='alert'>You do not have enough balance for this payment..</div>");
+           redirect("admin_ut/balance_history/");
+        }
 
     }
-
-
-
-
-
-
-
 
 }
 
