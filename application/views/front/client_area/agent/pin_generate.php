@@ -25,7 +25,7 @@
                                             <div class="col-lg-12">
                                                 
                                                 <form method="post" action="<?php echo base_url(); ?>agent/agent_pin/pin_generat_action">
-                                                       <input class="form-control" type="hidden" name="user_id" value="<?php echo($this->session->userdata('user_id'));?>" >
+                                                    
                                                     <input class="form-control" type="hidden" name="pin" value="12" hidden>
 
                                                     <div class="col-lg-4">
