@@ -11,7 +11,7 @@
 			            <hr />
 		            	<div class="row store2">
 		                    <div class="col-md-12 table-responsive">
-		                        <?php @print $msg; ?>
+		                    <?php print $this->session->flashdata('msg'); ?>
 		                        <table class="table-bordered table ">
 		                            <tr>
 		                                <th>Image</th>
