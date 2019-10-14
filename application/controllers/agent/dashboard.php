@@ -64,11 +64,18 @@ class dashboard extends CI_Controller {
 			$data['user_id'] = $user_id;
 			$data['sidebar_left'] = $this->load->view('front/client_area/sidebar-left', $data, true);
 			$this->load->view('front/client_area/header', $data);
-			
+
+					 	
 			$query = $this->db->get_where('users', array('ID'=>$data['ID']));
+
 			$data['profile'] = $query->row();
 			$data['query'] = $this->db->query("SELECT `users`.* FROM `tree`,`users` WHERE `tree`.`u_id` =  `users`.`ID` AND `tree`.`agent_id` = ".$data['ID']);
-			$data['querya'] = $this->db->query("SELECT * FROM `sales` WHERE `agent_id` = ".$data['ID']);
+
+
+			$this->db->where('agent_id = '.$data['ID']);
+			$this->db->limit(15);
+			$data['querya'] = $this->db->get('sales');
+
 			
 			$this->load->view('front/client_area/agent/dashboard', $data);
 			$this->load->view('front/client_area/footer', $data);

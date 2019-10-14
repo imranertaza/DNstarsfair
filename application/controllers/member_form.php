@@ -354,6 +354,25 @@ class member_form extends CI_Controller {
 	                );
 	                $this->db->insert('comm_spot', $spon_commision_statement);
 
+
+	                //sponsor commision is deducting from admin balance 
+	                $adminBalance = get_field_by_id_from_table('users', 'balance', 'ID', 1);
+			        $adminBalanceCRspon = $adminBalance-$sponsor_com;
+			        $adminBalanceCRdataspon = array(
+			            'balance' => $adminBalanceCRspon,
+			        );
+			        $this->db->where('ID', 1);
+			        $this->db->update('users', $adminBalanceCRdataspon);
+
+			        //admin balance history
+			        $hisBalanceadminspon = array(
+					    'user_id' => 1,
+						'amount' => $sponsor_com,
+						'type' => 'CR',
+						'purpose'=>'spon_commission',
+					);
+				    $this->db->insert('history_balance_admin', $hisBalanceadminspon);
+
 	                //All Users Perent_point will be increased And matching
 	                $min_matching_point = get_field_by_id_from_table("global_settings", "value", "title", "min_matching_point");
 	                $per_day_matching = get_field_by_id_from_table("global_settings", "value", "title", "per_day_matching");
@@ -420,14 +439,36 @@ class member_form extends CI_Controller {
 	                            $this->db->where('ID', $parent_id);
 	                            $this->db->update('users', $data);
 
-	                            $matching_commission;
-	                                $data = array(
-	                                    'u_id' => $parent_id,
-	                                    'purpose' => 'Matching Commission'.date("Y-m-d h:i:s A"),
-	                                    'amount' => $matching_commission,
-	                                    'date' => date("Y-m-d h:i:s")
-	                                );
-	                                $this->db->insert('comm_matching', $data);
+	                            //$matching_commission;
+                                $data = array(
+                                    'u_id' => $parent_id,
+                                    'purpose' => 'Matching Commission'.date("Y-m-d h:i:s A"),
+                                    'amount' => $matching_commission,
+                                    'date' => date("Y-m-d h:i:s")
+                                );
+                                $this->db->insert('comm_matching', $data);
+
+
+	                            //matching_commission is deducting from admin balance
+	                            $adminBalanceNew = get_field_by_id_from_table('users', 'balance', 'ID', 1);
+			                    $adminBalanceCR = $adminBalanceNew - $matching_commission;
+			                    $adminBalanceCRdata = array(
+			                    		'balance' => $adminBalanceCR,
+			                    		 );
+			                    $this->db->where('ID', 1);
+			                    $this->db->update('users', $adminBalanceCRdata);
+
+			                    //admin balance history
+			                    $hisBalanceadmin = array(
+					      			'user_id' => 1,
+									'amount' => $matching_commission,
+									'type' => 'CR',
+									'purpose'=>'matching_commission',
+								);
+				            	$this->db->insert('history_balance_admin', $hisBalanceadmin);
+
+
+
 
 	                            //Decreasing Left point
 	                            //$matching_point = $next_com_times * $min_matching_point;

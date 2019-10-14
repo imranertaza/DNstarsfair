@@ -14,7 +14,7 @@ $do = isset($_GET['do']) ? $_GET['do'] : 0;
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Liberal International Limited - Admin Panel</title>
+    <title>Stars Fair - Admin Panel</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url(); ?>assets/css/bootstrap.css" rel="stylesheet">
@@ -80,11 +80,13 @@ $do = isset($_GET['do']) ? $_GET['do'] : 0;
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="<?php print base_url(); ?>dashboard.html">Liberal International Limited - Admin Panel<sup>(v1)</sup></a>
+                <a class="navbar-brand" href="<?php print base_url(); ?>dashboard.html">Stars Fair - Admin Panel<sup>(v1)</sup></a>
             </div>
             <!-- /.navbar-header -->
             
             <ul class="nav navbar-top-links navbar-right">
+                <li class="username" style="margin-right: 50px;" ><b>Balance :</b> <?php print Tk_view(get_balance_by_id($this->session->userdata('user_id')));?></li>
+
             	<li class="username"><?php print 'Hi! '. $this->session->userdata('username');?></li>
                 <!--<li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
