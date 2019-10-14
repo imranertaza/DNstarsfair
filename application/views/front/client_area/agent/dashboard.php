@@ -10,6 +10,32 @@
                                   <h1> Agent Dashboard </h1>
                                   <hr />
                                   <div class="dashboard_aera">
+                                    <div class="dashboard_right_area">
+                                      <div class="user_information">
+                                        <h3>Agent Information</h3>
+                                        <table class="table-bordered table-hover table">
+                                          <tbody>
+                                            <tr>
+                                              <td><strong>Name</strong></td>
+                                              <td><?php echo $profile->username;?></td>
+                                            </tr>
+                                            <tr>
+                                              <td><strong>Profile Picture</strong></td>
+                                              <td><img src="<?php print base_url(); ?>uploads/temp/<?php echo $profile->photo ;?>" width="30%"></td>
+                                            </tr>
+                                            <tr>
+                                              <td><strong>Available Balance</strong></td>
+                                              <td><?php echo Tk_view($profile->balance)?></td>
+                                            </tr>
+                                            <tr>
+                                              <td><strong>Mobile Number</strong></td>
+                                              <td><?php echo $profile->phn_no;?></td>
+                                            </tr>
+                                            
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                    </div>
                                     <div class="dashboard_left_area">
                                       <h3>Recent Added Members</h3>
                                       <table class="table-bordered table-hover table">
@@ -58,32 +84,6 @@
                                           
                                         </tbody>
                                       </table>
-                                    </div>
-                                    <div class="dashboard_right_area">
-                                      <div class="user_information">
-                                        <h3>Agent Information</h3>
-                                        <table class="table-bordered table-hover table">
-                                          <tbody>
-                                            <tr>
-                                              <td><strong>Name</strong></td>
-                                              <td><?php echo $profile->username;?></td>
-                                            </tr>
-                                            <tr>
-                                              <td><strong>Profile Picture</strong></td>
-                                              <td><img src="<?php print base_url(); ?>uploads/temp/<?php echo $profile->photo ;?>" width="30%"></td>
-                                            </tr>
-                                            <tr>
-                                              <td><strong>Available Balance</strong></td>
-                                              <td><?php echo Tk_view($profile->balance)?></td>
-                                            </tr>
-                                            <tr>
-                                              <td><strong>Mobile Number</strong></td>
-                                              <td><?php echo $profile->phn_no;?></td>
-                                            </tr>
-                                            
-                                          </tbody>
-                                        </table>
-                                      </div>
                                     </div>
                                   </div>
                                 </div>

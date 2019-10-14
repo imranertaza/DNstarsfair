@@ -85,12 +85,14 @@ class agent_pin extends CI_Controller {
 				$ID = $this->session->userdata('user_id');
 				$pinAmount = $this->input->post('amount',TRUE);
 				$balance = get_field_by_id_from_table('users', 'balance', 'ID', $ID);
-				$active_amount = get_field_by_id_from_table('global_settings', 'value', 'title','active_amount');
+				$Commissionbalance = get_field_by_id_from_table('users', 'commission', 'ID', $ID);
+				$registration_amount = get_field_by_id_from_table('global_settings', 'value', 'title','registration_amount');
 				$adminBalance = get_field_by_id_from_table('users', 'balance', 'ID', 1);
 
+				$agent_commission = get_field_by_id_from_table('global_settings', 'value', 'title','agent_commission');
 				
 				//Amount Generate
-				$totalAmount = $active_amount*$pinAmount;
+				$totalAmount = $registration_amount*$pinAmount;
 				//Updated Data
 				$UpdateBalance = $balance - $totalAmount;
 				//Update Admin balance
@@ -99,7 +101,6 @@ class agent_pin extends CI_Controller {
 				if ($balance >= $totalAmount) {
 
 					$num_pins = $this->input->post('amount',TRUE);
-	    			$usrID = $this->input->post('user_id',TRUE);
 
 	    			$this->db->trans_start();
 	    			//Balance Update
@@ -122,21 +123,71 @@ class agent_pin extends CI_Controller {
 		            	//Pin Generate
 		            	$pin = $this->generate();
 			            $data = array(
-			      			'user_id' => $usrID,
+			      			'user_id' => $ID,
 							'pin' => $pin,
 						);
 		            	$this->db->insert('pins', $data);
 
-		            	//history_balance
-		            	$hisBalance = array(
-			      			'user_id' => $usrID,
-							'amount' => $num_pins,
+		            	//history_balance_agent
+		            	$hisBalanceAgent = array(
+			      			'user_id' => $ID,
+							'amount' => $registration_amount,
+							'type' => 'CR',
 							'purpose'=>'Pin generate',
 						);
-		            	$this->db->insert('history_balance', $hisBalance);
-
-		        
+		            	$this->db->insert('history_balance_agent', $hisBalanceAgent);
+		            	//history_balance_admin
+		            	$hisBalanceadmin = array(
+			      			'user_id' => 1,
+							'amount' => $registration_amount,
+							'type' => 'DR',
+							'purpose'=>'Pin generate',
+						);
+		            	$this->db->insert('history_balance_admin', $hisBalanceadmin);
 	            	}
+
+	            	//Amount Generate
+					$totalAmountcommission = $agent_commission*$pinAmount;
+
+					$UpdateBalanceagentcomm = $Commissionbalance + $totalAmountcommission;
+					//Update Admin balance
+					$totalAdminBalancecommission = $adminBalance - $totalAmountcommission;
+
+	            	//Update Admin balance CR
+	            	$adminBalanceDatacommission = array(
+						        'balance' => $totalAdminBalancecommission,
+						);
+	            	$this->db->where('ID', 1);
+	            	$this->db->update('users', $adminBalanceDatacommission);
+
+	            	//Balance Update Agent commission
+	            	$balanceDataagentCommission = array(
+						        'commission' => $UpdateBalanceagentcomm,
+						);
+	            	$this->db->where('ID', $ID);
+	            	$this->db->update('users', $balanceDataagentCommission);
+
+	            	// history commission
+	            	for($i = 1; $i <= $num_pins; $i++) {
+	            		//history_balance_agent_commission
+		            	$hisBalanceAgentcommission = array(
+			      			'user_id' => $ID,
+							'amount' => $agent_commission,
+							'type' => 'DR',
+							'purpose'=>'Pin generate commission',
+						);
+		            	$this->db->insert('history_balance_agent', $hisBalanceAgentcommission);
+		            	//history_balance_admin_commission
+		            	$hisBalanceadmincommission = array(
+			      			'user_id' => 1,
+							'amount' => $agent_commission,
+							'type' => 'CR',
+							'purpose'=>'Pin generate commission',
+						);
+		            	$this->db->insert('history_balance_admin', $hisBalanceadmincommission);
+	            	}
+
+
 	            	$this->db->trans_complete();
 
 	            	$this->session->set_flashdata('msg', "<div class='alert alert-success' role='alert'>Create PIN Success</div>");

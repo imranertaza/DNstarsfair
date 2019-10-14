@@ -289,7 +289,7 @@
                             <li>
                                 <a href="#"><i class="fa fa-fw"></i> Deposit/Withdraw<span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level">
-                                    <?php if ($this->functions->hasPermission('download_list') == true) { ?>
+                                    <?php /*if ($this->functions->hasPermission('download_list') == true) { ?>
                                         <li>
                                             <a href="<?php echo base_url(); ?>admin_ut/deposit_request/"><i class="fa fa-list fa-fw"></i> Deposit Request</a>
                                         </li>
@@ -297,9 +297,10 @@
                                         <li>
                                             <a href="<?php echo base_url(); ?>admin_ut/withdraw_request/"><i class="fa fa-plus-square fa-fw"></i> Withdraw Requet</a>
                                         </li>
-                                    <?php } if ($this->functions->hasPermission('add_download') == true) { ?>
+                                    <?php } */
+                                    if ($this->functions->hasPermission('add_download') == true) { ?>
                                     <li>
-                                        <a href="<?php echo base_url(); ?>admin_ut/balance_history/"><i class="fa fa-plus-square fa-fw"></i> Agent balance history</a>
+                                        <a href="<?php echo base_url(); ?>admin_ut/balance_history/"><i class="fa fa-plus-square fa-fw"></i> Load Agent Balance</a>
                                     </li>
                                     <?php } ?>
                                 </ul>

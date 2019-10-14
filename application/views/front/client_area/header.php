@@ -51,7 +51,11 @@ print $this->global_settings->get_each_setting_value($key = 'site_title'); ?></t
         <div class="main_body">
                 <div class="container">                     
                     <div class="col-md-3">
-                      <strong style="margin-top:5px;"><a href="<?php echo base_url(); ?>">Stars Fair BD</a></strong>
+                      <strong style="margin-top:5px;"><a href="<?php if($role == 4){ 
+                          print base_url().'agent/dashboard/';
+                        }else{
+                          print base_url().'member/dashboard/';
+                        }?>">Stars Fair BD</a></strong>
                     </div>
                     <div class="col-md-2 col-md-offset-7 text-right" >
                       
@@ -70,7 +74,11 @@ print $this->global_settings->get_each_setting_value($key = 'site_title'); ?></t
             <div class="row" >
                 <div class="container" style="padding: 10px;">                      
                         <div class="col-md-4">
-                            <a href="<?php echo base_url(); ?>"><img src="<?php print base_url(); ?>assets/images/logos.png" width="250" /></a>
+                            <a href="<?php if($role == 4){ 
+                          print base_url().'agent/dashboard/';
+                        }else{
+                          print base_url().'member/dashboard/';
+                        }?>"><img src="<?php print base_url(); ?>assets/images/logos.png" width="250" /></a>
                         </div>
                         <div class="col-md-8 " id="navigation">
                             <div class="topnav">
@@ -83,7 +91,6 @@ print $this->global_settings->get_each_setting_value($key = 'site_title'); ?></t
                               <a href="<?php print base_url(); ?>gallery/">Event Gallery</a>
                               <a href="<?php print base_url(); ?>details/page/about-us/">About Us</a>
                               <a href="<?php print base_url(); ?>details/page/contact-us/">Contact Us</a>
-                              <a href="<?php print base_url(); ?>member_form/register/">Register</a>
                               <a href="<?php print base_url().$log_url; ?>"><?php print $log_title; ?></a>
                             </div>
                         </div>
