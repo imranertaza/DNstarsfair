@@ -292,67 +292,76 @@ class product_sale extends CI_Controller {
 		if (isset($_POST['confirm'])) {
 
 			$sessionId = $this->session->userdata('user_id');
-
 			$totalamount = $this->input->post('totalamount',TRUE);
 			$userID = get_ID_by_username($this->input->post('username',TRUE));
 
-			$this->db->trans_start();
-				//sales insert
-				$saleProduct = array(
-					'u_id' =>$userID,
-					'agent_id' =>$sessionId ,
-					'amount' =>$totalamount ,
-					'pro_info' =>$productInfo,
-					 );	
-				$this->db->insert('sales',$saleProduct);
+			$agentBl = get_field_by_id_from_table('users', 'balance', 'ID',$sessionId);
+
+			if ($agentBl >= $totalamount ) {
+				
+				$this->db->trans_start();
+					//sales insert
+					$saleProduct = array(
+						'u_id' =>$userID,
+						'agent_id' =>$sessionId ,
+						'amount' =>$totalamount ,
+						'pro_info' =>$productInfo,
+						 );	
+					$this->db->insert('sales',$saleProduct);
 
 
-				//user balance update
-				$this->db->select('balance');
-				$Balance = $this->db->get_where('users', array('ID' => $sessionId))->row();
-				$agentBalance = $Balance->balance - $totalamount;
+					//user balance update
+					$this->db->select('balance');
+					$Balance = $this->db->get_where('users', array('ID' => $sessionId))->row();
+					$agentBalance = $Balance->balance - $totalamount;
 
-					$value = array('balance' =>$agentBalance);
-					$this->db->where('ID', $sessionId);
-					$this->db->update('users', $value);
-
-
-				//admin balance update
-				$this->db->select('balance');
-				$adminBal = $this->db->get_where('users', array('ID' => 1 ))->row();
-				$adminBalance = $adminBal->balance + $totalamount;
-
-					$adminvalue = array('balance' =>$adminBalance);
-					$this->db->where('ID', 1);
-					$this->db->update('users', $adminvalue);
+						$value = array('balance' =>$agentBalance);
+						$this->db->where('ID', $sessionId);
+						$this->db->update('users', $value);
 
 
-				//user point update
-				$this->db->select_sum('point');
-				$point = $this->db->get_where('users', array('ID' => $userID))->row();
-				$totalpoint = $point->point + $new_point;
+					//admin balance update
+					$this->db->select('balance');
+					$adminBal = $this->db->get_where('users', array('ID' => 1 ))->row();
+					$adminBalance = $adminBal->balance + $totalamount;
 
-					$pointdata = array('point' =>$totalpoint);
-					$this->db->where('ID', $userID);
-					$this->db->update('users', $pointdata);
+						$adminvalue = array('balance' =>$adminBalance);
+						$this->db->where('ID', 1);
+						$this->db->update('users', $adminvalue);
 
-						
-				//user status update point
-				$this->db->select_sum('amount');
-				$usbala = $this->db->get_where('sales', array('u_id' => $userID))->row();
-				$userbalance = $usbala->amount;
+
+					//user point update
+					$this->db->select_sum('point');
+					$point = $this->db->get_where('users', array('ID' => $userID))->row();
+					$totalpoint = $point->point + $new_point;
+
+						$pointdata = array('point' =>$totalpoint);
+						$this->db->where('ID', $userID);
+						$this->db->update('users', $pointdata);
+
+							
+					//user status update point
+					$this->db->select_sum('amount');
+					$usbala = $this->db->get_where('sales', array('u_id' => $userID))->row();
+					$userbalance = $usbala->amount;
+				
+					if ($userbalance >= 660) {
+						$userdata = array('status' =>'Active');
+						$this->db->where('ID',$userID);
+						$this->db->update('users', $userdata);
+					}
+
+				$this->db->trans_complete();
+
+				$this->cart->destroy();
+				$this->session->set_flashdata('msg', "<div class='alert alert-success' role='alert'>Successfully Purchased</div>");			
+				redirect(site_url('agent/product_sale/'));
+			}else{
+				//$this->cart->destroy();
+				$this->session->set_flashdata('msg', "<div class='alert alert-danger' role='alert'>Your Balance Is Too Low</div>");			
+				redirect(site_url('agent/product_sale/'));
+			}
 			
-				if ($userbalance >= 660) {
-					$userdata = array('status' =>'Active');
-					$this->db->where('ID',$userID);
-					$this->db->update('users', $userdata);
-				}
-
-			$this->db->trans_complete();
-
-			$this->cart->destroy();
-			$data['msg'] = '<p class="success">Successfully Purchased</p>';			
-			redirect(site_url('agent/product_sale/'));
 		}
 		
 				
