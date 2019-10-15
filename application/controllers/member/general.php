@@ -443,52 +443,54 @@ class general extends CI_Controller {
 
 
 
-    public function withdraw_money_nagad_success()
-    {
-        if ($this->m_logged_in == true) {
-            // Receiving transection data from Perfect Money/PM
-            $nagad_phone = $this->input->post('nagad_number');
-            $amount = $this->input->post('amount');
-            $ID = $this->session->userdata('user_id');
-            $min_withdraw_amount = get_field_by_id_from_table('global_settings', 'value', 'title', "min_withdraw_amount_nagad");
-            $previous_bal_of_user = get_field_by_id_from_table('users', 'balance', 'ID', $ID);
-//            $existing_balance = get_field_by_id_from_table('users', 'balance', 'ID', $ID);
-//            $doller_rate = get_field_by_id_from_table('global_settings', 'value', 'title', "doller_rate");
-//            $bangla_balance = $existing_balance * $doller_rate;
-//            $doller_withdraw_amount = $amount/$doller_rate;
+//     public function withdraw_money_nagad_success()
+//     {
+//         if ($this->m_logged_in == true) {
+//             // Receiving transection data from Perfect Money/PM
+//             $nagad_phone = $this->input->post('nagad_number');
+//             $amount = $this->input->post('amount');
+//             $ID = $this->session->userdata('user_id');
+//             $min_withdraw_amount = get_field_by_id_from_table('global_settings', 'value', 'title', "min_withdraw_amount_nagad");
+//             $previous_bal_of_user = get_field_by_id_from_table('users', 'balance', 'ID', $ID);
+// //            $existing_balance = get_field_by_id_from_table('users', 'balance', 'ID', $ID);
+// //            $doller_rate = get_field_by_id_from_table('global_settings', 'value', 'title', "doller_rate");
+// //            $bangla_balance = $existing_balance * $doller_rate;
+// //            $doller_withdraw_amount = $amount/$doller_rate;
 
 
-            if (($amount >= $min_withdraw_amount) && ($amount <= $previous_bal_of_user)) {
+//             if (($amount >= $min_withdraw_amount) && ($amount <= $previous_bal_of_user)) {
 
-            $this->db->trans_start();
-                // Discreasing balance of the user
-                $new_balance_of_user = array(
-                    'balance' => $previous_bal_of_user - $amount
-                );
-                $this->db->where('ID', $ID);
-                $this->db->update('users', $new_balance_of_user);
+//             $this->db->trans_start();
+//                 // Discreasing balance of the user
+//                 $new_balance_of_user = array(
+//                     'balance' => $previous_bal_of_user - $amount
+//                 );
+//                 $this->db->where('ID', $ID);
+//                 $this->db->update('users', $new_balance_of_user);
                 
-                // Added Transection history to history_transection_pm
-                $nagad_load_data = array(
-                    'receiver_id' => $ID,
-                    'nagad_number' => $nagad_phone,
-                    'amount' => $amount,
-                    'date' => date("Y-m-d h:i:s")
-                );
+//                 // Added Transection history to history_transection_pm
+//                 $nagad_load_data = array(
+//                     'receiver_id' => $ID,
+//                     'nagad_number' => $nagad_phone,
+//                     'amount' => $amount,
+//                     'date' => date("Y-m-d h:i:s")
+//                 );
 
-                $this->db->insert('history_withdraw_nagad', $nagad_load_data);
-                $this->session->set_flashdata('msg', "<div class='alert alert-success' role='alert'>Success!</div>");
-            $this->db->trans_complete();
+//                 $this->db->insert('history_withdraw_nagad', $nagad_load_data);
+//                 $this->session->set_flashdata('msg', "<div class='alert alert-success' role='alert'>Success!</div>");
+//             $this->db->trans_complete();
 
-            }else {
-                $this->session->set_flashdata('msg', "<div class='alert alert-danger' role='alert'>Sorry! Withdraw did not success.</div>");
-            }
+                
+//             }else {
+//                 $this->session->set_flashdata('msg', "<div class='alert alert-danger' role='alert'>Sorry! Withdraw did not success.</div>");
+                
+//             }
 
-            redirect("member/general/withdraw/");
-        }else{
-            redirect("member_form/login/");
-        }
-    }
+//             redirect("member/general/withdraw/");
+//         }else{
+//             redirect("member_form/login/");
+//         }
+//     }
 
 
 
@@ -651,78 +653,81 @@ class general extends CI_Controller {
 
 
 
-    public function withdraw_perfectmoney()
-    {
+    // public function withdraw_perfectmoney()
+    // {
 
-        if ($this->m_logged_in == true) {
-            // Receiving transection data from Perfect Money/PM
-            $payeeAccount = $this->input->post('pm_number');
-            $amount = $this->input->post('amount');
-            $ID = $this->session->userdata('user_id');
-            $min_amount_load_PM = get_field_by_id_from_table('global_settings', 'value', 'title', "min_amount_load_PM");
-            $payerAccount = get_field_by_id_from_table('global_settings', 'value', 'title', "PM_ID");
-            $accountId = get_field_by_id_from_table('global_settings', 'value', 'title', "PM_account_id");
-            $accountPass = get_field_by_id_from_table('global_settings', 'value', 'title', "PM_account_pass");
-            $previous_bal_of_user = get_field_by_id_from_table('users', 'balance', 'ID', $ID);
-            $PM_rest_balance = $this->pm_account_balance();
+    //     if ($this->m_logged_in == true) {
+    //         // Receiving transection data from Perfect Money/PM
+    //         $payeeAccount = $this->input->post('pm_number');
+    //         $amount = $this->input->post('amount');
+    //         $ID = $this->session->userdata('user_id');
+    //         $min_amount_load_PM = get_field_by_id_from_table('global_settings', 'value', 'title', "min_amount_load_PM");
+    //         $payerAccount = get_field_by_id_from_table('global_settings', 'value', 'title', "PM_ID");
+    //         $accountId = get_field_by_id_from_table('global_settings', 'value', 'title', "PM_account_id");
+    //         $accountPass = get_field_by_id_from_table('global_settings', 'value', 'title', "PM_account_pass");
+    //         $previous_bal_of_user = get_field_by_id_from_table('users', 'balance', 'ID', $ID);
+    //         $PM_rest_balance = $this->pm_account_balance();
 
-            if (($amount >= $min_amount_load_PM) && ($amount <= $previous_bal_of_user) && ($amount <= $PM_rest_balance)) {
+    //         if (($amount >= $min_amount_load_PM) && ($amount <= $previous_bal_of_user) && ($amount <= $PM_rest_balance)) {
 
-                // Discreasing balance of the user
-                $new_balance_of_user = array(
-                    'balance' => $previous_bal_of_user - $amount
-                );
-                $this->db->where('ID', $ID);
-                $this->db->update('users', $new_balance_of_user);
-
-
-                // Added Transection history to history_withdraw_pm
-                $pm_withdraw_data = array(
-                    'receiver_id' => $ID,
-                    'payee_account' => $payeeAccount,
-                    'amount' => $amount,
-                    'payment_units' => 'USD',
-                    'payer_account' => $payerAccount,
-                    'date' => date("Y-m-d h:i:s")
-                );
-
-                $this->db->insert('history_withdraw_pm', $pm_withdraw_data);
-
-                $withdrawId = $this->db->insert_id();
-
-                /*
-                This script demonstrates transfer proccess between two
-                PerfectMoney accounts using PerfectMoney API interface.
-                */
-
-                // trying to open URL to process PerfectMoney Spend request
-                $f = fopen('https://perfectmoney.is/acct/confirm.asp?AccountID=' . $accountId . '&PassPhrase=' . $accountPass . '&Payer_Account=' . $payerAccount . '&Payee_Account=' . $payeeAccount . '&Amount=' . $amount . '&PAY_IN=' . $amount . '&PAYMENT_ID=' . $withdrawId, 'rb');
-
-                if ($f === false) {
-                    //echo 'error openning url';
-                    // Change status to history_withdraw_pm
-                    $pm_withdraw_data = array(
-                        'status' => 'Pending'
-                    );
-                    $this->db->where('history_withdraw_pm_id', $withdrawId);
-                    $this->db->update('history_withdraw_pm', $pm_withdraw_data);
-                }
+    //             // Discreasing balance of the user
+    //             $new_balance_of_user = array(
+    //                 'balance' => $previous_bal_of_user - $amount
+    //             );
+    //             $this->db->where('ID', $ID);
+    //             $this->db->update('users', $new_balance_of_user);
 
 
+    //             // Added Transection history to history_withdraw_pm
+    //             $pm_withdraw_data = array(
+    //                 'receiver_id' => $ID,
+    //                 'payee_account' => $payeeAccount,
+    //                 'amount' => $amount,
+    //                 'payment_units' => 'USD',
+    //                 'payer_account' => $payerAccount,
+    //                 'date' => date("Y-m-d h:i:s")
+    //             );
+
+    //             $this->db->insert('history_withdraw_pm', $pm_withdraw_data);
+
+    //             $withdrawId = $this->db->insert_id();
+
+                
+    //             // This script demonstrates transfer proccess between two
+    //             // PerfectMoney accounts using PerfectMoney API interface.
+                
+
+    //             // trying to open URL to process PerfectMoney Spend request
+    //             $f = fopen('https://perfectmoney.is/acct/confirm.asp?AccountID=' . $accountId . '&PassPhrase=' . $accountPass . '&Payer_Account=' . $payerAccount . '&Payee_Account=' . $payeeAccount . '&Amount=' . $amount . '&PAY_IN=' . $amount . '&PAYMENT_ID=' . $withdrawId, 'rb');
+
+    //             if ($f === false) {
+    //                 //echo 'error openning url';
+    //                 // Change status to history_withdraw_pm
+    //                 $pm_withdraw_data = array(
+    //                     'status' => 'Pending'
+    //                 );
+    //                 $this->db->where('history_withdraw_pm_id', $withdrawId);
+    //                 $this->db->update('history_withdraw_pm', $pm_withdraw_data);
+    //             }
 
 
-                $this->session->set_flashdata('msg', "<div class='alert alert-success' role='alert'>Success!</div>");
-            }else {
-                $this->session->set_flashdata('msg', "<div class='alert alert-danger' role='alert'>Sorry! Withdraw did not success.</div>");
-            }
 
-            redirect("member/general/withdraw/");
 
-        }else{
-            redirect("member_form/login/");
-        }
+    //             $this->session->set_flashdata('msg', "<div class='alert alert-success' role='alert'>Success!</div>");
 
-    }
+                 
+    //         }else {
+    //             $this->session->set_flashdata('msg', "<div class='alert alert-danger' role='alert'>Sorry! Withdraw did not success.</div>");
+                 
+    //         }
+
+    //         redirect("member/general/withdraw/");
+
+    //     }else{
+    //         redirect("member_form/login/");
+    //     }
+
+    // }
 
 
 

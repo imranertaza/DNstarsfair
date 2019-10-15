@@ -62,12 +62,6 @@
                             <td><strong>Balance</strong></td>
                             <td><?php echo Tk_view($row->balance);?></td>
                           </tr>
-                          <tr>
-                              <td><strong>Status</strong></td>
-                              <td>
-                                  <?php $class =  ($row->status == "Active") ? "btn btn-success" : "btn btn-danger"; ?>
-                                  <?php echo $row->status;?></td>
-                          </tr>
                         </tbody>
                       </table>
                       

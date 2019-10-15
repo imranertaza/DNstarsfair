@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Liberal International Limited - Admin Panel</title>
+    <title>Stars Fair BD - Admin Panel</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">

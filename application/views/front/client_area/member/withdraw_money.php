@@ -13,25 +13,25 @@
 
 
 
-                        <div class="panel with-nav-tabs panel-default">
-                            <ul class="nav nav-tabs">
+                  <!--  <div class="panel with-nav-tabs panel-default"> -->
+                            <!-- <ul class="nav nav-tabs">
                                 <li class=""><a href="#tab1default" data-toggle="tab">Perfect Money</a></li>
                                 <li class="active"><a href="#tab2default" data-toggle="tab">Postal Nagad</a></li>
-                            </ul>
-                            <div class="panel-body">
+                            </ul> -->
+                            <!-- <div class="panel-body">
                                 <div class="tab-content">
                                     <div class="tab-pane fade" id="tab1default">
 
-                                        <div class='alert alert-warning' role='alert'>Withdraw using Perfect Money. Minimum $<?php print $min_amount_load_PM; ?> to withdraw.</div>
+                                        <div class='alert alert-warning' role='alert'>Withdraw using Perfect Money. Minimum $<?php //print $min_amount_load_PM; ?> to withdraw.</div>
                                         <div id="er_msg"></div>
 
                                         <div class="row">
-                                            <div class="col-md-12"><img class="float-right" width="200" src="<?php print base_url(); ?>assets/images/pm.png" /></div>
+                                            <div class="col-md-12"><img class="float-right" width="200" src="<?php //print base_url(); ?>assets/images/pm.png" /></div>
                                         </div>
                                         <br>
-                                        <br>
+                                        <br> -->
 
-                                        <form action="<?php print base_url(); ?>member/general/withdraw_perfectmoney/" method="post">
+                                        <!-- <form action="<?php //print base_url(); ?>member/general/withdraw_perfectmoney/" method="post">
 
                                             <div class="row">
                                                 <div class="col-md-3">
@@ -49,57 +49,57 @@
                                                 </div>
                                             </div>
 
-                                        </form>
+                                        </form> -->
 
 
-                                            <div class="row">
+                                            <!-- <div class="row">
 
 
 
                                             <br>
                                             <br>
-                                            <div class="col-md-12">
-                                                <hr>
+                                            <div class="col-md-12"> -->
+                                                <!-- <hr>
                                                 <h4>Perfect Money withdraw list</h4>
                                                 <table class="table table-striped">
                                                     <thead>
                                                     <tr>
                                                         <th>Payer Account(From)</th>
-                                                        <th>Payee Account(To)</th>
+                                                        <th>Payee Account(To)</th> -->
                 <!--                                        <th>Transection Batch Number</th>-->
-                                                        <th>Amount</th>
+                                                        <!-- <th>Amount</th>
                                                         <th>Date</th>
                                                     </tr>
                                                     </thead>
                                                     <tbody>
-                                                    <?php foreach($PM_trans as $trans) { ?>
+                                                    <?php //foreach($PM_trans as $trans) { ?>
                                                         <tr>
-                                                            <td><?php print $trans->payer_account; ?></td>
-                                                            <td><?php print $trans->payee_account; ?></td>
+                                                            <td><?php //print $trans->payer_account; ?></td>
+                                                            <td><?php //print $trans->payee_account; ?></td> -->
                 <!--                                            <td>--><?php //print $trans->payment_batch_num; ?><!--</td>-->
-                                                            <td><?php print $trans->amount; ?></td>
-                                                            <td><?php print $trans->date; ?></td>
+                                                            <!-- <td><?php //print $trans->amount; ?></td>
+                                                            <td><?php //print $trans->date; ?></td>
                                                         </tr>
-                                                    <?php } ?>
+                                                    <?php //} ?>
                                                     </tbody>
                                                 </table>
                                             </div>
 
                                         </div>
 
-                                    </div>
+                                    </div> -->
 
 
-                                    <div class="tab-pane fade active in" id="tab2default">
+                                    <!-- <div class="tab-pane fade active in" id="tab2default">
 
-                                        <div class='alert alert-warning' role='alert'>Minimum <?php print "$".$min_withdraw_amount_nagad; ?> TK to withdraw.</div>
+                                        <div class='alert alert-warning' role='alert'>Minimum <?php //print "$".$min_withdraw_amount_nagad; ?> TK to withdraw.</div>
 
                                         <div class="row">
-                                            <div class="col-md-12"><img class="float-right" width="200" src="<?php print base_url(); ?>assets/images/nagad.jpg" /></div>
+                                            <div class="col-md-12"><img class="float-right" width="200" src="<?php //print base_url(); ?>assets/images/nagad.jpg" /></div>
                                         </div>
                                         <br><br>
 
-                                        <form action="<?php print base_url(); ?>member/general/withdraw_money_nagad_success/" method="post">
+                                        <form action="<?php //print base_url(); ?>member/general/withdraw_money_nagad_success/" method="post">
 
                                         <div class="row">
                                         <div class="col-md-3">
@@ -117,9 +117,9 @@
                                             </div>
                                         </div>
 
-                                        </form>
+                                        </form> -->
 
-                                        <hr>
+                                        <!-- <hr>
                                         <br>
                                         <br>
                                         <h4>Nagad withdraw amount list</h4>
@@ -134,15 +134,15 @@
                                             </tr>
                                             </thead>
                                             <tbody>
-                                            <?php foreach($nagad_trans as $trans) { ?>
+                                            <?php //foreach($nagad_trans as $trans) { ?>
                                             <tr>
-                                                <td><?php print $trans->sender_phone; ?></td>
-                                                <td><?php print $trans->nagad_number; ?></td>
-                                                <td><?php print $trans->transection_num; ?></td>
-                                                <td><?php print "$".$trans->amount; ?></td>
-                                                <td><?php print $trans->status; ?></td>
+                                                <td><?php //print $trans->sender_phone; ?></td>
+                                                <td><?php //print $trans->nagad_number; ?></td>
+                                                <td><?php //print $trans->transection_num; ?></td>
+                                                <td><?php //print "$".$trans->amount; ?></td>
+                                                <td><?php //print $trans->status; ?></td>
                                             </tr>
-                                            <?php } ?>
+                                            <?php //} ?>
                                             </tbody>
                                         </table>
 
@@ -152,9 +152,9 @@
 
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
-
+                        <h2>Under Development </h2>
                     </div>
                   </div>
                 </div>

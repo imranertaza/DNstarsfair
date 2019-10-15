@@ -147,13 +147,10 @@ class agent_pin extends CI_Controller {
 	            	}
 
 	            	//Amount Generate
-					$totalAmountcommission = $agent_commission*$pinAmount;
+					$totalAmountcommission = $agent_commission*$pinAmount;					
 
-					$UpdateBalanceagentcomm = $Commissionbalance + $totalAmountcommission;
-					//Update Admin balance
-					$totalAdminBalancecommission = $adminBalance - $totalAmountcommission;
-
-	            	//Update Admin balance CR
+	            	//Update Admin balance CR	            	
+					$totalAdminBalancecommission = $totalAdminBalance - $totalAmountcommission;
 	            	$adminBalanceDatacommission = array(
 						        'balance' => $totalAdminBalancecommission,
 						);
@@ -161,6 +158,7 @@ class agent_pin extends CI_Controller {
 	            	$this->db->update('users', $adminBalanceDatacommission);
 
 	            	//Balance Update Agent commission
+	            	$UpdateBalanceagentcomm = $Commissionbalance + $totalAmountcommission;
 	            	$balanceDataagentCommission = array(
 						        'commission' => $UpdateBalanceagentcomm,
 						);
