@@ -341,11 +341,11 @@ class product_sale extends CI_Controller {
 
 							
 					//user status update point
+					$active_amount = get_field_by_id_from_table('global_settings', 'value', 'title','active_amount');
 					$this->db->select_sum('amount');
 					$usbala = $this->db->get_where('sales', array('u_id' => $userID))->row();
 					$userbalance = $usbala->amount;
-				
-					if ($userbalance >= 660) {
+					if ($userbalance >= $active_amount) {
 						$userdata = array('status' =>'Active');
 						$this->db->where('ID',$userID);
 						$this->db->update('users', $userdata);

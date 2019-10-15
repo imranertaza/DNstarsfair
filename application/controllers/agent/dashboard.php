@@ -47,8 +47,8 @@ class dashboard extends CI_Controller {
 		$data['slider'] = '';
 		
 		
-		print $role = $this->session->userdata('role');
-		print $m_logged_in = $this->session->userdata('m_logged_in');
+		$role = $this->session->userdata('role');
+		$m_logged_in = $this->session->userdata('m_logged_in');
 		if (($m_logged_in == true) && ($role == 4)) {
 			$data['log_url'] = 'member_form/logout_member.html';
 			$data['log_title'] = 'Logout';

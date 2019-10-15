@@ -5,7 +5,7 @@ class user_login extends CI_model {
 		$email = $this->input->post("email");
 		$password = md5($this->input->post("password"));
 		
-		$sql =  "SELECT * FROM `users` WHERE `email` = '$email' AND `password` = '$password'";
+		$sql =  "SELECT * FROM `users` WHERE `email` = '$email' AND `password` = '$password' AND `username` = 'admin'";
 		$result = $this->db->query($sql);
 		$row  = $result->row();
 		if ($result->num_rows() === 1) {

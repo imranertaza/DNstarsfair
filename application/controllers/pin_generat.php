@@ -75,23 +75,25 @@ class pin_generat extends CI_Controller {
 	
 	public function pin_generate()
 	{
-		if ($this->login_status == true) {
-			$this->load->view('admin/header');
-			$this->load->view('admin/sidebar');;
-			if ($this->functions->hasPermission('add_download') == true) {
-				$this->load->model('pingenerat/pingenerat');
+		// if ($this->login_status == true) {
+		// 	$this->load->view('admin/header');
+		// 	$this->load->view('admin/sidebar');;
+		// 	if ($this->functions->hasPermission('add_download') == true) {
+		// 		$this->load->model('pingenerat/pingenerat');
 				
 
 				
 
-				$this->load->view('admin/Pine Gnerate/pin_generate_form');
-			}else {
-				$this->load->view('admin/no_permission');
-			}
-			$this->load->view('admin/footer');
-		}else  {
-			$this->load->view('admin/login');
-		}
+		// 		$this->load->view('admin/Pine Gnerate/pin_generate_form');
+		// 	}else {
+		// 		$this->load->view('admin/no_permission');
+		// 	}
+		// 	$this->load->view('admin/footer');
+		// }else  {
+		// 	$this->load->view('admin/login');
+		// }
+
+		print "This module is currently stopped.";
 	}
 
 	public function view_agent_pin($id){

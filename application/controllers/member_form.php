@@ -175,7 +175,7 @@ class member_form extends CI_Controller {
 			}
 		}
 		
-		print $this->m_logged_in;
+		//print $this->m_logged_in;
 		if (($this->m_logged_in == true) || ($login)) {
 
             if ($this->session->userdata('role') == 4) { redirect("agent/dashboard/"); }

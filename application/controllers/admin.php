@@ -52,6 +52,8 @@ class admin extends CI_Controller {
 		}else {
 		
 			$login = $this->user_login->login_user();
+
+			//print $this->session->userdata('logged_in');
 			if ($login) {
 				$this->load->helper('settings_functions_helper');
 				$this->load->view('admin/header');
