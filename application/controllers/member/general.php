@@ -494,162 +494,162 @@ class general extends CI_Controller {
 
 
 
-    public function load_money($user_id=0)
-    {
+    // public function load_money($user_id=0)
+    // {
 
-        $data['dwn_path'] = base_url()."uploads/downloads/";
-        $notice_list = $this->db->query("SELECT * FROM `downloads` WHERE `cat_id` IN (5) ORDER BY `dwn_id` DESC LIMIT 0, 5");
-        if ($notice_list->num_rows() > 0)
-        {
-            $data['list_notice'] = $notice_list->result();
-        }else {
-            $data['list_notice'] = 'No notice published';
-        }
+    //     $data['dwn_path'] = base_url()."uploads/downloads/";
+    //     $notice_list = $this->db->query("SELECT * FROM `downloads` WHERE `cat_id` IN (5) ORDER BY `dwn_id` DESC LIMIT 0, 5");
+    //     if ($notice_list->num_rows() > 0)
+    //     {
+    //         $data['list_notice'] = $notice_list->result();
+    //     }else {
+    //         $data['list_notice'] = 'No notice published';
+    //     }
 
-        $data['footer_widget_title'] = $this->functions->show_widget('title', 8);
-        $data['footer_widget_description'] = $this->functions->show_widget('description', 8);
+    //     $data['footer_widget_title'] = $this->functions->show_widget('title', 8);
+    //     $data['footer_widget_description'] = $this->functions->show_widget('description', 8);
 
-        $data['footer_widget2_title'] = $this->functions->show_widget('title', 9);
-        $data['footer_widget2_description'] = $this->functions->show_widget('description', 9);
+    //     $data['footer_widget2_title'] = $this->functions->show_widget('title', 9);
+    //     $data['footer_widget2_description'] = $this->functions->show_widget('description', 9);
 
-        $data['page_title'] = 'home';
-        $data['slider'] = '';
-
-
-        if ($this->m_logged_in == true) {
-            $data['log_url'] = 'member_form/logout_member.html';
-            $data['log_title'] = 'Logout';
-            $data['check_user'] = $this->session->userdata('m_logged_in');
-            $data['ID'] = $this->session->userdata('user_id');
-            $data['u_name'] = get_field_by_id_from_table('users', 'username', 'ID', $data['ID']);
-            $data['f_name'] = get_field_by_id_from_table('users', 'f_name', 'ID', $data['ID']);
-            $data['l_name'] = get_field_by_id_from_table('users', 'l_name', 'ID', $data['ID']);
-            $data['balance'] = get_field_by_id_from_table('users', 'balance', 'ID', $data['ID']);
-            $data['point'] = get_field_by_id_from_table('users', 'point', 'ID', $data['ID']);
-            $data['role'] = get_field_by_id_from_table('user_roles', 'roleID', 'userID', $data['ID']);
-            $data['PM_ID'] = get_field_by_id_from_table('global_settings', 'value', 'title', "PM_ID");
-            $data['min_amount_load_PM'] = get_field_by_id_from_table('global_settings', 'value', 'title', "min_amount_load_PM");
-            $data['min_amount_load_nagad'] = get_field_by_id_from_table('global_settings', 'value', 'title', "min_amount_load_nagad");
-            $data['doller_rate'] = get_field_by_id_from_table('global_settings', 'value', 'title', "doller_rate");
-            $data['user_id'] = $user_id;
-            $data['sidebar_left'] = $this->load->view('front/client_area/sidebar-left', $data, true);
-            $this->load->view('front/client_area/header', $data);
+    //     $data['page_title'] = 'home';
+    //     $data['slider'] = '';
 
 
-            //query nagad transection list for this user
-            $data['nagad_trans'] = $this->db->get_where("history_transection_nagad", array("receiver_id" => $data['ID']))->result();
-
-            //query nagad transection list for this user
-            $data['PM_trans'] = $this->db->get_where("history_transection_pm", array("receiver_id" => $data['ID']))->result();
-
-            $data['query'] = $this->db->query('SELECT * FROM `tree` WHERE `ref_id`= '.$data['ID'].' ORDER BY `t_id` DESC LIMIT 0 , 10');
-
-            $this->load->view('front/client_area/member/load_money', $data);
-            $this->load->view('front/client_area/footer', $data);
-        }else{
-            redirect("member_form/login/");
-        }
-
-    }
-
-
-
-    public function load_money_success()
-    {
-
-        if ($this->m_logged_in == true) {
-            // Receiving transection data from Perfect Money/PM
-            $payee_account = $this->input->post('PAYEE_ACCOUNT');
-            $payment_amount = $this->input->post('PAYMENT_AMOUNT');
-            $payment_units = $this->input->post('PAYMENT_UNITS');
-            $payment_batch_num = $this->input->post('PAYMENT_BATCH_NUM');
-            $payer_account = $this->input->post('PAYER_ACCOUNT');
-            $payment_id = $this->input->post('PAYMENT_ID');
-            //$data['order_num'] = $this->input->post('ORDER_NUM');
-            $cust_num = $this->input->post('CUST_NUM');
-            $ID = $this->session->userdata('user_id');
-            $PM_ID = get_field_by_id_from_table('global_settings', 'value', 'title', "PM_ID");
-            $min_amount_load_PM = get_field_by_id_from_table('global_settings', 'value', 'title', "min_amount_load_PM");
+    //     if ($this->m_logged_in == true) {
+    //         $data['log_url'] = 'member_form/logout_member.html';
+    //         $data['log_title'] = 'Logout';
+    //         $data['check_user'] = $this->session->userdata('m_logged_in');
+    //         $data['ID'] = $this->session->userdata('user_id');
+    //         $data['u_name'] = get_field_by_id_from_table('users', 'username', 'ID', $data['ID']);
+    //         $data['f_name'] = get_field_by_id_from_table('users', 'f_name', 'ID', $data['ID']);
+    //         $data['l_name'] = get_field_by_id_from_table('users', 'l_name', 'ID', $data['ID']);
+    //         $data['balance'] = get_field_by_id_from_table('users', 'balance', 'ID', $data['ID']);
+    //         $data['point'] = get_field_by_id_from_table('users', 'point', 'ID', $data['ID']);
+    //         $data['role'] = get_field_by_id_from_table('user_roles', 'roleID', 'userID', $data['ID']);
+    //         $data['PM_ID'] = get_field_by_id_from_table('global_settings', 'value', 'title', "PM_ID");
+    //         $data['min_amount_load_PM'] = get_field_by_id_from_table('global_settings', 'value', 'title', "min_amount_load_PM");
+    //         $data['min_amount_load_nagad'] = get_field_by_id_from_table('global_settings', 'value', 'title', "min_amount_load_nagad");
+    //         $data['doller_rate'] = get_field_by_id_from_table('global_settings', 'value', 'title', "doller_rate");
+    //         $data['user_id'] = $user_id;
+    //         $data['sidebar_left'] = $this->load->view('front/client_area/sidebar-left', $data, true);
+    //         $this->load->view('front/client_area/header', $data);
 
 
-            if (($payment_batch_num != 0) && ($payee_account == $PM_ID) && ($payment_amount >= $min_amount_load_PM)) {
-                // Increasing balance of loader
-                $previous_bal_of_receiver = get_field_by_id_from_table('users', 'balance', 'ID', $ID);
-                $new_balance_of_receiver = array(
-                    'balance' => $previous_bal_of_receiver + $payment_amount
-                );
-                $this->db->where('ID', $ID);
-                $this->db->update('users', $new_balance_of_receiver);
+    //         //query nagad transection list for this user
+    //         $data['nagad_trans'] = $this->db->get_where("history_transection_nagad", array("receiver_id" => $data['ID']))->result();
+
+    //         //query nagad transection list for this user
+    //         $data['PM_trans'] = $this->db->get_where("history_transection_pm", array("receiver_id" => $data['ID']))->result();
+
+    //         $data['query'] = $this->db->query('SELECT * FROM `tree` WHERE `ref_id`= '.$data['ID'].' ORDER BY `t_id` DESC LIMIT 0 , 10');
+
+    //         $this->load->view('front/client_area/member/load_money', $data);
+    //         $this->load->view('front/client_area/footer', $data);
+    //     }else{
+    //         redirect("member_form/login/");
+    //     }
+
+    // }
 
 
-                // Added Transection history to history_transection_pm
-                $pm_load_data = array(
-                    'receiver_id' => $ID,
-                    'payment_batch_num' => $payment_batch_num,
-                    'payee_account' => $payee_account,
-                    'amount' => $payment_amount,
-                    'payment_units' => $payment_units,
-                    'payer_account' => $payer_account,
-                    'payment_id' => $payment_id,
-                    'cust_num' => $cust_num,
-                    'date' => date("Y-m-d h:i:s")
-                );
 
-                $this->db->insert('history_transection_pm', $pm_load_data);
+    // public function load_money_success()
+    // {
 
-                $this->session->set_flashdata('msg', "<div class='alert alert-success' role='alert'>Success!</div>");
-            }else {
-                $this->session->set_flashdata('msg', "<div class='alert alert-danger' role='alert'>Sorry! Load did not success.</div>");
-            }
-
-            redirect("member/general/load_money/");
-        }else{
-            redirect("member_form/login/");
-        }
-
-    }
-
-    public function load_money_canceled()
-    {
-        $this->session->set_flashdata('msg', "<div class='alert alert-danger' role='alert'>Sorry! Load did not success.</div>");
-        redirect("member/general/load_money/");
-    }
+    //     if ($this->m_logged_in == true) {
+    //         // Receiving transection data from Perfect Money/PM
+    //         $payee_account = $this->input->post('PAYEE_ACCOUNT');
+    //         $payment_amount = $this->input->post('PAYMENT_AMOUNT');
+    //         $payment_units = $this->input->post('PAYMENT_UNITS');
+    //         $payment_batch_num = $this->input->post('PAYMENT_BATCH_NUM');
+    //         $payer_account = $this->input->post('PAYER_ACCOUNT');
+    //         $payment_id = $this->input->post('PAYMENT_ID');
+    //         //$data['order_num'] = $this->input->post('ORDER_NUM');
+    //         $cust_num = $this->input->post('CUST_NUM');
+    //         $ID = $this->session->userdata('user_id');
+    //         $PM_ID = get_field_by_id_from_table('global_settings', 'value', 'title', "PM_ID");
+    //         $min_amount_load_PM = get_field_by_id_from_table('global_settings', 'value', 'title', "min_amount_load_PM");
 
 
-    public function load_money_nagad_success()
-    {
-        if ($this->m_logged_in == true) {
-            // Receiving transection data from Perfect Money/PM
-            $nagad_phone = $this->input->post('nagad_phone');
-            $sender_phone = $this->input->post('sender_phone');
-            $transection = $this->input->post('transection');
-            $amount = $this->input->post('amount');
-            $ID = $this->session->userdata('user_id');
-            $min_amount_load_nagad = get_field_by_id_from_table('global_settings', 'value', 'title', "min_amount_load_nagad");
+    //         if (($payment_batch_num != 0) && ($payee_account == $PM_ID) && ($payment_amount >= $min_amount_load_PM)) {
+    //             // Increasing balance of loader
+    //             $previous_bal_of_receiver = get_field_by_id_from_table('users', 'balance', 'ID', $ID);
+    //             $new_balance_of_receiver = array(
+    //                 'balance' => $previous_bal_of_receiver + $payment_amount
+    //             );
+    //             $this->db->where('ID', $ID);
+    //             $this->db->update('users', $new_balance_of_receiver);
 
 
-            if ($amount >= $min_amount_load_nagad) {
-                // Added Transection history to history_transection_pm
-                $nagad_load_data = array(
-                    'receiver_id' => $ID,
-                    'nagad_number' => $nagad_phone,
-                    'transection_num' => $transection,
-                    'sender_phone' => $sender_phone,
-                    'amount' => $amount,
-                    'date' => date("Y-m-d h:i:s")
-                );
+    //             // Added Transection history to history_transection_pm
+    //             $pm_load_data = array(
+    //                 'receiver_id' => $ID,
+    //                 'payment_batch_num' => $payment_batch_num,
+    //                 'payee_account' => $payee_account,
+    //                 'amount' => $payment_amount,
+    //                 'payment_units' => $payment_units,
+    //                 'payer_account' => $payer_account,
+    //                 'payment_id' => $payment_id,
+    //                 'cust_num' => $cust_num,
+    //                 'date' => date("Y-m-d h:i:s")
+    //             );
 
-                $this->db->insert('history_transection_nagad', $nagad_load_data);
-                $this->session->set_flashdata('msg', "<div class='alert alert-success' role='alert'>Success!</div>");
-            }else {
-                $this->session->set_flashdata('msg', "<div class='alert alert-danger' role='alert'>Sorry! Load did not success.</div>");
-            }
+    //             $this->db->insert('history_transection_pm', $pm_load_data);
 
-            redirect("member/general/load_money/");
-        }else{
-            redirect("member_form/login/");
-        }
-    }
+    //             $this->session->set_flashdata('msg', "<div class='alert alert-success' role='alert'>Success!</div>");
+    //         }else {
+    //             $this->session->set_flashdata('msg', "<div class='alert alert-danger' role='alert'>Sorry! Load did not success.</div>");
+    //         }
+
+    //         redirect("member/general/load_money/");
+    //     }else{
+    //         redirect("member_form/login/");
+    //     }
+
+    // }
+
+    // public function load_money_canceled()
+    // {
+    //     $this->session->set_flashdata('msg', "<div class='alert alert-danger' role='alert'>Sorry! Load did not success.</div>");
+    //     redirect("member/general/load_money/");
+    // }
+
+
+    // public function load_money_nagad_success()
+    // {
+    //     if ($this->m_logged_in == true) {
+    //         // Receiving transection data from Perfect Money/PM
+    //         $nagad_phone = $this->input->post('nagad_phone');
+    //         $sender_phone = $this->input->post('sender_phone');
+    //         $transection = $this->input->post('transection');
+    //         $amount = $this->input->post('amount');
+    //         $ID = $this->session->userdata('user_id');
+    //         $min_amount_load_nagad = get_field_by_id_from_table('global_settings', 'value', 'title', "min_amount_load_nagad");
+
+
+    //         if ($amount >= $min_amount_load_nagad) {
+    //             // Added Transection history to history_transection_pm
+    //             $nagad_load_data = array(
+    //                 'receiver_id' => $ID,
+    //                 'nagad_number' => $nagad_phone,
+    //                 'transection_num' => $transection,
+    //                 'sender_phone' => $sender_phone,
+    //                 'amount' => $amount,
+    //                 'date' => date("Y-m-d h:i:s")
+    //             );
+
+    //             $this->db->insert('history_transection_nagad', $nagad_load_data);
+    //             $this->session->set_flashdata('msg', "<div class='alert alert-success' role='alert'>Success!</div>");
+    //         }else {
+    //             $this->session->set_flashdata('msg', "<div class='alert alert-danger' role='alert'>Sorry! Load did not success.</div>");
+    //         }
+
+    //         redirect("member/general/load_money/");
+    //     }else{
+    //         redirect("member_form/login/");
+    //     }
+    // }
 
 
 

@@ -8,11 +8,11 @@
               		<div class="top_right_content">
               			<h1> Update Profile </h1>
               			<hr />
-                  		<?php if ($row->status == "Inactive") { ?>
+                  		<?php /*if ($row->status == "Inactive") { ?>
 	                      	<div class="alert alert-warning" role="alert">
 	                          Sorry! But your account is not active yet!. PLease <a href="<?php print base_url(); ?>member/general/load_money/">load balance</a> to your account and <a href="#">Active.</a>
 	                      	</div>
-                  		<?php } print $this->session->flashdata('msg'); ?>
+                  		<?php }*/ print $this->session->flashdata('msg'); ?>
 
                   		<div class="panel with-nav-tabs panel-default">
                             <ul class="nav nav-tabs">
